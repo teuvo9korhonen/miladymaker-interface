@@ -22,7 +22,7 @@ img {
 	margin: 1em;
 	background-color: #ffffee;
 }
-p a { color: blue; text-decoration: underline; }
+a { color: blue; text-decoration: underline; }
 .m_box_bar {
  background:#2f4d0c;
  color:white;
