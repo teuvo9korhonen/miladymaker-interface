@@ -1,5 +1,6 @@
 body {
- font:13px/1.231 arial,helvetica,clean,sans-serif;
+ font: 1.2em;
+ font-family: arial,helvetica,clean,sans-serif;
  width: 45em;
  margin: auto;
   background-image: linear-gradient(#d9f0d6, #f4ffee, #f4ffee, white, white);
@@ -54,8 +55,8 @@ p {
  color:#2f4d0c
 }
 
-h2 { margin-bottom:0.001em; margin-left:0.5em; font-size: 1em; text-align:center; }
-h3 { margin-left:0.3em; font-size: 1em; margin-top:0.3em; margin-bottom:0.1em;text-decoration: underline; font-weight: bold;}
+h2 { margin-bottom:0.001em; margin-left:0.25em;}
+h3 { margin-left:0.3em; font-size: 1em; margin-top:0.3em; margin-bottom:0.1em;text-decoration: underline; text-align:center; font-weight: bold;}
 li { margin-left:0.3em; }
 ul { list-style-type: circle;}
 a { color:inherit; text-decoration: none;}
