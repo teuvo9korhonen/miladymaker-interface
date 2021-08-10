@@ -94,12 +94,12 @@ a:hover { color:red; text-decoration: underline;}
 	  
 .card {
   width: 71.5vw;
-  height: 100vw;
+  height: 300px;
     // width: clamp(200px, 61vh, 18vw);
     // height: clamp(280px, 85vh, 25.2vw);
   @media screen and (min-width: 600px) {
     // width: 61vh;
-    // height: 85vh;
+    // height: 400px;
     // max-width: 500px;
     // max-height: 700px;
     width: clamp(12.9vw, 61vh, 18vw);
