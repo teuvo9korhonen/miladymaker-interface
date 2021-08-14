@@ -84,14 +84,14 @@ a:hover { color:red; text-decoration: underline;}
   --back: url(https://miladymaker.net/logo.png);
   --miladya1: #fac;
   --miladya2: #ddccaa;
-  --miladyafront: url(https://miladymaker.net/logo.png);
+  --miladyafront: url(https://miladymaker.net/milady5.png);
   --miladyb1: #54a29e;
   --miladyb2: #a79d66;
   --miladybfront: url(https://miladymaker.net/logo.png);
-  --miladycfront: url(https://miladymaker.net/logo.png);
+  --miladycfront: url(https://miladymaker.net/milady3.png);
   --miladyd1: #efb2fb;
   --miladyd2: #acc6f8;
-  --miladydfront: url(https://miladymaker.net/logo.png);
+  --miladydfront: url(https://miladymaker.net/milady4.png);
 }
 	  
 .card {
