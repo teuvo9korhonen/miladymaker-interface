@@ -446,3 +446,10 @@ a:hover { color:red; text-decoration: underline;}
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+ #header {
+	     visibility: hidden;
+
+	}
+}
