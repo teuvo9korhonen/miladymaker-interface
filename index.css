@@ -94,8 +94,8 @@ div.gallery_item {
 }
  
 div.gallery_item img {
-	width: 48%;
-	height: 60%;
+	width: 80%;
+	height: 80%;
   border: 1px solid #777;
   padding-top: 0px;
 }
@@ -105,7 +105,7 @@ div.gallery_item img:hover {
 }
  
 div.desc {
-	padding-top: 10px;
+padding-top: 10px;
   padding-bottom: 15px;
   padding-right: 15px;
   padding-left: 15px;
