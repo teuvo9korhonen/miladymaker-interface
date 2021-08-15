@@ -12,6 +12,10 @@ img {
 	margin: auto;
 	max-width: 20em;
 	padding-top: 1em;
+	border: 1px solid #777;
+}
+img:hover {
+	border: 1px solid purple;
 }
 .m_box {
 	border: 1px solid #2f4d0c;
@@ -91,14 +95,14 @@ div.gallery_item {
 }
  
 div.gallery_item img {
-	width: 65%;
-	height: 60%;
-  border: 1px solid #FFFFFF;
+	width: 477px;
+	height: 596px;
+  border: 1px solid #777;
   padding-top: 0px;
 }
  
 div.gallery_item img:hover {
-  border: 1px solid #777;
+  border: 1px solid purple;
 }
  
 div.desc {
