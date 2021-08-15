@@ -95,8 +95,8 @@ div.gallery_item {
 }
  
 div.gallery_item img {
-	width: 477px;
-	height: 596px;
+	width: 48%;
+	height: 60%;
   border: 1px solid #777;
   padding-top: 0px;
 }
