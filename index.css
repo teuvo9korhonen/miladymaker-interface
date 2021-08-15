@@ -83,7 +83,8 @@ a:hover { color:red; text-decoration: underline;}
 .gallery_container {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	padding: 40px;
+	padding: 1em;
+	padding-bottom:0em;
 }
  
 div.gallery_item {
@@ -105,10 +106,7 @@ div.gallery_item img:hover {
 }
  
 div.desc {
-padding-top: 10px;
-  padding-bottom: 15px;
-  padding-right: 15px;
-  padding-left: 15px;
+padding:1em;
   text-align: center;
   font-size: smaller;
   width: 80%;
