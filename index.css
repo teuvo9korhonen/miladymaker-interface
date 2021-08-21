@@ -6,7 +6,7 @@ body {
   background-image: linear-gradient(#d9f0d6, #f4ffee, #f4ffee, white, white);
   background-attachment: fixed;
 }
-
+ 
 img {
 	display: block;
 	margin: auto;
@@ -35,7 +35,7 @@ a { color: blue; text-decoration: underline; }
  background:#800000;
  color:white;
 }
-
+ 
 h2.m_box {
 	background-color:#2f4d0c;
 }
@@ -47,8 +47,8 @@ p {
 	margin-left:1em;
 	color: black;
 }
-
-
+ 
+ 
 .box {
 	border: 1px solid #2f4d0c ;
 	 color:#2f4d0c;
@@ -59,50 +59,45 @@ p {
  background:#b9d9b7;
  color:#2f4d0c
 }
-
+ 
 h2 { margin-top:0.001em; margin-bottom:0.001em; margin-left:0.25em; font-size: 1.1em}
 h3 { margin-left:0.3em; font-size: 1em; margin-top:0.3em; margin-bottom:0.1em;text-decoration: underline; text-align:center; font-weight: bold;}
 li { margin-left:0.3em; }
 ul { list-style-type: circle;}
 a:hover { color:red; text-decoration: underline;}
-
+ 
 .column {
   float: left;
   width: 32%;
 }
-
+ 
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
-
-
+ 
+ 
 .gallery_container {
 	display: grid;
-	grid-template-columns: auto auto auto;
-	padding: 1em;
-	padding-bottom:0em;
-}
- 
-div.gallery_item {
-	max-height: 100%;
-	max-width: 100%;
-	height: auto;
+	justify-items: auto;
+	grid-template-columns: 33.33% 33.33% 33.33%;
+	padding: 0.5em;
 	width: auto;
 }
  
-div.gallery_item img {
-	width: 80%;
-	height: 80%;
-  border: 1px solid #777;
-  padding-top: 0px;
+div.gallery_item {
+object-fit: cover;
 }
  
-div.gallery_item img:hover {
-  border: 1px solid purple;
+.gallery_item img {
+  border: 1px solid #777;
+	height: auto;
+  width: auto;
+  max-width: 80%;
+	max-height: 80%;
+	object-fit: cover;
 }
  
 div.desc {
@@ -110,5 +105,17 @@ padding:1em;
   text-align: center;
   font-size: smaller;
   width: 80%;
+  max-height: 100%;
 }
  
+@media only screen and (max-width: 600px){
+ 
+  img { width: 100%;}
+ 
+  body {width: 100%;}
+ 
+	div.desc {font-size: x-small;}
+ 
+	ul {margin-right: 1em}
+ 
+}
