@@ -1,30 +1,20 @@
-'use strict';
+"use strict";
 const e = React.createElement;
 const useState = React.useState;
 const useEffect = React.useEffect;
 
-class MintButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { minted: false };
+const MintButton = () => {
+  const [minted, setMinted] = useState(false);
+
+  if (minted) {
+    return "Mint Test Complete";
   }
 
-  render() {
-    if (this.state.minted) {
-      return 'Mint Test Complete';
-    }
+  return e("button", { onClick: () => setMinted(true) }, "Mint Control");
+};
 
-    return e(
-      'button',
-      { onClick: () => this.setState({ minted: true }) },
-      'Mint Control'
-    );
-  }
-}
-
-const domContainer = document.querySelector('#mint_button_c');
+const domContainer = document.querySelector("#mint_button_c");
 ReactDOM.render(e(MintButton), domContainer);
-
 
 /* CODE HERE TO TRY
 
