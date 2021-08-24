@@ -127,7 +127,7 @@ const Mint = ({ reserve }) => {
 
   const eMint = (n) => {
     const priceEach = getMiladyPriceEach(n).dividedBy("1e18");
-    const priceAll = priceEach * n;
+    const priceAll = priceEach.multipliedBy(n);
     return e(
       "div",
       { className: "mint-button" },
@@ -145,11 +145,10 @@ const Mint = ({ reserve }) => {
 
   console.log(signedIn);
 
-  /*
-  if (!saleStarted) {
-    return e("div", { className: "sale-notice" }, "The sale has not started yet.");
-  }
-*/
+  // if (!saleStarted) {
+  //   return e("div", { className: "sale-notice" }, "The sale has not started yet.");
+  // }
+
   if (!signedIn) {
     return eSignIn();
   }

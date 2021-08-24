@@ -28,23 +28,6 @@ img:hover {
   background-color: #ffffee;
 }
 
-.connect-button
-{
-  border:5px solid green;
-  width:200px;
-  height:200px;
-  font-size:20px;
-}
-.mint-button a 
-{
-  color:white;
-}
-.mint-button a:hover
-{
-  color:white;
-  background-color:green;
-}
-
 a {
   color: blue;
   text-decoration: underline;
@@ -168,13 +151,29 @@ div.desc {
 
 .mint-box {
   padding: 0.5em 1em 1em;
+  background: #2f4d0c;
+  text-align: center;
+}
+#mint {
+  display: inline-block;
+  text-align: left;
 }
 
 .connect-button {
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
   margin-bottom: 0.5em;
+  width: 300px;
+  height: 150px;
+  border: 5px solid green;
 }
-
 .mint-button a {
   margin-left: 1em;
   cursor: pointer;
+  color: white;
+}
+.mint-button a:hover {
+  color: white;
+  background-color: green;
 }
