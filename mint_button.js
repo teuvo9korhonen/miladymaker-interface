@@ -192,9 +192,9 @@ const ConnectAndMint = ({ reserve }) => {
     );
   };
 
-  // if (!saleStarted) {
-  //   return e("div", { className: "sale-notice" }, "The sale has not started yet.");
-  // }
+   if (!saleStarted) {
+    return e("div", { className: "sale-notice" }, "The sale has not started yet.");
+   }
 
   if (!signedIn) {
     return SignInButton();
