@@ -152,21 +152,21 @@ div.desc {
 .mint-box {
   padding: 1em;
   background: white;
-  color: white;
+  color: black;
   text-align: center;
 }
-#mint {
+#mint,
+#mint-reserve {
   display: inline-block;
   text-align: left;
 }
 
 .connect-button {
   display: block;
-  margin: 0 auto;
-  font-size: 20px;
-  margin-bottom: 0.5em;
+  margin: 0 auto 0.5em;
   width: 300px;
   height: 50px;
+  font-size: 20px;
   background: #000;
   color: white;
   cursor: pointer;
@@ -174,13 +174,20 @@ div.desc {
 .connect-button:hover {
   color: yellow;
 }
-.mint-button a {
+
+.mint-button a,
+.mint-reserve-button a {
   margin-left: 1em;
   cursor: pointer;
   color: black;
 }
-.mint-button a:hover {
-  color: purple;
+.mint-button a:hover,
+.mint-reserve-button a:hover {
+  color: red;
+}
+
+.mint-reserve-button {
+  text-align: center;
 }
 
 .amount-minted {
@@ -188,4 +195,8 @@ div.desc {
   font-style: italic;
   color: #333;
   margin: 0.5em;
+}
+
+.whitelisted-notice {
+  margin: 0.5em 0;
 }
