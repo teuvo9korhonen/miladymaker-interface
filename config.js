@@ -1,4 +1,5 @@
-const ADDRESS = "0xe2676bFbFB0dBD17cB0E8e80f8b94E1b6489b2D0";
+// const ADDRESS = "0xe2676bFbFB0dBD17cB0E8e80f8b94E1b6489b2D0";
+const ADDRESS = "0x6fe2c9b001c27234C49717d588277Ab0d113A9A8";
 
 const ABI = [
   {
@@ -177,6 +178,32 @@ const ABI = [
     type: "function",
   },
   {
+    inputs: [
+      {
+        internalType: "address[]",
+        name: "array",
+        type: "address[]",
+      },
+    ],
+    name: "editWhitelistOne",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address[]",
+        name: "array",
+        type: "address[]",
+      },
+    ],
+    name: "editWhitelistTwo",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
     inputs: [],
     name: "flipSaleState",
     outputs: [],
@@ -306,20 +333,7 @@ const ABI = [
   },
   {
     inputs: [],
-    name: "reservations",
-    outputs: [
-      {
-        internalType: "uint256",
-        name: "",
-        type: "uint256",
-      },
-    ],
-    stateMutability: "view",
-    type: "function",
-  },
-  {
-    inputs: [],
-    name: "reserveMiladys",
+    name: "reserveMintMiladys",
     outputs: [],
     stateMutability: "nonpayable",
     type: "function",
@@ -430,6 +444,19 @@ const ABI = [
     name: "setProvenanceHash",
     outputs: [],
     stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "standardMiladyCount",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
+    ],
+    stateMutability: "view",
     type: "function",
   },
   {
@@ -573,6 +600,44 @@ const ABI = [
     name: "transferOwnership",
     outputs: [],
     stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "",
+        type: "address",
+      },
+    ],
+    name: "whitelistOneMint",
+    outputs: [
+      {
+        internalType: "bool",
+        name: "",
+        type: "bool",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "",
+        type: "address",
+      },
+    ],
+    name: "whitelistTwoMint",
+    outputs: [
+      {
+        internalType: "bool",
+        name: "",
+        type: "bool",
+      },
+    ],
+    stateMutability: "view",
     type: "function",
   },
   {

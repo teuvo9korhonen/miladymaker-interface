@@ -4,19 +4,11 @@ const e = React.createElement;
 const useState = React.useState;
 const useEffect = React.useEffect;
 
-const Connect = () => {
-  // FOR WALLET
+const Mint = () => {
   const [signedIn, setSignedIn] = useState(false);
   const [walletAddress, setWalletAddress] = useState(null);
-
-  // FOR MINTING
-  const [howMany, setHowMany] = useState(0);
   const [miladyContract, setmiladyContract] = useState(null);
-
-  // INFO FROM SMART CONTRACT
-  const [totalSupply, setTotalSupply] = useState(0);
   const [saleStarted, setSaleStarted] = useState(false);
-  const [miladyPrice, setMiladyPriceNFT] = useState(0);
 
   async function signIn() {
     if (typeof window.web3 !== "undefined") {
@@ -58,59 +50,98 @@ const Connect = () => {
   async function callContractData(wallet) {
     // let balance = await web3.eth.getBalance(wallet);
     // setWalletBalance(balance)
+
     const miladyContract = new window.web3.eth.Contract(ABI, ADDRESS);
     setmiladyContract(miladyContract);
 
-    const salebool = await miladyContract.methods.saleIsActive().call();
-    // console.log("saleisActive" , salebool)
-    setSaleStarted(salebool);
+    const saleIsActive = await miladyContract.methods.saleIsActive().call();
+    setSaleStarted(saleIsActive);
+  }
 
-    const totalSupply = await miladyContract.methods.totalSupply().call();
-    setTotalSupply(totalSupply);
-
-    const miladyPrice = await miladyContract.methods.miladyPrice().call();
-    setMiladyPriceNFT(miladyPrice);
+  function getMiladyPriceEach(n) {
+    if (n === 30) {
+      return BigNumber("60000000000000000"); // 0.06 ETH
+    } else if (n === 15) {
+      return BigNumber("70000000000000000"); // 0.07 ETH
+    } else if (n === 5) {
+      return BigNumber("75000000000000000"); // 0.075 ETH
+    } else {
+      return BigNumber("80000000000000000"); // 0.08 ETH
+    }
   }
 
   async function mintMiladys(n) {
-    if (miladyContract) {
-      const price = Number(miladyPrice) * n;
+    if (!miladyContract) {
+      console.log("Wallet not online.");
+      return;
+    }
+
+    try {
+      const price = getMiladyPriceEach(n).multipliedBy(n).toString();
+
+      const gasAmount = await miladyContract.methods.mintMiladys(n).estimateGas({ from: walletAddress, value: price });
+
+      console.log("estimated gas", gasAmount);
+      console.log({ from: walletAddress, value: price });
+
+      miladyContract.methods
+        .mintMiladys(n)
+        .send({ from: walletAddress, value: price, gas: String(gasAmount) })
+        .on("transactionHash", function (hash) {
+          console.log("transactionHash", hash);
+        });
+    } catch (err) {
+      alert(JSON.stringify(err));
+    }
+  }
+
+  async function reserveMintMiladys() {
+    if (!miladyContract) {
+      console.log("Wallet not online.");
+      return;
+    }
+
+    try {
+      const price = "0";
 
       const gasAmount = await miladyContract.methods
-        .mintMiladyNFT(n)
+        .reserveMintMiladys()
         .estimateGas({ from: walletAddress, value: price });
       console.log("estimated gas", gasAmount);
 
       console.log({ from: walletAddress, value: price });
 
       miladyContract.methods
-        .mintMiladyNFT(n)
+        .reserveMintMiladys()
         .send({ from: walletAddress, value: price, gas: String(gasAmount) })
         .on("transactionHash", function (hash) {
           console.log("transactionHash", hash);
         });
-    } else {
-      console.log("Wallet not online.");
+    } catch (err) {
+      alert(JSON.stringify(err));
     }
   }
 
   const eSignIn = () => e("button", { className: "connect-button", onClick: signIn }, `Connect to MetaMask`);
   const eSignOut = () => e("button", { className: "connect-button", onClick: signOut }, `Disconnect from MetaMask`);
 
-  const eMint = (n) =>
-    e(
+  const eMint = (n) => {
+    const priceEach = getMiladyPriceEach(n).dividedBy("10e18");
+    const priceAll = priceEach * n;
+    return e(
       "div",
       { className: "mint-button" },
       e(
         "a",
         { onClick: () => mintMiladys(n) },
-        `Mint ${n} Milady${n > 1 ? "s" : ""} for ${(miladyPrice * n) / 10 ** 18} ETH + gas`
+        `Mint ${n} Milady${n > 1 ? "s" : ""} - ${priceAll} ETH (${priceEach} each)`
       )
     );
+  };
 
   console.log(signedIn);
 
-  if (saleStarted) {
+  if (!saleStarted) {
     return e("div", { className: "sale-notice" }, "The sale has not started yet.");
   }
 
@@ -122,6 +153,6 @@ const Connect = () => {
 };
 
 ReactDOM.render(
-  e(() => Connect()),
+  e(() => Mint()),
   document.querySelector("#mint")
 );
