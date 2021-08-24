@@ -133,20 +133,28 @@ const Mint = ({ reserve }) => {
       { className: "mint-button" },
       e(
         "a",
-        { onClick: () => (reserve ? reserveMintMiladys() : mintMiladys(n)) },
+        { onClick: () => mintMiladys(n) },
         `Mint ${n} Milady${n > 1 ? "s" : ""} - ${priceAll} ETH (${priceEach} each)`
       )
     );
   };
 
+  const eMintReserve = () => {
+    return e("div", { className: "mint-button" }, e("a", { onClick: () => reserveMintMiladys() }, `Mint Miladys`));
+  };
+
   console.log(signedIn);
 
-  if (!saleStarted) {
-    return e("div", { className: "sale-notice" }, "The sale has not started yet.");
-  }
+  // if (!saleStarted) {
+  //   return e("div", { className: "sale-notice" }, "The sale has not started yet.");
+  // }
 
   if (!signedIn) {
     return eSignIn();
+  }
+
+  if (reserve) {
+    return e("div", { className: "connect-or-buy" }, eSignOut(), eMintReserve());
   }
 
   return e("div", { className: "connect-or-buy" }, eSignOut(), eMint(1), eMint(5), eMint(15), eMint(30));
