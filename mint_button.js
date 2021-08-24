@@ -158,16 +158,27 @@ const ConnectAndMint = ({ reserve }) => {
   };
 
   const WhitelistedNotice = (n) => {
+    return e(
+      "div",
+      { className: "whitelisted-notice" },
+      `Congrats! Your wallet is whitelisted to reserve ${n} free Milady${
+        n > 1 ? "s" : ""
+      } from the Community Reserve! `,
+      e("a", { href: "reserve.html" }, "Click to view!")
+    );
+  };
+
+  const WhitelistedNoticeReserve = (n) => {
     if (n === 0) {
       return e(
         "div",
-        { className: "whitelisted-notice" },
+        { className: "whitelisted-notice-reserve" },
         `Sorry, but your address (${walletAddress}) is not whitelisted.`
       );
     }
     return e(
       "div",
-      { className: "whitelisted-notice" },
+      { className: "whitelisted-notice-reserve" },
       `Congrats! Your wallet is whitelisted to reserve ${n} free Milady${n > 1 ? "s" : ""} from the ` +
         `Community Reserve! Click below to claim if you haven't already (gas not included):`
     );
@@ -191,12 +202,12 @@ const ConnectAndMint = ({ reserve }) => {
 
   if (reserve) {
     if (whitelistedFor1) {
-      return e("div", null, SignOutButton(), WhitelistedNotice(1), MintReserveButton());
+      return e("div", null, SignOutButton(), WhitelistedNoticeReserve(1), MintReserveButton());
     }
     if (whitelistedFor2) {
-      return e("div", null, SignOutButton(), WhitelistedNotice(2), MintReserveButton());
+      return e("div", null, SignOutButton(), WhitelistedNoticeReserve(2), MintReserveButton());
     }
-    return e("div", null, SignOutButton(), WhitelistedNotice(0));
+    return e("div", null, SignOutButton(), WhitelistedNoticeReserve(0));
   }
 
   return e(
@@ -207,7 +218,13 @@ const ConnectAndMint = ({ reserve }) => {
     MintButton(1),
     MintButton(5),
     MintButton(15),
-    MintButton(30)
+    MintButton(30),
+    e(
+      "div",
+      { className: "whitelisted-notices" },
+      whitelistedFor1 ? WhitelistedNotice(1) : null,
+      whitelistedFor2 ? WhitelistedNotice(2) : null
+    )
   );
 };
 
