@@ -168,7 +168,7 @@ const ConnectAndMint = ({ reserve }) => {
     return e(
       "div",
       { className: "whitelisted-notice" },
-      `Congrats! Your wallet is whitelisted to reserve ${n} free Milady${n > 1 ? s : ""} from the ` +
+      `Congrats! Your wallet is whitelisted to reserve ${n} free Milady${n > 1 ? "s" : ""} from the ` +
         `Community Reserve! Click below to claim if you haven't already (gas not included):`
     );
   };
