@@ -4,7 +4,7 @@ const e = React.createElement;
 const useState = React.useState;
 const useEffect = React.useEffect;
 
-const Mint = () => {
+const Mint = ({ reserve }) => {
   const [signedIn, setSignedIn] = useState(false);
   const [walletAddress, setWalletAddress] = useState(null);
   const [miladyContract, setmiladyContract] = useState(null);
@@ -133,7 +133,7 @@ const Mint = () => {
       { className: "mint-button" },
       e(
         "a",
-        { onClick: () => mintMiladys(n) },
+        { onClick: () => (reserve ? reserveMintMiladys() : mintMiladys(n)) },
         `Mint ${n} Milady${n > 1 ? "s" : ""} - ${priceAll} ETH (${priceEach} each)`
       )
     );
@@ -152,7 +152,18 @@ const Mint = () => {
   return e("div", { className: "connect-or-buy" }, eSignOut(), eMint(1), eMint(5), eMint(15), eMint(30));
 };
 
-ReactDOM.render(
-  e(() => Mint()),
-  document.querySelector("#mint")
-);
+const mint = document.querySelector("#mint");
+if (mint) {
+  ReactDOM.render(
+    e(() => Mint({ reserve: false })),
+    mint
+  );
+}
+
+const mintReserve = document.querySelector("#mint-reserve");
+if (mintReserve) {
+  ReactDOM.render(
+    e(() => Mint({ reserve: true })),
+    mintReserve
+  );
+}
