@@ -178,3 +178,10 @@ div.desc {
   color: white;
   background-color: green;
 }
+
+.amount-minted {
+  text-align: center;
+  font-style: italic;
+  color: #eee;
+  margin: 0.5em;
+}

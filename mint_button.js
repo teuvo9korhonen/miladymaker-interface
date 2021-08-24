@@ -8,7 +8,11 @@ const Mint = ({ reserve }) => {
   const [signedIn, setSignedIn] = useState(false);
   const [walletAddress, setWalletAddress] = useState(null);
   const [miladyContract, setmiladyContract] = useState(null);
+  const [totalSupply, setTotalSupply] = useState(null);
   const [saleStarted, setSaleStarted] = useState(false);
+
+  useEffect(() => console.log("totalSupply:", totalSupply), [totalSupply]);
+  useEffect(() => console.log("saleStarted:", saleStarted), [saleStarted]);
 
   async function signIn() {
     if (typeof window.web3 !== "undefined") {
@@ -23,13 +27,10 @@ const Mint = ({ reserve }) => {
       .then(function (accounts) {
         window.web3.eth.net
           .getNetworkType()
-          // checks if connected network is mainnet (change this to rinkeby if you wanna test on testnet)
+          // check if connected network is mainnet
           .then((network) => {
-            console.log(network);
             if (network != "main") {
-              alert(
-                "You are on " + network + " network. Change network to mainnet or you won't be able to do anything here"
-              );
+              alert("You are on " + network + " network. Change network to Ethereum mainnet.");
             }
           });
         let wallet = accounts[0];
@@ -53,6 +54,9 @@ const Mint = ({ reserve }) => {
 
     const miladyContract = new window.web3.eth.Contract(ABI, ADDRESS);
     setmiladyContract(miladyContract);
+
+    const totalSupply = await miladyContract.methods.totalSupply().call();
+    setTotalSupply(totalSupply);
 
     const saleIsActive = await miladyContract.methods.saleIsActive().call();
     setSaleStarted(saleIsActive);
@@ -107,8 +111,8 @@ const Mint = ({ reserve }) => {
       const gasAmount = await miladyContract.methods
         .reserveMintMiladys()
         .estimateGas({ from: walletAddress, value: price });
-      console.log("estimated gas", gasAmount);
 
+      console.log("estimated gas", gasAmount);
       console.log({ from: walletAddress, value: price });
 
       miladyContract.methods
@@ -122,8 +126,13 @@ const Mint = ({ reserve }) => {
     }
   }
 
+  function format(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
   const eSignIn = () => e("button", { className: "connect-button", onClick: signIn }, `Connect to MetaMask`);
   const eSignOut = () => e("button", { className: "connect-button", onClick: signOut }, `Disconnect from MetaMask`);
+  const eMinted = (n) => e("div", { className: "amount-minted" }, `${format(n)} / ${format(10000)} minted`);
 
   const eMint = (n) => {
     const priceEach = getMiladyPriceEach(n).dividedBy("1e18");
@@ -145,9 +154,9 @@ const Mint = ({ reserve }) => {
 
   console.log(signedIn);
 
-  if (!saleStarted) {
-    return e("div", { className: "sale-notice" }, "The sale has not started yet.");
-  }
+  // if (!saleStarted) {
+  //   return e("div", { className: "sale-notice" }, "The sale has not started yet.");
+  // }
 
   if (!signedIn) {
     return eSignIn();
@@ -157,7 +166,16 @@ const Mint = ({ reserve }) => {
     return e("div", { className: "connect-or-buy" }, eSignOut(), eMintReserve());
   }
 
-  return e("div", { className: "connect-or-buy" }, eSignOut(), eMint(1), eMint(5), eMint(15), eMint(30));
+  return e(
+    "div",
+    { className: "connect-or-buy" },
+    eSignOut(),
+    totalSupply ? eMinted(totalSupply) : null,
+    eMint(1),
+    eMint(5),
+    eMint(15),
+    eMint(30)
+  );
 };
 
 const mint = document.querySelector("#mint");
