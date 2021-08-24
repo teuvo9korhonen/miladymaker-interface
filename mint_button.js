@@ -10,6 +10,7 @@ const Mint = ({ reserve }) => {
   const [miladyContract, setmiladyContract] = useState(null);
   const [totalSupply, setTotalSupply] = useState(null);
   const [saleStarted, setSaleStarted] = useState(false);
+  const [isWhitelisted, setWhiteListed]
 
   useEffect(() => console.log("totalSupply:", totalSupply), [totalSupply]);
   useEffect(() => console.log("saleStarted:", saleStarted), [saleStarted]);
@@ -60,6 +61,10 @@ const Mint = ({ reserve }) => {
 
     const saleIsActive = await miladyContract.methods.saleIsActive().call();
     setSaleStarted(saleIsActive);
+
+    const isWhitelisted = await miladyContract.methods.whitelistOneMint(walletAddress).call(); 
+    setWhiteListed(isWhitelisted);
+
   }
 
   function getMiladyPriceEach(n) {
