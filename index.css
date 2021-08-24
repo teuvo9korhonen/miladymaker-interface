@@ -27,6 +27,24 @@ img:hover {
   margin: 1em;
   background-color: #ffffee;
 }
+
+.connect-button
+{
+  border:5px solid green;
+  width:200px;
+  height:200px;
+  font-size:20px;
+}
+.mint-button a 
+{
+  color:white;
+}
+.mint-button a:hover
+{
+  color:white;
+  background-color:green;
+}
+
 a {
   color: blue;
   text-decoration: underline;

@@ -126,7 +126,7 @@ const Mint = ({ reserve }) => {
   const eSignOut = () => e("button", { className: "connect-button", onClick: signOut }, `Disconnect from MetaMask`);
 
   const eMint = (n) => {
-    const priceEach = getMiladyPriceEach(n).dividedBy("10e18");
+    const priceEach = getMiladyPriceEach(n).dividedBy("1e18");
     const priceAll = priceEach * n;
     return e(
       "div",
@@ -145,10 +145,11 @@ const Mint = ({ reserve }) => {
 
   console.log(signedIn);
 
+  /*
   if (!saleStarted) {
     return e("div", { className: "sale-notice" }, "The sale has not started yet.");
   }
-
+*/
   if (!signedIn) {
     return eSignIn();
   }
