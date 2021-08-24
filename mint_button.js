@@ -4,13 +4,14 @@ const e = React.createElement;
 const useState = React.useState;
 const useEffect = React.useEffect;
 
-const Mint = ({ reserve }) => {
+const ConnectAndMint = ({ reserve }) => {
   const [signedIn, setSignedIn] = useState(false);
   const [walletAddress, setWalletAddress] = useState(null);
   const [miladyContract, setmiladyContract] = useState(null);
   const [totalSupply, setTotalSupply] = useState(null);
   const [saleStarted, setSaleStarted] = useState(false);
-  const [isWhitelisted, setWhiteListed]
+  const [whitelistedFor1, setWhitelistedFor1] = useState(false);
+  const [whitelistedFor2, setWhitelistedFor2] = useState(false);
 
   useEffect(() => console.log("totalSupply:", totalSupply), [totalSupply]);
   useEffect(() => console.log("saleStarted:", saleStarted), [saleStarted]);
@@ -25,7 +26,7 @@ const Mint = ({ reserve }) => {
 
     window.ethereum
       .enable()
-      .then(function (accounts) {
+      .then((accounts) => {
         window.web3.eth.net
           .getNetworkType()
           // check if connected network is mainnet
@@ -34,14 +35,14 @@ const Mint = ({ reserve }) => {
               alert("You are on " + network + " network. Change network to Ethereum mainnet.");
             }
           });
-        let wallet = accounts[0];
-        setWalletAddress(wallet);
+        let walletAddress = accounts[0];
+        setWalletAddress(walletAddress);
         setSignedIn(true);
-        callContractData(wallet);
+        callContractData(walletAddress);
       })
-      .catch(function (error) {
+      .catch((err) => {
         // Handle error. Likely the user rejected the login
-        console.error(error);
+        console.error(err);
       });
   }
 
@@ -49,7 +50,7 @@ const Mint = ({ reserve }) => {
     setSignedIn(false);
   }
 
-  async function callContractData(wallet) {
+  async function callContractData(walletAddress) {
     // let balance = await web3.eth.getBalance(wallet);
     // setWalletBalance(balance)
 
@@ -62,9 +63,11 @@ const Mint = ({ reserve }) => {
     const saleIsActive = await miladyContract.methods.saleIsActive().call();
     setSaleStarted(saleIsActive);
 
-    const isWhitelisted = await miladyContract.methods.whitelistOneMint(walletAddress).call(); 
-    setWhiteListed(isWhitelisted);
+    const whitelistOneMint = await miladyContract.methods.whitelistOneMint(walletAddress).call();
+    setWhitelistedFor1(whitelistOneMint);
 
+    const whitelistTwoMint = await miladyContract.methods.whitelistTwoMint(walletAddress).call();
+    setWhitelistedFor2(whitelistTwoMint);
   }
 
   function getMiladyPriceEach(n) {
@@ -93,10 +96,10 @@ const Mint = ({ reserve }) => {
       console.log("estimated gas", gasAmount);
       console.log({ from: walletAddress, value: price });
 
-      miladyContract.methods
+      await miladyContract.methods
         .mintMiladys(n)
         .send({ from: walletAddress, value: price, gas: String(gasAmount) })
-        .on("transactionHash", function (hash) {
+        .on("transactionHash", (hash) => {
           console.log("transactionHash", hash);
         });
     } catch (err) {
@@ -120,10 +123,10 @@ const Mint = ({ reserve }) => {
       console.log("estimated gas", gasAmount);
       console.log({ from: walletAddress, value: price });
 
-      miladyContract.methods
+      await miladyContract.methods
         .reserveMintMiladys()
         .send({ from: walletAddress, value: price, gas: String(gasAmount) })
-        .on("transactionHash", function (hash) {
+        .on("transactionHash", (hash) => {
           console.log("transactionHash", hash);
         });
     } catch (err) {
@@ -135,11 +138,12 @@ const Mint = ({ reserve }) => {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
-  const eSignIn = () => e("button", { className: "connect-button", onClick: signIn }, `Connect to MetaMask`);
-  const eSignOut = () => e("button", { className: "connect-button", onClick: signOut }, `Disconnect from MetaMask`);
-  const eMinted = (n) => e("div", { className: "amount-minted" }, `${format(n)} / ${format(10000)} minted`);
+  const SignInButton = () => e("button", { className: "connect-button", onClick: signIn }, `Connect to MetaMask`);
+  const SignOutButton = () =>
+    e("button", { className: "connect-button", onClick: signOut }, `Disconnect from MetaMask`);
+  const AmountMinted = (n) => e("div", { className: "amount-minted" }, `${format(n)} / ${format(10000)} minted`);
 
-  const eMint = (n) => {
+  const MintButton = (n) => {
     const priceEach = getMiladyPriceEach(n).dividedBy("1e18");
     const priceAll = priceEach.multipliedBy(n);
     return e(
@@ -153,40 +157,81 @@ const Mint = ({ reserve }) => {
     );
   };
 
-  const eMintReserve = () => {
-    return e("div", { className: "mint-button" }, e("a", { onClick: () => reserveMintMiladys() }, `Mint Miladys`));
+  const WhitelistedNotice = (n) => {
+    return e(
+      "div",
+      { className: "whitelisted-notice" },
+      `Congrats! Your wallet is whitelisted to reserve ${n} free Milady${
+        n > 1 ? "s" : ""
+      } from the Community Reserve! `,
+      e("a", { href: "reserve.html" }, "Click to view!")
+    );
   };
 
-  console.log(signedIn);
+  const WhitelistedNoticeReserve = (n) => {
+    if (n === 0) {
+      return e(
+        "div",
+        { className: "whitelisted-notice-reserve" },
+        `Sorry, but your address (${walletAddress}) is not whitelisted.`
+      );
+    }
+    return e(
+      "div",
+      { className: "whitelisted-notice-reserve" },
+      `Congrats! Your wallet is whitelisted to reserve ${n} free Milady${n > 1 ? "s" : ""} from the ` +
+        `Community Reserve! Click below to claim if you haven't already (gas not included):`
+    );
+  };
 
-  // if (!saleStarted) {
-  //   return e("div", { className: "sale-notice" }, "The sale has not started yet.");
-  // }
+  const MintReserveButton = () => {
+    return e(
+      "div",
+      { className: "mint-reserve-button" },
+      e("a", { onClick: () => reserveMintMiladys() }, `Mint Miladys`)
+    );
+  };
+
+   if (!saleStarted) {
+    return e("div", { className: "sale-notice" }, "The sale has not started yet.");
+   }
 
   if (!signedIn) {
-    return eSignIn();
+    return SignInButton();
   }
 
   if (reserve) {
-    return e("div", { className: "connect-or-buy" }, eSignOut(), eMintReserve());
+    if (whitelistedFor1) {
+      return e("div", null, SignOutButton(), WhitelistedNoticeReserve(1), MintReserveButton());
+    }
+    if (whitelistedFor2) {
+      return e("div", null, SignOutButton(), WhitelistedNoticeReserve(2), MintReserveButton());
+    }
+    return e("div", null, SignOutButton(), WhitelistedNoticeReserve(0));
   }
 
   return e(
     "div",
     { className: "connect-or-buy" },
-    eSignOut(),
-    totalSupply ? eMinted(totalSupply) : null,
-    eMint(1),
-    eMint(5),
-    eMint(15),
-    eMint(30)
+    SignOutButton(),
+    totalSupply ? AmountMinted(totalSupply) : null,
+    MintButton(1),
+    MintButton(5),
+    MintButton(15),
+    MintButton(30),
+    e(
+      "div",
+      { className: "whitelisted-notices" },
+      whitelistedFor1 ? WhitelistedNotice(1) : null,
+      whitelistedFor2 ? WhitelistedNotice(2) : null
+    )
   );
 };
 
 const mint = document.querySelector("#mint");
 if (mint) {
   ReactDOM.render(
-    e(() => Mint({ reserve: false })),
+    e(() => ConnectAndMint({ reserve: false })),
     mint
   );
 }
@@ -194,7 +239,7 @@ if (mint) {
 const mintReserve = document.querySelector("#mint-reserve");
 if (mintReserve) {
   ReactDOM.render(
-    e(() => Mint({ reserve: true })),
+    e(() => ConnectAndMint({ reserve: true })),
     mintReserve
   );
 }
