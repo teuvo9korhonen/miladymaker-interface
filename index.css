@@ -151,7 +151,7 @@ div.desc {
 
 .mint-box {
   padding: 1em;
-  background: #2f4d0c;
+  background:white;
   color: white;
   text-align: center;
 }
@@ -166,15 +166,20 @@ div.desc {
   font-size: 20px;
   margin-bottom: 0.5em;
   width: 300px;
-  height: 150px;
-  border: 5px solid green;
+  height: 50px;
+  background:#000;
+  color:white;
+  cursor:pointer;
+}
+.connect-button:hover 
+{
+  color:yellow;
 }
 .mint-button a {
   margin-left: 1em;
   cursor: pointer;
-  color: white;
+  color:black;
 }
 .mint-button a:hover {
-  color: white;
-  background-color: green;
+  color:purple;
 }
