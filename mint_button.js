@@ -38,7 +38,7 @@ const ConnectAndMint = ({ reserve }) => {
         let walletAddress = accounts[0];
         setWalletAddress(walletAddress);
         setSignedIn(true);
-        await callContractData(walletAddress);
+        callContractData(walletAddress);
       })
       .catch((err) => {
         // Handle error. Likely the user rejected the login
