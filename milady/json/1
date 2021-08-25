@@ -1,5 +1,4 @@
 {
-	"name": "Milady 2",
 	"attributes": [
 		{
 			"trait_type": "Background",
@@ -41,5 +40,6 @@
 			"trait_type": "Number",
 			"value": "2"
 		}
-	]
+	],
+	"name": "Milady 2"
 }
