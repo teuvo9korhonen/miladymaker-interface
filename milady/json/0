@@ -1,6 +1,4 @@
 {
-	"name": "Milady 1",
-	"image": "https://raw.githubusercontent.com/remiliacorp/miladycollection/main/1.png",
 	"attributes": [
 		{
 			"trait_type": "Background",
@@ -51,4 +49,6 @@
 			"value": "1"
 		}
 	]
+	"name": "Milady 1",
+	"image": "https://raw.githubusercontent.com/remiliacorp/miladycollection/main/1.png"
 }
