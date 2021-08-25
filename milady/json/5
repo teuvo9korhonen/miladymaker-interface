@@ -1,48 +1,48 @@
 {
 	"description": "[Milady Maker](https://www.miladymaker.net) is a collection of 10,000 generative pfpNFT's in a neochibi aesthetic inspired by Tokyo street style tribes.",
 	"external_url": "https://www.miladymaker.net",
-	"image": "ipfs://QmTSULfavMyKZ7BVjSv2RLgk9QdjiKePdT7jSVVCvoGxGo/milady/5.png",
-	"name": "Milady 5",
+	"image": "ipfs://QmTSULfavMyKZ7BVjSv2RLgk9QdjiKePdT7jSVVCvoGxGo/milady/6.png",
+	"name": "Milady 6",
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "nagano",
+			"value": "sunrise",
 		},
 		{
 			"trait_type": "Race",
-			"value": "black",
+			"value": "pale",
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "classic",
+			"value": "sleepy",
 		},
 		{
 			"trait_type": "Earring",
-			"value": "maf creeper",
+			"value": "fuzzy coat",
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "short blue",
+			"value": "tuft blue",
 		},
 		{
 			"trait_type": "Hat",
-			"value": "concernedb",
+			"value": "complacent",
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "45.000000",
+			"value": "20.000000",
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast-harajuku",
+			"value": "prep",
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "ss-drip",
+			"value": "d-drip",
 		},
 		{
 			"trait_type": "Number",
-			"value": "5",
+			"value": "6",
 		}
 	]
 }
