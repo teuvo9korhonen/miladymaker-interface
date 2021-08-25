@@ -51,9 +51,6 @@ const ConnectAndMint = ({ reserve }) => {
   }
 
   async function callContractData(walletAddress) {
-    let balance = await web3.eth.getBalance(walletAddress);
-    setWalletBalance(balance)
-
     const miladyContract = new window.web3.eth.Contract(ABI, ADDRESS);
     setmiladyContract(miladyContract);
 
