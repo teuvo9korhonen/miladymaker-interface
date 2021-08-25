@@ -1,51 +1,63 @@
 {
 	"description": "Milady Maker is a collection of 10,000 generative pfpNFT's in a neochibi aesthetic inspired by Tokyo street style tribes.",
-	"image": "https://raw.githubusercontent.com/remiliacorp/miladycollection/main/55.png",
-	"name": "Milady 55",
+	"image": "https://raw.githubusercontent.com/remiliacorp/miladycollection/main/54.png",
+	"name": "Milady 54",
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "train"
+			"value": "sunset"
 		},
 		{
 			"trait_type": "Race",
-			"value": "alien"
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sleepy"
+			"value": "dilated"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown"
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "sheep pullover"
+			"value": "malenciaga neon"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "tuft dark"
+			"value": "tuft purple"
+		},
+		{
+			"trait_type": "Earring",
+			"value": "bar piercings"
+		},
+		{
+			"trait_type": "Face Decoration",
+			"value": "nose ring gold"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "fuzz earmuffs"
+			"value": "denim fish cap"
+		},
+		{
+			"trait_type": "Neck",
+			"value": "anime chest tattoo"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "38"
+			"value": "57"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-prep"
+			"value": "hypebeast-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "a-drip"
+			"value": "ss-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "55"
+			"value": "54"
 		}
 	]
 }

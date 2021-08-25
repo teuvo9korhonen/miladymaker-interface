@@ -1,11 +1,8 @@
 {
-	"description": "Milady Maker is a collection of 10,000 generative pfpNFT's in a neochibi aesthetic inspired by Tokyo street style tribes.",
-	"image": "https://raw.githubusercontent.com/remiliacorp/miladycollection/main/3.png",
-	"name": "Milady 3",
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "clouds"
+			"value": "mountain"
 		},
 		{
 			"trait_type": "Race",
@@ -13,39 +10,36 @@
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sparkle"
+			"value": "teary"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown"
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "cactus shirt"
+			"value": "chore coat"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "tuft purple"
-		},
-		{
-			"trait_type": "Hat",
-			"value": "trucker anime"
+			"value": "bowl brown"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "34"
+			"value": "20"
 		},
 		{
 			"trait_type": "Core",
-			"value": "gyaru"
+			"value": "hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip"
+			"value": "d-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "3"
+			"value": "2"
 		}
-	]
+	],
+	"name": "Milady 2"
 }

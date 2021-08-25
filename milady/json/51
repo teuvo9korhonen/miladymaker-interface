@@ -1,47 +1,39 @@
 {
 	"description": "Milady Maker is a collection of 10,000 generative pfpNFT's in a neochibi aesthetic inspired by Tokyo street style tribes.",
-	"image": "https://raw.githubusercontent.com/remiliacorp/miladycollection/main/52.png",
-	"name": "Milady 52",
+	"image": "https://raw.githubusercontent.com/remiliacorp/miladycollection/main/51.png",
+	"name": "Milady 51",
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "tennis"
+			"value": "streets"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink"
+			"value": "tan"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sleepy"
+			"value": "sparkle"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown"
+			"value": "lilac"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "maf rothko"
+			"value": "sweater and tie"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "short orange"
-		},
-		{
-			"trait_type": "Earring",
-			"value": "burger earring"
-		},
-		{
-			"trait_type": "Glasses",
-			"value": "mottega sunglasses blue"
+			"value": "og black"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "bean hat"
+			"value": "treeprint bucket"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "53"
+			"value": "30"
 		},
 		{
 			"trait_type": "Core",
@@ -49,11 +41,11 @@
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "ss-drip"
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "52"
+			"value": "51"
 		}
 	]
 }
