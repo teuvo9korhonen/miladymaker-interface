@@ -1,32 +1,40 @@
 {
 	"description": "[Milady Maker](https://www.miladymaker.net) is a collection of 10,000 generative pfpNFT's in a neochibi aesthetic inspired by Tokyo street style tribes.",
 	"external_url": "https://www.miladymaker.net",
-	"image": "ipfs://QmbxxTFyh8AyEe6SMmFgJSqTwTz4PrSHngSD4fceGzQaGm/milady/6.png",
-	"name": "Milady 6",
+	"image": "ipfs://QmbxxTFyh8AyEe6SMmFgJSqTwTz4PrSHngSD4fceGzQaGm/milady/51.png",
+	"name": "Milady 51",
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunrise",
+			"value": "mountain",
 		},
 		{
 			"trait_type": "Race",
-			"value": "pale",
+			"value": "clay",
+		},
+		{
+			"trait_type": "Necklace",
+			"value": "line blush",
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "sleepy",
+			"value": "classic",
+		},
+		{
+			"trait_type": "Hair",
+			"value": "girl necklace",
 		},
 		{
 			"trait_type": "Earring",
-			"value": "fuzzy coat",
+			"value": "cardigan tee",
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "tuft blue",
+			"value": "tuft brown",
 		},
 		{
 			"trait_type": "Hat",
-			"value": "complacent",
+			"value": "concernedb",
 		},
 		{
 			"trait_type": "Drip Score",
@@ -34,7 +42,7 @@
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep",
+			"value": "harajuku",
 		},
 		{
 			"trait_type": "Drip Grade",
@@ -42,7 +50,7 @@
 		},
 		{
 			"trait_type": "Number",
-			"value": "6",
+			"value": "51",
 		}
 	]
 }
