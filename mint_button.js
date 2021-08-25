@@ -38,7 +38,7 @@ const ConnectAndMint = ({ reserve }) => {
         let walletAddress = accounts[0];
         setWalletAddress(walletAddress);
         setSignedIn(true);
-        callContractData(walletAddress);
+        await callContractData(walletAddress);
       })
       .catch((err) => {
         // Handle error. Likely the user rejected the login
@@ -189,7 +189,7 @@ const ConnectAndMint = ({ reserve }) => {
     );
   };
 
-   /*
+  /*
    if (!saleStarted) {
     return e("div", { className: "sale-notice" }, "The sale has not started yet.");
    }
