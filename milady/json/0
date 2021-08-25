@@ -6,47 +6,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "bjork",
+			"value": "bjork"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pale",
+			"value": "pale"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "classic",
+			"value": "classic"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "pink knit polo",
+			"value": "pink knit polo"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "tuft green",
+			"value": "tuft green"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "nose ring silver",
+			"value": "nose ring silver"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "white cowboy hat",
+			"value": "white cowboy hat"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "30",
+			"value": "30"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep-gyaru",
+			"value": "prep-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",

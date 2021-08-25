@@ -6,43 +6,43 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "tennis",
+			"value": "tennis"
 		},
 		{
 			"trait_type": "Race",
-			"value": "clay",
+			"value": "clay"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "dilated",
+			"value": "dilated"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "sheep pullover",
+			"value": "sheep pullover"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og black",
+			"value": "og black"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "plaid bonnet",
+			"value": "plaid bonnet"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "26",
+			"value": "26"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep",
+			"value": "prep"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "c-drip",
+			"value": "c-drip"
 		},
 		{
 			"trait_type": "Number",

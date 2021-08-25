@@ -6,47 +6,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "train",
+			"value": "train"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "teary",
+			"value": "teary"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "jesus tank",
+			"value": "jesus tank"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "braid green",
+			"value": "braid green"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "double safety pins",
+			"value": "double safety pins"
 		},
 		{
 			"trait_type": "Neck",
-			"value": "anime chest tattoo",
+			"value": "anime chest tattoo"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "34",
+			"value": "34"
 		},
 		{
 			"trait_type": "Core",
-			"value": "gyaru",
+			"value": "gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",

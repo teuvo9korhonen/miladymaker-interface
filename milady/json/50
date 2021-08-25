@@ -6,43 +6,43 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "streets",
+			"value": "streets"
 		},
 		{
 			"trait_type": "Race",
-			"value": "tan",
+			"value": "tan"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sparkle",
+			"value": "sparkle"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "lilac",
+			"value": "lilac"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "sweater and tie",
+			"value": "sweater and tie"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og black",
+			"value": "og black"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "treeprint bucket",
+			"value": "treeprint bucket"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "30",
+			"value": "30"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep-hypebeast",
+			"value": "prep-hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",

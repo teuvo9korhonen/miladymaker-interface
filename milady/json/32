@@ -6,47 +6,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "streets",
+			"value": "streets"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pale",
+			"value": "pale"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "classic",
+			"value": "classic"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "black blazer",
+			"value": "black blazer"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og frosted purple",
+			"value": "og frosted purple"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "mottega sunglasses blue",
+			"value": "mottega sunglasses blue"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "pink bonnet",
+			"value": "pink bonnet"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "29",
+			"value": "29"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-prep",
+			"value": "lolita-prep"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "c-drip",
+			"value": "c-drip"
 		},
 		{
 			"trait_type": "Number",

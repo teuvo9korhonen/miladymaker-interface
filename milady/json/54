@@ -6,43 +6,43 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "train",
+			"value": "train"
 		},
 		{
 			"trait_type": "Race",
-			"value": "alien",
+			"value": "alien"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sleepy",
+			"value": "sleepy"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown",
+			"value": "brown"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "sheep pullover",
+			"value": "sheep pullover"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "tuft dark",
+			"value": "tuft dark"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "fuzz earmuffs",
+			"value": "fuzz earmuffs"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "38",
+			"value": "38"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-prep",
+			"value": "lolita-prep"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "a-drip",
+			"value": "a-drip"
 		},
 		{
 			"trait_type": "Number",

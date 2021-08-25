@@ -6,47 +6,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunset",
+			"value": "sunset"
 		},
 		{
 			"trait_type": "Race",
-			"value": "black",
+			"value": "black"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sparkle",
+			"value": "sparkle"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "im cute im punk shirt",
+			"value": "im cute im punk shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "short pink",
+			"value": "short pink"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "cherry earring",
+			"value": "cherry earring"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "heihei hat",
+			"value": "heihei hat"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "45",
+			"value": "45"
 		},
 		{
 			"trait_type": "Core",
-			"value": "harajuku-gyaru",
+			"value": "harajuku-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "ss-drip",
+			"value": "ss-drip"
 		},
 		{
 			"trait_type": "Number",

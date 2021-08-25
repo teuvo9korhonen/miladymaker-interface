@@ -6,47 +6,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "bushland",
+			"value": "bushland"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "crying",
+			"value": "crying"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "bear sweater",
+			"value": "bear sweater"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl purple",
+			"value": "bowl purple"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "larry glasses",
+			"value": "larry glasses"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "buckethat",
+			"value": "buckethat"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "38",
+			"value": "38"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep-hypebeast",
+			"value": "prep-hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "a-drip",
+			"value": "a-drip"
 		},
 		{
 			"trait_type": "Number",
