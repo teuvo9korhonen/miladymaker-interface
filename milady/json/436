@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sonora",
+			"value": "sonora"
 		},
 		{
 			"trait_type": "Race",
-			"value": "clay",
+			"value": "clay"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "crying",
+			"value": "crying"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Necklace",
-			"value": "milady beads",
+			"value": "milady beads"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "knit sweater",
+			"value": "knit sweater"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "short orange",
+			"value": "short orange"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "shy saints cap",
+			"value": "shy saints cap"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "28",
+			"value": "28"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep-gyaru",
+			"value": "prep-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "c-drip",
+			"value": "c-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "436",
+			"value": "436"
 		}
 	]
 }

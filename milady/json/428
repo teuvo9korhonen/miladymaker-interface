@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "tennis",
+			"value": "tennis"
 		},
 		{
 			"trait_type": "Race",
-			"value": "tan",
+			"value": "tan"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "closed",
+			"value": "closed"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "special people shirt",
+			"value": "special people shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og black",
+			"value": "og black"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "cobain glasses",
+			"value": "cobain glasses"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "cross cap white",
+			"value": "cross cap white"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "39",
+			"value": "39"
 		},
 		{
 			"trait_type": "Core",
-			"value": "gyaru",
+			"value": "gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "a-drip",
+			"value": "a-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "428",
+			"value": "428"
 		}
 	]
 }

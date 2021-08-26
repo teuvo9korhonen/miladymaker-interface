@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "nagano",
+			"value": "nagano"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "closed",
+			"value": "closed"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Necklace",
-			"value": "cherry necklace",
+			"value": "cherry necklace"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "tennis outfit",
+			"value": "tennis outfit"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "tuft blue",
+			"value": "tuft blue"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "trucker oasis",
+			"value": "trucker oasis"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "43",
+			"value": "43"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep-gyaru",
+			"value": "prep-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "s-drip",
+			"value": "s-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "447",
+			"value": "447"
 		}
 	]
 }

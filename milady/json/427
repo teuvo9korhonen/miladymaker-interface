@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunrise",
+			"value": "sunrise"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sparkle",
+			"value": "sparkle"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "special people shirt",
+			"value": "special people shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og frosted blonde",
+			"value": "og frosted blonde"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "dual rings silver",
+			"value": "dual rings silver"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "trucker white rabbit",
+			"value": "trucker white rabbit"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "32",
+			"value": "32"
 		},
 		{
 			"trait_type": "Core",
-			"value": "gyaru",
+			"value": "gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "427",
+			"value": "427"
 		}
 	]
 }

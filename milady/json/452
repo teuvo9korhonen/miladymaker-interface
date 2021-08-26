@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "roadside",
+			"value": "roadside"
 		},
 		{
 			"trait_type": "Race",
-			"value": "clay",
+			"value": "clay"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sleepy",
+			"value": "sleepy"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Necklace",
-			"value": "coral cross necklace",
+			"value": "coral cross necklace"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "knit sweater",
+			"value": "knit sweater"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og frosted blonde",
+			"value": "og frosted blonde"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "trucker gothic milady",
+			"value": "trucker gothic milady"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "30",
+			"value": "30"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep-hypebeast",
+			"value": "prep-hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "452",
+			"value": "452"
 		}
 	]
 }

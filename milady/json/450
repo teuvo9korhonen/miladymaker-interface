@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "clouds",
+			"value": "clouds"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "smug",
+			"value": "smug"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "bowling shirt oriental",
+			"value": "bowling shirt oriental"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "braid purple",
+			"value": "braid purple"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "star heart tattoo",
+			"value": "star heart tattoo"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "blue pink bow",
+			"value": "blue pink bow"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "41",
+			"value": "41"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-hypebeast",
+			"value": "lolita-hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "s-drip",
+			"value": "s-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "450",
+			"value": "450"
 		}
 	]
 }

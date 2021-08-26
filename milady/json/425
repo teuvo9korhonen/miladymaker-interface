@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunrise",
+			"value": "sunrise"
 		},
 		{
 			"trait_type": "Race",
-			"value": "black",
+			"value": "black"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "heart eyes",
+			"value": "heart eyes"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown",
+			"value": "brown"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "leopard vest",
+			"value": "leopard vest"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl brown",
+			"value": "bowl brown"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "chain earrings",
+			"value": "chain earrings"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "trucker anime",
+			"value": "trucker anime"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "34",
+			"value": "34"
 		},
 		{
 			"trait_type": "Core",
-			"value": "harajuku-gyaru",
+			"value": "harajuku-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "425",
+			"value": "425"
 		}
 	]
 }

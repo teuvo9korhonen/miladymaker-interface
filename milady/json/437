@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "casino",
+			"value": "casino"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sparkle",
+			"value": "sparkle"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "peter pan collar shirt",
+			"value": "peter pan collar shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og frosted purple",
+			"value": "og frosted purple"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "backwards trucker pink",
+			"value": "backwards trucker pink"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "25",
+			"value": "25"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-gyaru",
+			"value": "lolita-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "d-drip",
+			"value": "d-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "437",
+			"value": "437"
 		}
 	]
 }

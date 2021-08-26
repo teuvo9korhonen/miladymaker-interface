@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "roadside",
+			"value": "roadside"
 		},
 		{
 			"trait_type": "Race",
-			"value": "black",
+			"value": "black"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "teary",
+			"value": "teary"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown",
+			"value": "brown"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "sailor lolita",
+			"value": "sailor lolita"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og green",
+			"value": "og green"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "flower earring",
+			"value": "flower earring"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "shy saints cap",
+			"value": "shy saints cap"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "39",
+			"value": "39"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-gyaru",
+			"value": "lolita-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "a-drip",
+			"value": "a-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "432",
+			"value": "432"
 		}
 	]
 }

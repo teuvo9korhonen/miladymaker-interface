@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "tennis",
+			"value": "tennis"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "dilated",
+			"value": "dilated"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Necklace",
-			"value": "evil eye necklace",
+			"value": "evil eye necklace"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "heihei shirt",
+			"value": "heihei shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "tuft dark",
+			"value": "tuft dark"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "backwards trucker pink",
+			"value": "backwards trucker pink"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "34",
+			"value": "34"
 		},
 		{
 			"trait_type": "Core",
-			"value": "harajuku-gyaru",
+			"value": "harajuku-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "423",
+			"value": "423"
 		}
 	]
 }

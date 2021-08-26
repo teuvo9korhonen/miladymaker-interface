@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "clouds",
+			"value": "clouds"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sleepy",
+			"value": "sleepy"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "jesus tank",
+			"value": "jesus tank"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "braid green",
+			"value": "braid green"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "bar piercings",
+			"value": "bar piercings"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "maid hat",
+			"value": "maid hat"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "32",
+			"value": "32"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-gyaru",
+			"value": "lolita-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "445",
+			"value": "445"
 		}
 	]
 }

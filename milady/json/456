@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "mountain",
+			"value": "mountain"
 		},
 		{
 			"trait_type": "Race",
-			"value": "clay",
+			"value": "clay"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "dilated",
+			"value": "dilated"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "jesus tank",
+			"value": "jesus tank"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "tuft dark",
+			"value": "tuft dark"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "flower earring",
+			"value": "flower earring"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "trucker im so",
+			"value": "trucker im so"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "26",
+			"value": "26"
 		},
 		{
 			"trait_type": "Core",
-			"value": "gyaru",
+			"value": "gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "c-drip",
+			"value": "c-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "456",
+			"value": "456"
 		}
 	]
 }

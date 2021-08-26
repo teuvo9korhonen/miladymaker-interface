@@ -5,55 +5,55 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunset",
+			"value": "sunset"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "crying",
+			"value": "crying"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "bear sweater",
+			"value": "bear sweater"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl black",
+			"value": "bowl black"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "prescription glasses",
+			"value": "prescription glasses"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "maid hat",
+			"value": "maid hat"
 		},
 		{
 			"trait_type": "Neck",
-			"value": "castle neck tattoo",
+			"value": "castle neck tattoo"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "26",
+			"value": "26"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-prep",
+			"value": "lolita-prep"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "c-drip",
+			"value": "c-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "449",
+			"value": "449"
 		}
 	]
 }

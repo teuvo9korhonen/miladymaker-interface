@@ -5,55 +5,55 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "clouds",
+			"value": "clouds"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "dilated",
+			"value": "dilated"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "lilac",
+			"value": "lilac"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "goth poncho",
+			"value": "goth poncho"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og green",
+			"value": "og green"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "dual rings silver",
+			"value": "dual rings silver"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "harajuku glasses",
+			"value": "harajuku glasses"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "denim fish cap",
+			"value": "denim fish cap"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "45",
+			"value": "45"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-gyaru",
+			"value": "lolita-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "ss-drip",
+			"value": "ss-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "442",
+			"value": "442"
 		}
 	]
 }

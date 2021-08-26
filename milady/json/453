@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunset",
+			"value": "sunset"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "teary",
+			"value": "teary"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "malenciaga neon",
+			"value": "malenciaga neon"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "short pink",
+			"value": "short pink"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "double safety pins",
+			"value": "double safety pins"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "fuzz earmuffs",
+			"value": "fuzz earmuffs"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "47",
+			"value": "47"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-hypebeast",
+			"value": "lolita-hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "ss-drip",
+			"value": "ss-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "453",
+			"value": "453"
 		}
 	]
 }

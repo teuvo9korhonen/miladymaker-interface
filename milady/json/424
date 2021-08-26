@@ -5,55 +5,55 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunset",
+			"value": "sunset"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pale",
+			"value": "pale"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "crying",
+			"value": "crying"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "lilac",
+			"value": "lilac"
 		},
 		{
 			"trait_type": "Necklace",
-			"value": "coral cross necklace",
+			"value": "coral cross necklace"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "matagonia pullover",
+			"value": "matagonia pullover"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "tuft blue",
+			"value": "tuft blue"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "moakleys",
+			"value": "moakleys"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "fez",
+			"value": "fez"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "50",
+			"value": "50"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast-harajuku",
+			"value": "hypebeast-harajuku"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "ss-drip",
+			"value": "ss-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "424",
+			"value": "424"
 		}
 	]
 }

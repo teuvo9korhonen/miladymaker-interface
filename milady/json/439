@@ -5,55 +5,55 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "casino",
+			"value": "casino"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pale",
+			"value": "pale"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "dilated",
+			"value": "dilated"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "aqua",
+			"value": "aqua"
 		},
 		{
 			"trait_type": "Necklace",
-			"value": "pearl necklace",
+			"value": "pearl necklace"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "bowling shirt oriental",
+			"value": "bowling shirt oriental"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl brown",
+			"value": "bowl brown"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "nose ring gold",
+			"value": "nose ring gold"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "white cowboy hat",
+			"value": "white cowboy hat"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "34",
+			"value": "34"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast-gyaru",
+			"value": "hypebeast-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "439",
+			"value": "439"
 		}
 	]
 }

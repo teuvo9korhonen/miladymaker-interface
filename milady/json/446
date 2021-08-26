@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "roadside",
+			"value": "roadside"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pale",
+			"value": "pale"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sleepy",
+			"value": "sleepy"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "blue ribbon tank",
+			"value": "blue ribbon tank"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "braid black",
+			"value": "braid black"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "ivy cap",
+			"value": "ivy cap"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "23",
+			"value": "23"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep-gyaru",
+			"value": "prep-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "d-drip",
+			"value": "d-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "446",
+			"value": "446"
 		}
 	]
 }

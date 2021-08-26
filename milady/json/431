@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "clouds",
+			"value": "clouds"
 		},
 		{
 			"trait_type": "Race",
-			"value": "clay",
+			"value": "clay"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sleepy",
+			"value": "sleepy"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "peter pan collar shirt",
+			"value": "peter pan collar shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og frosted blonde",
+			"value": "og frosted blonde"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "mottega sunglasses blue",
+			"value": "mottega sunglasses blue"
 		},
 		{
 			"trait_type": "Neck",
-			"value": "castle neck tattoo",
+			"value": "castle neck tattoo"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "29",
+			"value": "29"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita",
+			"value": "lolita"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "c-drip",
+			"value": "c-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "431",
+			"value": "431"
 		}
 	]
 }
