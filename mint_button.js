@@ -12,7 +12,26 @@ const ConnectAndMint = ({ reserve }) => {
   const [saleStarted, setSaleStarted] = useState(false);
   const [whitelistedFor1, setWhitelistedFor1] = useState(false);
   const [whitelistedFor2, setWhitelistedFor2] = useState(false);
+  
+  useEffect(() => {
+    (async () => {
+        if (typeof window.web3 !== "undefined") {
+      // Use existing gateway
+      window.web3 = new Web3(window.ethereum);
+    } else {
+      alert("No ETH interface plugged. Using read-only.");
+    }
+     const miladyContract = new window.web3.eth.Contract(ABI, ADDRESS);
+    setmiladyContract(miladyContract);
 
+    const totalSupply = await miladyContract.methods.totalSupply().call();
+    setTotalSupply(totalSupply);
+
+    const saleIsActive = await miladyContract.methods.saleIsActive().call();
+    setSaleStarted(saleIsActive);
+
+    })();
+});
 
   async function signIn() {
     if (typeof window.web3 !== "undefined") {
@@ -21,6 +40,7 @@ const ConnectAndMint = ({ reserve }) => {
     } else {
       alert("No ETH interface plugged. Using read-only.");
     }
+
 
     window.ethereum
       .enable()
@@ -77,6 +97,7 @@ const ConnectAndMint = ({ reserve }) => {
     }
   }
 
+
   async function mintMiladys(n) {
     if (!miladyContract) {
       return e("button", { className: "connect-button", onClick: signOut }, `MetaMask wallet offline.`);
@@ -99,14 +120,7 @@ const ConnectAndMint = ({ reserve }) => {
           console.log("transactionHash", hash);
         });
     } catch (err) {
-      alert(JSON.stringify(err));
-      //const Error = () => e("div", { className: "error-output" }, `An error has occured: Insufficient Funds.`);
-      return e(
-        "div",
-        { className: "error-output" },
-        JSON.stringify(err)
-      );
-      
+      //const Error = () => e("div", { className: "error-output" }, `An error has occured: Insufficient Funds.`); 
     }
   }
 
@@ -238,7 +252,13 @@ if(!signedIn)
         MintButton(30),
         Breaker(),
         SignInButton(),  
+
       ),
+      Breaker(),
+      e(
+        "div",
+        { className: "wallet-show" }, "No Wallet Connected"
+      )
     );
   }
  
