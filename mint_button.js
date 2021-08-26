@@ -195,7 +195,40 @@ const ConnectAndMint = ({ reserve }) => {
    }
   */
   if (!signedIn) {
-    return SignInButton();
+    return e(
+      "div",
+
+      { className: "connect-or-buy" },
+       totalSupply ? AmountMinted(totalSupply) : null,
+      MintButton(1),
+      MintButton(5),
+      MintButton(15),
+      MintButton(30),
+      SignInButton(),
+      
+    );
+  }
+
+  if(signedIn)
+  {
+    return e(
+      "div",
+      { className: "connect-or-buy" },
+      totalSupply ? AmountMinted(totalSupply) : null,
+      SignOutButton(),
+      MintButton(1),
+      MintButton(5),
+      MintButton(15),
+      MintButton(30),
+      
+      
+      e(
+        "div",
+        { className: "whitelisted-notices" },
+        whitelistedFor1 ? WhitelistedNotice(1) : null,
+        whitelistedFor2 ? WhitelistedNotice(2) : null
+      )
+    );
   }
 
   if (reserve) {
@@ -207,23 +240,8 @@ const ConnectAndMint = ({ reserve }) => {
     }
     return e("div", null, SignOutButton(), WhitelistedNoticeReserve(0));
   }
-
-  return e(
-    "div",
-    { className: "connect-or-buy" },
-    SignOutButton(),
-    totalSupply ? AmountMinted(totalSupply) : null,
-    MintButton(1),
-    MintButton(5),
-    MintButton(15),
-    MintButton(30),
-    e(
-      "div",
-      { className: "whitelisted-notices" },
-      whitelistedFor1 ? WhitelistedNotice(1) : null,
-      whitelistedFor2 ? WhitelistedNotice(2) : null
-    )
-  );
+   
+  
 };
 
 const mint = document.querySelector("#mint");

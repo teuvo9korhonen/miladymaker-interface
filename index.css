@@ -168,6 +168,7 @@ div.desc {
     background: #000;
     color: #fff;
     cursor: pointer;
+    white-space:pre-line;
 }
 .connect-button:hover {
   color: yellow;
@@ -175,6 +176,7 @@ div.desc {
 
 .mint-button a,
 .mint-reserve-button a {
+  
   margin-left: 1em;
   cursor: pointer;
   color: black;
