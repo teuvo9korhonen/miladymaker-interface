@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "mountain",
+			"value": "mountain"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pale",
+			"value": "pale"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "heart eyes",
+			"value": "heart eyes"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "leaf",
+			"value": "leaf"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "maf rothko",
+			"value": "maf rothko"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "braid brown",
+			"value": "braid brown"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "cross cap pink",
+			"value": "cross cap pink"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "35",
+			"value": "35"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast-gyaru",
+			"value": "hypebeast-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "a-drip",
+			"value": "a-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "212",
+			"value": "212"
 		}
 	]
 }

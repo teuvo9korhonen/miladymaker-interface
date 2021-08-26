@@ -5,55 +5,55 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "clouds",
+			"value": "clouds"
 		},
 		{
 			"trait_type": "Race",
-			"value": "tan",
+			"value": "tan"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sparkle",
+			"value": "sparkle"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Necklace",
-			"value": "smiley bead necklace",
+			"value": "smiley bead necklace"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "leopard polo",
+			"value": "leopard polo"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "tuft dark",
+			"value": "tuft dark"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "nose ring silver",
+			"value": "nose ring silver"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "workin cap",
+			"value": "workin cap"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "42",
+			"value": "42"
 		},
 		{
 			"trait_type": "Core",
-			"value": "gyaru",
+			"value": "gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "s-drip",
+			"value": "s-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "251",
+			"value": "251"
 		}
 	]
 }
