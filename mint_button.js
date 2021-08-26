@@ -8,8 +8,8 @@ const ConnectAndMint = ({ reserve }) => {
   const [signedIn, setSignedIn] = useState(false);
   const [walletAddress, setWalletAddress] = useState(null);
   const [miladyContract, setmiladyContract] = useState(null);
-  var [totalSupply, setTotalSupply] = useState();
-  const [saleStarted, setSaleStarted] = useState(true);
+  var [totalSupply, setTotalSupply] = useState(null);
+  const [saleStarted, setSaleStarted] = useState(false);
   const [whitelistedFor1, setWhitelistedFor1] = useState(false);
   const [whitelistedFor2, setWhitelistedFor2] = useState(false);
 
@@ -146,7 +146,7 @@ const ConnectAndMint = ({ reserve }) => {
   const Breaker = () => e("br");
   const SignOutButton = () =>
     e("button", { className: "connect-button", onClick: signOut }, `Disconnect from MetaMask`);
-  const AmountMinted = (n) => e("div", { className: "amount-minted" }, `${format(n)} / ${format(10000)} minted`);
+  const AmountMinted = (n) => e("div", { className: "showtotal" }, `${format(n)} / ${format(10000)} minted`);
 
   const MintButton = (n) => {
     const priceEach = getMiladyPriceEach(n).dividedBy("1e18");
@@ -225,12 +225,10 @@ const ConnectAndMint = ({ reserve }) => {
 
 if(!signedIn)
   {
-
-
     return e(
       "div",
-      { className: "totaly" },
-      totalSupply + " / " + " 10000" + " minted.",
+      { className: "showtotal" },
+      totalSupply + " / " + " 10,000" + " minted",
       e(
         "div",
         { className: "connect-or-buy" },
@@ -253,7 +251,7 @@ if(!signedIn)
     return e(
      
       "div",
-      { className: "amount-minted" },
+      { className: "showtotal" },
       totalSupply ? AmountMinted(totalSupply) : null,
       Breaker(),
       MintButton(1),
