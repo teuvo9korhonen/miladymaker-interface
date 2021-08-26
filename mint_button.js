@@ -8,13 +8,11 @@ const ConnectAndMint = ({ reserve }) => {
   const [signedIn, setSignedIn] = useState(false);
   const [walletAddress, setWalletAddress] = useState(null);
   const [miladyContract, setmiladyContract] = useState(null);
-  const [totalSupply, setTotalSupply] = useState(null);
-  const [saleStarted, setSaleStarted] = useState(false);
+  let [totalSupply, setTotalSupply] = useState(null);
+  const [saleStarted, setSaleStarted] = useState(true);
   const [whitelistedFor1, setWhitelistedFor1] = useState(false);
   const [whitelistedFor2, setWhitelistedFor2] = useState(false);
 
-  useEffect(() => console.log("totalSupply:", totalSupply), [totalSupply]);
-  useEffect(() => console.log("saleStarted:", saleStarted), [saleStarted]);
 
   async function signIn() {
     if (typeof window.web3 !== "undefined") {
@@ -49,6 +47,7 @@ const ConnectAndMint = ({ reserve }) => {
   async function signOut() {
     setSignedIn(false);
   }
+
 
   async function callContractData(walletAddress) {
     const miladyContract = new window.web3.eth.Contract(ABI, ADDRESS);
@@ -86,6 +85,7 @@ const ConnectAndMint = ({ reserve }) => {
     }
 
     try {
+      alert("Minting started.");
       const price = getMiladyPriceEach(n).multipliedBy(n).toString();
 
       const gasAmount = await miladyContract.methods.mintMiladys(n).estimateGas({ from: walletAddress, value: price });
@@ -100,14 +100,21 @@ const ConnectAndMint = ({ reserve }) => {
           console.log("transactionHash", hash);
         });
     } catch (err) {
-      alert(JSON.stringify(err));
+      //alert(JSON.stringify(err));
+      //const Error = () => e("div", { className: "error-output" }, `An error has occured: Insufficient Funds.`);
+      return e(
+        "div",
+        { className: "error-output" },
+        JSON.stringify(err)
+      );
+      
     }
   }
 
   async function reserveMintMiladys() {
     if (!miladyContract) {
-      console.log("Wallet not online.");
-      return;
+      return e("button", { className: "connect-button", onClick: signOut }, `MetaMask wallet offline.`);
+      
     }
 
     try {
@@ -127,7 +134,7 @@ const ConnectAndMint = ({ reserve }) => {
           console.log("transactionHash", hash);
         });
     } catch (err) {
-      alert(JSON.stringify(err));
+      alert("An error has occured. Please try again later.");
     }
   }
 
@@ -136,6 +143,7 @@ const ConnectAndMint = ({ reserve }) => {
   }
 
   const SignInButton = () => e("button", { className: "connect-button", onClick: signIn }, `Connect to MetaMask`);
+  const Breaker = () => e("br");
   const SignOutButton = () =>
     e("button", { className: "connect-button", onClick: signOut }, `Disconnect from MetaMask`);
   const AmountMinted = (n) => e("div", { className: "amount-minted" }, `${format(n)} / ${format(10000)} minted`);
@@ -143,15 +151,37 @@ const ConnectAndMint = ({ reserve }) => {
   const MintButton = (n) => {
     const priceEach = getMiladyPriceEach(n).dividedBy("1e18");
     const priceAll = priceEach.multipliedBy(n);
-    return e(
-      "div",
-      { className: "mint-button" },
-      e(
-        "a",
-        { onClick: () => mintMiladys(n) },
-        `Mint ${n} Milady${n > 1 ? "s" : ""} - ${priceAll} ETH (${priceEach} each)`
-      )
-    );
+
+    if(!signedIn)
+    {
+       
+        return e(
+        "div",
+        { className: "mint-button" },
+        e(
+          "span",
+          { onHover: () => null },
+          `Mint ${n} Milady${n > 1 ? "s" : ""} - ${priceAll} ETH (${priceEach} each)`,
+          
+        )
+
+
+      );
+
+    }
+    else 
+    {
+         return e(
+        "div",
+        { className: "mint-button" },
+        e(
+          "a",
+          { onClick: () => mintMiladys(n) },
+          `Mint ${n} Milady${n > 1 ? "s" : ""} - ${priceAll} ETH (${priceEach} each)`
+        )
+      );
+    }
+   
   };
 
   const WhitelistedNotice = (n) => {
@@ -194,28 +224,40 @@ const ConnectAndMint = ({ reserve }) => {
     return e("div", { className: "sale-notice" }, "The sale has not started yet.");
    }
   */
+
+  useEffect(() => console.log("totalSupply:", totalSupply), [totalSupply]);
+  useEffect(() => console.log("saleStarted:", saleStarted), [saleStarted]);
   if (!signedIn) {
     return e(
       "div",
-
-      { className: "connect-or-buy" },
-       totalSupply ? AmountMinted(totalSupply) : null,
+      { className: "amount-minted" }, 
+      "Total Minted: ", totalSupply ? AmountMinted(totalSupply) : null,
+      
+      Breaker(),
       MintButton(1),
       MintButton(5),
       MintButton(15),
       MintButton(30),
+      Breaker(),
       SignInButton(),
-      
+
+
     );
+   
   }
 
   if(signedIn)
   {
+
+
     return e(
       "div",
-      { className: "connect-or-buy" },
+      { className: "amount-minted" },
       totalSupply ? AmountMinted(totalSupply) : null,
+      Breaker(),
       SignOutButton(),
+      Breaker(),
+      Breaker(),
       MintButton(1),
       MintButton(5),
       MintButton(15),
