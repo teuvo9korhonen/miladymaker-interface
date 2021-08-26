@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunrise",
+			"value": "sunrise"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "smug",
+			"value": "smug"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "blue sweatervest",
+			"value": "blue sweatervest"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og orange",
+			"value": "og orange"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "trucker oasis",
+			"value": "trucker oasis"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "21",
+			"value": "21"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep-gyaru",
+			"value": "prep-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "d-drip",
+			"value": "d-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "293",
+			"value": "293"
 		}
 	]
 }

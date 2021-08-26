@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "mountain",
+			"value": "mountain"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pale",
+			"value": "pale"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "classic",
+			"value": "classic"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "goth harajuku",
+			"value": "goth harajuku"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl blue",
+			"value": "bowl blue"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "tyson tribal tattoo",
+			"value": "tyson tribal tattoo"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "trucker pink camo",
+			"value": "trucker pink camo"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "33",
+			"value": "33"
 		},
 		{
 			"trait_type": "Core",
-			"value": "harajuku-gyaru",
+			"value": "harajuku-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "368",
+			"value": "368"
 		}
 	]
 }

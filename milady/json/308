@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunset",
+			"value": "sunset"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "crying",
+			"value": "crying"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "matagonia pullover",
+			"value": "matagonia pullover"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "braids harajuku dye",
+			"value": "braids harajuku dye"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "star heart tattoo",
+			"value": "star heart tattoo"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "denim usa cap",
+			"value": "denim usa cap"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "42",
+			"value": "42"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast-gyaru",
+			"value": "hypebeast-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "s-drip",
+			"value": "s-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "308",
+			"value": "308"
 		}
 	]
 }

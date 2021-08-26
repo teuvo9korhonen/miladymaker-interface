@@ -5,55 +5,55 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunset",
+			"value": "sunset"
 		},
 		{
 			"trait_type": "Race",
-			"value": "clay",
+			"value": "clay"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "teary",
+			"value": "teary"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown",
+			"value": "brown"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "fur coat",
+			"value": "fur coat"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "braid blue",
+			"value": "braid blue"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "strawberry earring",
+			"value": "strawberry earring"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "nose ring silver",
+			"value": "nose ring silver"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "alien hat",
+			"value": "alien hat"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "43",
+			"value": "43"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-hypebeast",
+			"value": "lolita-hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "s-drip",
+			"value": "s-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "365",
+			"value": "365"
 		}
 	]
 }

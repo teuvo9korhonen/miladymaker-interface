@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "casino",
+			"value": "casino"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sparkle",
+			"value": "sparkle"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown",
+			"value": "brown"
 		},
 		{
 			"trait_type": "Necklace",
-			"value": "silver coin necklace",
+			"value": "silver coin necklace"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "bowling shirt oriental",
+			"value": "bowling shirt oriental"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl black",
+			"value": "bowl black"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "26",
+			"value": "26"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast",
+			"value": "hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "c-drip",
+			"value": "c-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "312",
+			"value": "312"
 		}
 	]
 }

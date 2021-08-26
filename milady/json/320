@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "bushland",
+			"value": "bushland"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pale",
+			"value": "pale"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "classic",
+			"value": "classic"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "im cute im punk shirt",
+			"value": "im cute im punk shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "tuft brown",
+			"value": "tuft brown"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "milady pilled tattoo",
+			"value": "milady pilled tattoo"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "18",
+			"value": "18"
 		},
 		{
 			"trait_type": "Core",
-			"value": "gyaru",
+			"value": "gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "d-drip",
+			"value": "d-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "320",
+			"value": "320"
 		}
 	]
 }

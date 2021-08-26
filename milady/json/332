@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "bushland",
+			"value": "bushland"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pale",
+			"value": "pale"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "dilated",
+			"value": "dilated"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "super lover shirt",
+			"value": "super lover shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "short orange",
+			"value": "short orange"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "star heart tattoo",
+			"value": "star heart tattoo"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "aloha visor",
+			"value": "aloha visor"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "31",
+			"value": "31"
 		},
 		{
 			"trait_type": "Core",
-			"value": "gyaru",
+			"value": "gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "332",
+			"value": "332"
 		}
 	]
 }

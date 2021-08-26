@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "casino",
+			"value": "casino"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "dilated",
+			"value": "dilated"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "kogal cardigan",
+			"value": "kogal cardigan"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "short orange",
+			"value": "short orange"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "prescription glasses",
+			"value": "prescription glasses"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "trucker im so",
+			"value": "trucker im so"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "28",
+			"value": "28"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep-gyaru",
+			"value": "prep-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "c-drip",
+			"value": "c-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "340",
+			"value": "340"
 		}
 	]
 }

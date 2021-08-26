@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunset",
+			"value": "sunset"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sparkle",
+			"value": "sparkle"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "aqua",
+			"value": "aqua"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "mape hoodie",
+			"value": "mape hoodie"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og green",
+			"value": "og green"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "bear hat",
+			"value": "bear hat"
 		},
 		{
 			"trait_type": "Neck",
-			"value": "lean neck tattoo",
+			"value": "lean neck tattoo"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "34",
+			"value": "34"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-hypebeast",
+			"value": "lolita-hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "281",
+			"value": "281"
 		}
 	]
 }

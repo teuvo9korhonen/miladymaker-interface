@@ -5,55 +5,55 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sonora",
+			"value": "sonora"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "classic",
+			"value": "classic"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "matagonia pullover",
+			"value": "matagonia pullover"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "short blue",
+			"value": "short blue"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "nose ring gold",
+			"value": "nose ring gold"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "mottega sunglasses blue",
+			"value": "mottega sunglasses blue"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "kossphones",
+			"value": "kossphones"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "44",
+			"value": "44"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast-harajuku",
+			"value": "hypebeast-harajuku"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "s-drip",
+			"value": "s-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "314",
+			"value": "314"
 		}
 	]
 }

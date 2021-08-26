@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "nagano",
+			"value": "nagano"
 		},
 		{
 			"trait_type": "Race",
-			"value": "clay",
+			"value": "clay"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sparkle",
+			"value": "sparkle"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "mwo shirt",
+			"value": "mwo shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og blue",
+			"value": "og blue"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "trucker oasis",
+			"value": "trucker oasis"
 		},
 		{
 			"trait_type": "Neck",
-			"value": "spider neck tattoo",
+			"value": "spider neck tattoo"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "32",
+			"value": "32"
 		},
 		{
 			"trait_type": "Core",
-			"value": "gyaru",
+			"value": "gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "275",
+			"value": "275"
 		}
 	]
 }

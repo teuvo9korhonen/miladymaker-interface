@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "bushland",
+			"value": "bushland"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "classic",
+			"value": "classic"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "active dissident shirt",
+			"value": "active dissident shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "tuft green",
+			"value": "tuft green"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "rhinestone skull cap",
+			"value": "rhinestone skull cap"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "33",
+			"value": "33"
 		},
 		{
 			"trait_type": "Core",
-			"value": "gyaru",
+			"value": "gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "322",
+			"value": "322"
 		}
 	]
 }

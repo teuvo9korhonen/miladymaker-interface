@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "casino",
+			"value": "casino"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pale",
+			"value": "pale"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "closed",
+			"value": "closed"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown",
+			"value": "brown"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "maf creeper",
+			"value": "maf creeper"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl blue",
+			"value": "bowl blue"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "denim fish cap",
+			"value": "denim fish cap"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "28",
+			"value": "28"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast-gyaru",
+			"value": "hypebeast-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "c-drip",
+			"value": "c-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "336",
+			"value": "336"
 		}
 	]
 }

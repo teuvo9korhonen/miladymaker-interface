@@ -5,55 +5,55 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "mountain",
+			"value": "mountain"
 		},
 		{
 			"trait_type": "Race",
-			"value": "black",
+			"value": "black"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "dilated",
+			"value": "dilated"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Necklace",
-			"value": "silver coin necklace",
+			"value": "silver coin necklace"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "jesus tank",
+			"value": "jesus tank"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "tuft blue",
+			"value": "tuft blue"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "teardrops tattoo",
+			"value": "teardrops tattoo"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "larry glasses",
+			"value": "larry glasses"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "37",
+			"value": "37"
 		},
 		{
 			"trait_type": "Core",
-			"value": "gyaru",
+			"value": "gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "a-drip",
+			"value": "a-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "361",
+			"value": "361"
 		}
 	]
 }

@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunset",
+			"value": "sunset"
 		},
 		{
 			"trait_type": "Race",
-			"value": "tan",
+			"value": "tan"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sleepy",
+			"value": "sleepy"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "goth harajuku",
+			"value": "goth harajuku"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og green",
+			"value": "og green"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "nose ring gold",
+			"value": "nose ring gold"
 		},
 		{
 			"trait_type": "Neck",
-			"value": "castle neck tattoo",
+			"value": "castle neck tattoo"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "31",
+			"value": "31"
 		},
 		{
 			"trait_type": "Core",
-			"value": "harajuku",
+			"value": "harajuku"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "319",
+			"value": "319"
 		}
 	]
 }

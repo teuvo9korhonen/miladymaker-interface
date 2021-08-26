@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "mountain",
+			"value": "mountain"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "dilated",
+			"value": "dilated"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown",
+			"value": "brown"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "active dissident shirt",
+			"value": "active dissident shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl slate",
+			"value": "bowl slate"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "chrome cross",
+			"value": "chrome cross"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "sunglasses",
+			"value": "sunglasses"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "31",
+			"value": "31"
 		},
 		{
 			"trait_type": "Core",
-			"value": "gyaru",
+			"value": "gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "286",
+			"value": "286"
 		}
 	]
 }

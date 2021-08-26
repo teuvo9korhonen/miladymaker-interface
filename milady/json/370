@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "clouds",
+			"value": "clouds"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pale",
+			"value": "pale"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sparkle",
+			"value": "sparkle"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown",
+			"value": "brown"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "maf rothko",
+			"value": "maf rothko"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl slate",
+			"value": "bowl slate"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "teardrops tattoo",
+			"value": "teardrops tattoo"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "backwards trucker pink",
+			"value": "backwards trucker pink"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "26",
+			"value": "26"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast-gyaru",
+			"value": "hypebeast-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "c-drip",
+			"value": "c-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "370",
+			"value": "370"
 		}
 	]
 }

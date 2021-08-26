@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunset",
+			"value": "sunset"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pale",
+			"value": "pale"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sleepy",
+			"value": "sleepy"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown",
+			"value": "brown"
 		},
 		{
 			"trait_type": "Necklace",
-			"value": "silver coin necklace",
+			"value": "silver coin necklace"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "blue ribbon tank",
+			"value": "blue ribbon tank"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl slate",
+			"value": "bowl slate"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "15",
+			"value": "15"
 		},
 		{
 			"trait_type": "Core",
-			"value": "gyaru",
+			"value": "gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "d-drip",
+			"value": "d-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "350",
+			"value": "350"
 		}
 	]
 }

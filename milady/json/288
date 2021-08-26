@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "roadside",
+			"value": "roadside"
 		},
 		{
 			"trait_type": "Race",
-			"value": "tan",
+			"value": "tan"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "crying",
+			"value": "crying"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "lilac",
+			"value": "lilac"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "meedles tracksuit",
+			"value": "meedles tracksuit"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "braid brown",
+			"value": "braid brown"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "dual rings gold",
+			"value": "dual rings gold"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "face piercings",
+			"value": "face piercings"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "35",
+			"value": "35"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast",
+			"value": "hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "a-drip",
+			"value": "a-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "288",
+			"value": "288"
 		}
 	]
 }

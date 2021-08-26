@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "casino",
+			"value": "casino"
 		},
 		{
 			"trait_type": "Race",
-			"value": "clay",
+			"value": "clay"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "closed",
+			"value": "closed"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "blue pink shirt",
+			"value": "blue pink shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "tuft green",
+			"value": "tuft green"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "bar piercings",
+			"value": "bar piercings"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "kossphones",
+			"value": "kossphones"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "30",
+			"value": "30"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-harajuku",
+			"value": "lolita-harajuku"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "302",
+			"value": "302"
 		}
 	]
 }

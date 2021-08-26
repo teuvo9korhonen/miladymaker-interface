@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "mountain",
+			"value": "mountain"
 		},
 		{
 			"trait_type": "Race",
-			"value": "clay",
+			"value": "clay"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "dilated",
+			"value": "dilated"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "sailor lolita",
+			"value": "sailor lolita"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "braid blue",
+			"value": "braid blue"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "round glasses",
+			"value": "round glasses"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "trucker anime",
+			"value": "trucker anime"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "28",
+			"value": "28"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-gyaru",
+			"value": "lolita-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "c-drip",
+			"value": "c-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "367",
+			"value": "367"
 		}
 	]
 }

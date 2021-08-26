@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunset",
+			"value": "sunset"
 		},
 		{
 			"trait_type": "Race",
-			"value": "clay",
+			"value": "clay"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "dilated",
+			"value": "dilated"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown",
+			"value": "brown"
 		},
 		{
 			"trait_type": "Necklace",
-			"value": "silver coin necklace",
+			"value": "silver coin necklace"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "bowling shirt oriental",
+			"value": "bowling shirt oriental"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "tuft brown",
+			"value": "tuft brown"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "flower clip",
+			"value": "flower clip"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "28",
+			"value": "28"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast-gyaru",
+			"value": "hypebeast-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "c-drip",
+			"value": "c-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "324",
+			"value": "324"
 		}
 	]
 }

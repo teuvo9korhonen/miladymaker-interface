@@ -5,55 +5,55 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunrise",
+			"value": "sunrise"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "classic",
+			"value": "classic"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "super lover shirt",
+			"value": "super lover shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "tuft purple",
+			"value": "tuft purple"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "flower earring",
+			"value": "flower earring"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "star heart tattoo",
+			"value": "star heart tattoo"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "earflap cap",
+			"value": "earflap cap"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "35",
+			"value": "35"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep-gyaru",
+			"value": "prep-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "a-drip",
+			"value": "a-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "273",
+			"value": "273"
 		}
 	]
 }

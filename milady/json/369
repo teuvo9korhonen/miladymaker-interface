@@ -5,55 +5,55 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "xp",
+			"value": "xp"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "dilated",
+			"value": "dilated"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "remilia tank",
+			"value": "remilia tank"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "braid brown",
+			"value": "braid brown"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "diamond stud",
+			"value": "diamond stud"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "harajuku glasses",
+			"value": "harajuku glasses"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "backwards trucker pink",
+			"value": "backwards trucker pink"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "48",
+			"value": "48"
 		},
 		{
 			"trait_type": "Core",
-			"value": "gyaru",
+			"value": "gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "ss-drip",
+			"value": "ss-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "369",
+			"value": "369"
 		}
 	]
 }

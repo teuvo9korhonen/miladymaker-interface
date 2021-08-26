@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "yashima",
+			"value": "yashima"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sleepy",
+			"value": "sleepy"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "cactus shirt",
+			"value": "cactus shirt"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "cross earring",
+			"value": "cross earring"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "strawberry hat",
+			"value": "strawberry hat"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "34",
+			"value": "34"
 		},
 		{
 			"trait_type": "Core",
-			"value": "harajuku-gyaru",
+			"value": "harajuku-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "347",
+			"value": "347"
 		}
 	]
 }

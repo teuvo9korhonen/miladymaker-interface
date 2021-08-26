@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "casino",
+			"value": "casino"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pale",
+			"value": "pale"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "classic",
+			"value": "classic"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "pink coat",
+			"value": "pink coat"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og frosted blonde",
+			"value": "og frosted blonde"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "buckethat",
+			"value": "buckethat"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "29",
+			"value": "29"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-hypebeast",
+			"value": "lolita-hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "c-drip",
+			"value": "c-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "352",
+			"value": "352"
 		}
 	]
 }

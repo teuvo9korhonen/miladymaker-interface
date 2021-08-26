@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "mountain",
+			"value": "mountain"
 		},
 		{
 			"trait_type": "Race",
-			"value": "clay",
+			"value": "clay"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sleepy",
+			"value": "sleepy"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "super lover shirt",
+			"value": "super lover shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og green",
+			"value": "og green"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "heart pearls earring",
+			"value": "heart pearls earring"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "pink bow",
+			"value": "pink bow"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "31",
+			"value": "31"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-gyaru",
+			"value": "lolita-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "366",
+			"value": "366"
 		}
 	]
 }

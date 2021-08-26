@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "mountain",
+			"value": "mountain"
 		},
 		{
 			"trait_type": "Race",
-			"value": "black",
+			"value": "black"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sparkle",
+			"value": "sparkle"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "cactus shirt",
+			"value": "cactus shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "braid brown",
+			"value": "braid brown"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "round glasses",
+			"value": "round glasses"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "pink bonnet",
+			"value": "pink bonnet"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "34",
+			"value": "34"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-gyaru",
+			"value": "lolita-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "278",
+			"value": "278"
 		}
 	]
 }

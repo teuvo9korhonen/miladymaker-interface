@@ -5,43 +5,43 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunset",
+			"value": "sunset"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sparkle",
+			"value": "sparkle"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "fur coat",
+			"value": "fur coat"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl green",
+			"value": "bowl green"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "19",
+			"value": "19"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita",
+			"value": "lolita"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "d-drip",
+			"value": "d-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "343",
+			"value": "343"
 		}
 	]
 }

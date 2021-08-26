@@ -5,55 +5,55 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "nagano",
+			"value": "nagano"
 		},
 		{
 			"trait_type": "Race",
-			"value": "tan",
+			"value": "tan"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "classic",
+			"value": "classic"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Necklace",
-			"value": "milady beads",
+			"value": "milady beads"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "zip polo",
+			"value": "zip polo"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "short green",
+			"value": "short green"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "harajuku glasses",
+			"value": "harajuku glasses"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "denim usa cap",
+			"value": "denim usa cap"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "51",
+			"value": "51"
 		},
 		{
 			"trait_type": "Core",
-			"value": "harajuku-gyaru",
+			"value": "harajuku-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "ss-drip",
+			"value": "ss-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "321",
+			"value": "321"
 		}
 	]
 }

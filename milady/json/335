@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "bjork",
+			"value": "bjork"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "classic",
+			"value": "classic"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "red puffer",
+			"value": "red puffer"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "short blonde",
+			"value": "short blonde"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "sunglasses",
+			"value": "sunglasses"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "27",
+			"value": "27"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast",
+			"value": "hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "c-drip",
+			"value": "c-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "335",
+			"value": "335"
 		}
 	]
 }

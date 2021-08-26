@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "xp",
+			"value": "xp"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sparkle",
+			"value": "sparkle"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "hikki condition shirt",
+			"value": "hikki condition shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl slate",
+			"value": "bowl slate"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "crescent tattoo",
+			"value": "crescent tattoo"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "cross cap white",
+			"value": "cross cap white"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "36",
+			"value": "36"
 		},
 		{
 			"trait_type": "Core",
-			"value": "gyaru",
+			"value": "gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "a-drip",
+			"value": "a-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "327",
+			"value": "327"
 		}
 	]
 }

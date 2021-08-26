@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "mountain",
+			"value": "mountain"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "crying",
+			"value": "crying"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "aqua",
+			"value": "aqua"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "western jacket",
+			"value": "western jacket"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "short pink",
+			"value": "short pink"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "bear hat",
+			"value": "bear hat"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "36",
+			"value": "36"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-hypebeast",
+			"value": "lolita-hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "a-drip",
+			"value": "a-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "333",
+			"value": "333"
 		}
 	]
 }

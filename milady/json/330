@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunrise",
+			"value": "sunrise"
 		},
 		{
 			"trait_type": "Race",
-			"value": "tan",
+			"value": "tan"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "teary",
+			"value": "teary"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "red puffer",
+			"value": "red puffer"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl green",
+			"value": "bowl green"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "trucker gothic milady",
+			"value": "trucker gothic milady"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "30",
+			"value": "30"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast",
+			"value": "hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "330",
+			"value": "330"
 		}
 	]
 }

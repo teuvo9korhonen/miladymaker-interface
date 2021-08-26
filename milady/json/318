@@ -5,43 +5,43 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "bushland",
+			"value": "bushland"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "classic",
+			"value": "classic"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown",
+			"value": "brown"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "football shirt",
+			"value": "football shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "braid purple",
+			"value": "braid purple"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "32",
+			"value": "32"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast",
+			"value": "hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "318",
+			"value": "318"
 		}
 	]
 }

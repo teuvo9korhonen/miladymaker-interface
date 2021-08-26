@@ -5,43 +5,43 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunset",
+			"value": "sunset"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sleepy",
+			"value": "sleepy"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown",
+			"value": "brown"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "mape hoodie",
+			"value": "mape hoodie"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "tuft purple",
+			"value": "tuft purple"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "26",
+			"value": "26"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast",
+			"value": "hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "c-drip",
+			"value": "c-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "292",
+			"value": "292"
 		}
 	]
 }

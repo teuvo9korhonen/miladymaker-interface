@@ -5,43 +5,43 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "tennis",
+			"value": "tennis"
 		},
 		{
 			"trait_type": "Race",
-			"value": "black",
+			"value": "black"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sparkle",
+			"value": "sparkle"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown",
+			"value": "brown"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "leopard vest",
+			"value": "leopard vest"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "braid black",
+			"value": "braid black"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "30",
+			"value": "30"
 		},
 		{
 			"trait_type": "Core",
-			"value": "harajuku",
+			"value": "harajuku"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "334",
+			"value": "334"
 		}
 	]
 }

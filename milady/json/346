@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "roadside",
+			"value": "roadside"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pale",
+			"value": "pale"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sparkle",
+			"value": "sparkle"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "kogal cardigan",
+			"value": "kogal cardigan"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl black",
+			"value": "bowl black"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "harajuku glasses",
+			"value": "harajuku glasses"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "22",
+			"value": "22"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep",
+			"value": "prep"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "d-drip",
+			"value": "d-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "346",
+			"value": "346"
 		}
 	]
 }

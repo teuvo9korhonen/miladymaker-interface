@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "mountain",
+			"value": "mountain"
 		},
 		{
 			"trait_type": "Race",
-			"value": "black",
+			"value": "black"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "dilated",
+			"value": "dilated"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown",
+			"value": "brown"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "mape hoodie",
+			"value": "mape hoodie"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "tuft green",
+			"value": "tuft green"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "nose ring gold",
+			"value": "nose ring gold"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "trucker hat 911",
+			"value": "trucker hat 911"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "33",
+			"value": "33"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast-gyaru",
+			"value": "hypebeast-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "349",
+			"value": "349"
 		}
 	]
 }

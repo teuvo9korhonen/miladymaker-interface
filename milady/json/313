@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "streets",
+			"value": "streets"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pale",
+			"value": "pale"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sparkle",
+			"value": "sparkle"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "bear sweater",
+			"value": "bear sweater"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og blue",
+			"value": "og blue"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "mottega sunglasses blue",
+			"value": "mottega sunglasses blue"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "miteryx beanie",
+			"value": "miteryx beanie"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "32",
+			"value": "32"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep-hypebeast",
+			"value": "prep-hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "313",
+			"value": "313"
 		}
 	]
 }

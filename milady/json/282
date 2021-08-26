@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sonora",
+			"value": "sonora"
 		},
 		{
 			"trait_type": "Race",
-			"value": "tan",
+			"value": "tan"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sparkle",
+			"value": "sparkle"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "special people shirt",
+			"value": "special people shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl slate",
+			"value": "bowl slate"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "cat ears with bell",
+			"value": "cat ears with bell"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "25",
+			"value": "25"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-gyaru",
+			"value": "lolita-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "d-drip",
+			"value": "d-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "282",
+			"value": "282"
 		}
 	]
 }

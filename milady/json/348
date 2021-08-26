@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "bushland",
+			"value": "bushland"
 		},
 		{
 			"trait_type": "Race",
-			"value": "tan",
+			"value": "tan"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "dilated",
+			"value": "dilated"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "gold spray puffer",
+			"value": "gold spray puffer"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og blue",
+			"value": "og blue"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "safety pin piercing",
+			"value": "safety pin piercing"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "32",
+			"value": "32"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast",
+			"value": "hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "348",
+			"value": "348"
 		}
 	]
 }

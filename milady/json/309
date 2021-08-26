@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "yashima",
+			"value": "yashima"
 		},
 		{
 			"trait_type": "Race",
-			"value": "tan",
+			"value": "tan"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "classic",
+			"value": "classic"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Necklace",
-			"value": "coral cross necklace",
+			"value": "coral cross necklace"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "heihei shirt",
+			"value": "heihei shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og blonde",
+			"value": "og blonde"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "sunglasses",
+			"value": "sunglasses"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "38",
+			"value": "38"
 		},
 		{
 			"trait_type": "Core",
-			"value": "harajuku",
+			"value": "harajuku"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "a-drip",
+			"value": "a-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "309",
+			"value": "309"
 		}
 	]
 }

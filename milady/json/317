@@ -5,55 +5,55 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sonora",
+			"value": "sonora"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pale",
+			"value": "pale"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "classic",
+			"value": "classic"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Necklace",
-			"value": "milady beads",
+			"value": "milady beads"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "bowling shirt",
+			"value": "bowling shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og orange",
+			"value": "og orange"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "double safety pins",
+			"value": "double safety pins"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "trucker oasis",
+			"value": "trucker oasis"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "31",
+			"value": "31"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast-gyaru",
+			"value": "hypebeast-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "317",
+			"value": "317"
 		}
 	]
 }

@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "mountain",
+			"value": "mountain"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "classic",
+			"value": "classic"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown",
+			"value": "brown"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "malenciaga jersey",
+			"value": "malenciaga jersey"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "braid green",
+			"value": "braid green"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "larry glasses",
+			"value": "larry glasses"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "trucker gothic milady",
+			"value": "trucker gothic milady"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "53",
+			"value": "53"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast",
+			"value": "hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "ss-drip",
+			"value": "ss-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "300",
+			"value": "300"
 		}
 	]
 }

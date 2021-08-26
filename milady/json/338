@@ -5,55 +5,55 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunrise",
+			"value": "sunrise"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "teary",
+			"value": "teary"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "ulzzang coat",
+			"value": "ulzzang coat"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og blonde",
+			"value": "og blonde"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "round glasses",
+			"value": "round glasses"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "plaid bonnet",
+			"value": "plaid bonnet"
 		},
 		{
 			"trait_type": "Neck",
-			"value": "lean neck tattoo",
+			"value": "lean neck tattoo"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "37",
+			"value": "37"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep",
+			"value": "prep"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "a-drip",
+			"value": "a-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "338",
+			"value": "338"
 		}
 	]
 }

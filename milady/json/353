@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "bushland",
+			"value": "bushland"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pale",
+			"value": "pale"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sparkle",
+			"value": "sparkle"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "ribbon lolita",
+			"value": "ribbon lolita"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "braid brown",
+			"value": "braid brown"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "snakebites",
+			"value": "snakebites"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "trucker im so",
+			"value": "trucker im so"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "22",
+			"value": "22"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-gyaru",
+			"value": "lolita-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "d-drip",
+			"value": "d-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "353",
+			"value": "353"
 		}
 	]
 }

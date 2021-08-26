@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "bushland",
+			"value": "bushland"
 		},
 		{
 			"trait_type": "Race",
-			"value": "clay",
+			"value": "clay"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sleepy",
+			"value": "sleepy"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "maid",
+			"value": "maid"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og black",
+			"value": "og black"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "dual rings gold",
+			"value": "dual rings gold"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "plaid bonnet",
+			"value": "plaid bonnet"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "23",
+			"value": "23"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-prep",
+			"value": "lolita-prep"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "d-drip",
+			"value": "d-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "310",
+			"value": "310"
 		}
 	]
 }
