@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "streets",
+			"value": "streets"
 		},
 		{
 			"trait_type": "Race",
-			"value": "clay",
+			"value": "clay"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "spiral",
+			"value": "spiral"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Necklace",
-			"value": "mestwood pearl necklace",
+			"value": "mestwood pearl necklace"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "fleece paisley jacket",
+			"value": "fleece paisley jacket"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl black",
+			"value": "bowl black"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "cake hat",
+			"value": "cake hat"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "46",
+			"value": "46"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast-harajuku",
+			"value": "hypebeast-harajuku"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "ss-drip",
+			"value": "ss-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "129",
+			"value": "129"
 		}
 	]
 }

@@ -5,55 +5,55 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "yashima",
+			"value": "yashima"
 		},
 		{
 			"trait_type": "Race",
-			"value": "alien",
+			"value": "alien"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sleepy",
+			"value": "sleepy"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Necklace",
-			"value": "pearl necklace",
+			"value": "pearl necklace"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "bowling shirt",
+			"value": "bowling shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "tuft green",
+			"value": "tuft green"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "teardrops tattoo",
+			"value": "teardrops tattoo"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "miteryx beanie",
+			"value": "miteryx beanie"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "56",
+			"value": "56"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast",
+			"value": "hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "ss-drip",
+			"value": "ss-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "139",
+			"value": "139"
 		}
 	]
 }

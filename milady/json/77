@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "casino",
+			"value": "casino"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "dilated",
+			"value": "dilated"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown",
+			"value": "brown"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "fuzzy coat",
+			"value": "fuzzy coat"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "short blue",
+			"value": "short blue"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "diamond stud",
+			"value": "diamond stud"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "buckethat",
+			"value": "buckethat"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "35",
+			"value": "35"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep-hypebeast",
+			"value": "prep-hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "a-drip",
+			"value": "a-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "77",
+			"value": "77"
 		}
 	]
 }

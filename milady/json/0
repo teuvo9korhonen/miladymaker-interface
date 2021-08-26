@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "tennis",
+			"value": "tennis"
 		},
 		{
 			"trait_type": "Race",
-			"value": "clay",
+			"value": "clay"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "teary",
+			"value": "teary"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "lilac",
+			"value": "lilac"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "sweater and tie",
+			"value": "sweater and tie"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og orange",
+			"value": "og orange"
 		},
 		{
 			"trait_type": "Neck",
-			"value": "anime chest tattoo",
+			"value": "anime chest tattoo"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "25",
+			"value": "25"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep",
+			"value": "prep"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "d-drip",
+			"value": "d-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "0",
+			"value": "0"
 		}
 	]
 }

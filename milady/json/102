@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sonora",
+			"value": "sonora"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pale",
+			"value": "pale"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "crying",
+			"value": "crying"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "leaf",
+			"value": "leaf"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "meedles tracksuit",
+			"value": "meedles tracksuit"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "braid black",
+			"value": "braid black"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "plaid bonnet",
+			"value": "plaid bonnet"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "25",
+			"value": "25"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep-hypebeast",
+			"value": "prep-hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "d-drip",
+			"value": "d-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "102",
+			"value": "102"
 		}
 	]
 }

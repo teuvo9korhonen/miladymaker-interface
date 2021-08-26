@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "yashima",
+			"value": "yashima"
 		},
 		{
 			"trait_type": "Race",
-			"value": "black",
+			"value": "black"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sparkle",
+			"value": "sparkle"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "bowling shirt oriental",
+			"value": "bowling shirt oriental"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl harajuku dye",
+			"value": "bowl harajuku dye"
 		},
 		{
 			"trait_type": "Neck",
-			"value": "anime chest tattoo",
+			"value": "anime chest tattoo"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "49",
+			"value": "49"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast",
+			"value": "hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "ss-drip",
+			"value": "ss-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "121",
+			"value": "121"
 		}
 	]
 }

@@ -5,55 +5,55 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "mountain",
+			"value": "mountain"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "closed",
+			"value": "closed"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Necklace",
-			"value": "evil eye necklace",
+			"value": "evil eye necklace"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "bowling shirt",
+			"value": "bowling shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "braid green",
+			"value": "braid green"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "safety pin piercing",
+			"value": "safety pin piercing"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "temple cross tattoo",
+			"value": "temple cross tattoo"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "44",
+			"value": "44"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast",
+			"value": "hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "s-drip",
+			"value": "s-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "138",
+			"value": "138"
 		}
 	]
 }

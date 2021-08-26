@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunset",
+			"value": "sunset"
 		},
 		{
 			"trait_type": "Race",
-			"value": "clay",
+			"value": "clay"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "classic",
+			"value": "classic"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "western jacket",
+			"value": "western jacket"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og blue",
+			"value": "og blue"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "dual rings silver",
+			"value": "dual rings silver"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "22",
+			"value": "22"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast",
+			"value": "hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "d-drip",
+			"value": "d-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "152",
+			"value": "152"
 		}
 	]
 }

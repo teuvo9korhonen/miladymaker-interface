@@ -5,59 +5,59 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "bushland",
+			"value": "bushland"
 		},
 		{
 			"trait_type": "Race",
-			"value": "tan",
+			"value": "tan"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "crying",
+			"value": "crying"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown",
+			"value": "brown"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "leopard vest",
+			"value": "leopard vest"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl purple",
+			"value": "bowl purple"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "strawberry earring",
+			"value": "strawberry earring"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "snakebites",
+			"value": "snakebites"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "sunglasses",
+			"value": "sunglasses"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "trucker gothic milady",
+			"value": "trucker gothic milady"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "52",
+			"value": "52"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast-harajuku",
+			"value": "hypebeast-harajuku"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "ss-drip",
+			"value": "ss-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "78",
+			"value": "78"
 		}
 	]
 }

@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunrise",
+			"value": "sunrise"
 		},
 		{
 			"trait_type": "Race",
-			"value": "clay",
+			"value": "clay"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "teary",
+			"value": "teary"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "mwo shirt",
+			"value": "mwo shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl harajuku dye",
+			"value": "bowl harajuku dye"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "face piercings",
+			"value": "face piercings"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "sailor hat",
+			"value": "sailor hat"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "39",
+			"value": "39"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-gyaru",
+			"value": "lolita-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "a-drip",
+			"value": "a-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "108",
+			"value": "108"
 		}
 	]
 }
