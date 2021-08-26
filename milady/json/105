@@ -45,7 +45,7 @@
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "d-drip"
+			"value": "normal"
 		},
 		{
 			"trait_type": "Number",
