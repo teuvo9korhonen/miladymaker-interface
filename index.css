@@ -207,3 +207,17 @@ div.desc {
 .whitelisted-notice-reserve {
   margin: 0.5em 0;
 }
+
+.wallet-show 
+{ 
+  color:#FFF;
+  background-color:#000;
+}
+.wallet-show a
+{ 
+  color:#FFF;
+}
+.wallet-show a:hover
+{ 
+  color:#0F0;
+}

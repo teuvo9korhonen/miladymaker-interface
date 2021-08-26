@@ -8,7 +8,7 @@ const ConnectAndMint = ({ reserve }) => {
   const [signedIn, setSignedIn] = useState(false);
   const [walletAddress, setWalletAddress] = useState(null);
   const [miladyContract, setmiladyContract] = useState(null);
-  let [totalSupply, setTotalSupply] = useState(null);
+  var [totalSupply, setTotalSupply] = useState();
   const [saleStarted, setSaleStarted] = useState(true);
   const [whitelistedFor1, setWhitelistedFor1] = useState(false);
   const [whitelistedFor2, setWhitelistedFor2] = useState(false);
@@ -85,7 +85,7 @@ const ConnectAndMint = ({ reserve }) => {
     }
 
     try {
-      alert("Minting started.");
+      
       const price = getMiladyPriceEach(n).multipliedBy(n).toString();
 
       const gasAmount = await miladyContract.methods.mintMiladys(n).estimateGas({ from: walletAddress, value: price });
@@ -100,7 +100,7 @@ const ConnectAndMint = ({ reserve }) => {
           console.log("transactionHash", hash);
         });
     } catch (err) {
-      //alert(JSON.stringify(err));
+      alert(JSON.stringify(err));
       //const Error = () => e("div", { className: "error-output" }, `An error has occured: Insufficient Funds.`);
       return e(
         "div",
@@ -164,8 +164,6 @@ const ConnectAndMint = ({ reserve }) => {
           `Mint ${n} Milady${n > 1 ? "s" : ""} - ${priceAll} ETH (${priceEach} each)`,
           
         )
-
-
       );
 
     }
@@ -225,51 +223,60 @@ const ConnectAndMint = ({ reserve }) => {
    }
   */
 
-  useEffect(() => console.log("totalSupply:", totalSupply), [totalSupply]);
-  useEffect(() => console.log("saleStarted:", saleStarted), [saleStarted]);
-  if (!signedIn) {
+if(!signedIn)
+  {
+
+
     return e(
       "div",
-      { className: "amount-minted" }, 
-      "Total Minted: ", totalSupply ? AmountMinted(totalSupply) : null,
-      
-      Breaker(),
-      MintButton(1),
-      MintButton(5),
-      MintButton(15),
-      MintButton(30),
-      Breaker(),
-      SignInButton(),
-
-
+      { className: "totaly" },
+      totalSupply + " / " + " 10000" + " minted.",
+      e(
+        "div",
+        { className: "connect-or-buy" },
+        Breaker(),
+        MintButton(1),
+        MintButton(5),
+        MintButton(15),
+        MintButton(30),
+        Breaker(),
+        SignInButton(),  
+      ),
     );
-   
   }
+ 
 
   if(signedIn)
   {
 
 
     return e(
+     
       "div",
       { className: "amount-minted" },
       totalSupply ? AmountMinted(totalSupply) : null,
-      Breaker(),
-      SignOutButton(),
-      Breaker(),
       Breaker(),
       MintButton(1),
       MintButton(5),
       MintButton(15),
       MintButton(30),
-      
-      
+      Breaker(),
+      SignOutButton(),  
+      Breaker(),
+      Breaker(),
+      e(
+        "div",
+        { className: "wallet-show" },
+
+        e("a", { href: "http://etherscan.io/address/"+walletAddress}, "Connected Wallet: ", walletAddress)
+      ),
       e(
         "div",
         { className: "whitelisted-notices" },
         whitelistedFor1 ? WhitelistedNotice(1) : null,
         whitelistedFor2 ? WhitelistedNotice(2) : null
       )
+      
     );
   }
 
@@ -286,12 +293,17 @@ const ConnectAndMint = ({ reserve }) => {
   
 };
 
+
 const mint = document.querySelector("#mint");
+//const totalSupplyShow = document.querySelector("#showtotal");
+
 if (mint) {
+ 
   ReactDOM.render(
     e(() => ConnectAndMint({ reserve: false })),
     mint
   );
+   
 }
 
 const mintReserve = document.querySelector("#mint-reserve");
