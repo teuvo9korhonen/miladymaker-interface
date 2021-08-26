@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "xp",
+			"value": "xp"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sleepy",
+			"value": "sleepy"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "zip polo",
+			"value": "zip polo"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "tuft blue",
+			"value": "tuft blue"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "double safety pins",
+			"value": "double safety pins"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "meedles headband",
+			"value": "meedles headband"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "43",
+			"value": "43"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast-harajuku",
+			"value": "hypebeast-harajuku"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "s-drip",
+			"value": "s-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "384",
+			"value": "384"
 		}
 	]
 }

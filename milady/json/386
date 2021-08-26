@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "bushland",
+			"value": "bushland"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "dilated",
+			"value": "dilated"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown",
+			"value": "brown"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "super lover shirt",
+			"value": "super lover shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl green",
+			"value": "bowl green"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "fez",
+			"value": "fez"
 		},
 		{
 			"trait_type": "Neck",
-			"value": "spider neck tattoo",
+			"value": "spider neck tattoo"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "27",
+			"value": "27"
 		},
 		{
 			"trait_type": "Core",
-			"value": "harajuku-gyaru",
+			"value": "harajuku-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "c-drip",
+			"value": "c-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "386",
+			"value": "386"
 		}
 	]
 }

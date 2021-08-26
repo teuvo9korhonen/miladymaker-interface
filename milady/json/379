@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "clouds",
+			"value": "clouds"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "classic",
+			"value": "classic"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "lilac",
+			"value": "lilac"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "skull sweater",
+			"value": "skull sweater"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl black",
+			"value": "bowl black"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "white cowboy hat",
+			"value": "white cowboy hat"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "29",
+			"value": "29"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast-gyaru",
+			"value": "hypebeast-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "c-drip",
+			"value": "c-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "379",
+			"value": "379"
 		}
 	]
 }

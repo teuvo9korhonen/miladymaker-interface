@@ -5,59 +5,59 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sonora",
+			"value": "sonora"
 		},
 		{
 			"trait_type": "Race",
-			"value": "tan",
+			"value": "tan"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "teary",
+			"value": "teary"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Necklace",
-			"value": "cherry necklace",
+			"value": "cherry necklace"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "matagonia pullover",
+			"value": "matagonia pullover"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og frosted purple",
+			"value": "og frosted purple"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "prescription glasses",
+			"value": "prescription glasses"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "trucker white rabbit",
+			"value": "trucker white rabbit"
 		},
 		{
 			"trait_type": "Neck",
-			"value": "anime chest tattoo",
+			"value": "anime chest tattoo"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "48",
+			"value": "48"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast-gyaru",
+			"value": "hypebeast-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "ss-drip",
+			"value": "ss-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "406",
+			"value": "406"
 		}
 	]
 }

@@ -5,55 +5,55 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "casino",
+			"value": "casino"
 		},
 		{
 			"trait_type": "Race",
-			"value": "tan",
+			"value": "tan"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sparkle",
+			"value": "sparkle"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown",
+			"value": "brown"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "skull sweater",
+			"value": "skull sweater"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl brown",
+			"value": "bowl brown"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "cross earring",
+			"value": "cross earring"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "prescription glasses",
+			"value": "prescription glasses"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "denim fish cap",
+			"value": "denim fish cap"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "35",
+			"value": "35"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast-gyaru",
+			"value": "hypebeast-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "a-drip",
+			"value": "a-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "388",
+			"value": "388"
 		}
 	]
 }

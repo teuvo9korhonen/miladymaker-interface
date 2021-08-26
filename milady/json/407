@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "clouds",
+			"value": "clouds"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pale",
+			"value": "pale"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "closed",
+			"value": "closed"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "bear sweater",
+			"value": "bear sweater"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "tuft brown",
+			"value": "tuft brown"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "cobain glasses",
+			"value": "cobain glasses"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "spotted fur hat",
+			"value": "spotted fur hat"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "41",
+			"value": "41"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep",
+			"value": "prep"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "s-drip",
+			"value": "s-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "407",
+			"value": "407"
 		}
 	]
 }

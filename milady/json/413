@@ -5,55 +5,55 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "bushland",
+			"value": "bushland"
 		},
 		{
 			"trait_type": "Race",
-			"value": "clay",
+			"value": "clay"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "teary",
+			"value": "teary"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Necklace",
-			"value": "girl necklace",
+			"value": "girl necklace"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "cardigan tee",
+			"value": "cardigan tee"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl purple",
+			"value": "bowl purple"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "plaid bonnet",
+			"value": "plaid bonnet"
 		},
 		{
 			"trait_type": "Neck",
-			"value": "lean neck tattoo",
+			"value": "lean neck tattoo"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "34",
+			"value": "34"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep-harajuku",
+			"value": "prep-harajuku"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "413",
+			"value": "413"
 		}
 	]
 }

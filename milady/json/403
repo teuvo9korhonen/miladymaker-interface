@@ -5,59 +5,59 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "mountain",
+			"value": "mountain"
 		},
 		{
 			"trait_type": "Race",
-			"value": "clay",
+			"value": "clay"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sparkle",
+			"value": "sparkle"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "lilac",
+			"value": "lilac"
 		},
 		{
 			"trait_type": "Necklace",
-			"value": "coral cross necklace",
+			"value": "coral cross necklace"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "jesus tank",
+			"value": "jesus tank"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og orange",
+			"value": "og orange"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "teardrops tattoo",
+			"value": "teardrops tattoo"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "mottega sunglasses yellow",
+			"value": "mottega sunglasses yellow"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "maid hat",
+			"value": "maid hat"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "27",
+			"value": "27"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-gyaru",
+			"value": "lolita-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "c-drip",
+			"value": "c-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "403",
+			"value": "403"
 		}
 	]
 }

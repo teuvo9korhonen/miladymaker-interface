@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "mountain",
+			"value": "mountain"
 		},
 		{
 			"trait_type": "Race",
-			"value": "clay",
+			"value": "clay"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sparkle",
+			"value": "sparkle"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown",
+			"value": "brown"
 		},
 		{
 			"trait_type": "Necklace",
-			"value": "milady beads",
+			"value": "milady beads"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "cardigan tee",
+			"value": "cardigan tee"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "short blonde",
+			"value": "short blonde"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "loop chain earring",
+			"value": "loop chain earring"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "26",
+			"value": "26"
 		},
 		{
 			"trait_type": "Core",
-			"value": "harajuku",
+			"value": "harajuku"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "c-drip",
+			"value": "c-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "393",
+			"value": "393"
 		}
 	]
 }

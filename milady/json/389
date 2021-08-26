@@ -5,55 +5,55 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "nagano",
+			"value": "nagano"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "crying",
+			"value": "crying"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "blue pink shirt",
+			"value": "blue pink shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "short orange",
+			"value": "short orange"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "cherry earring",
+			"value": "cherry earring"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "mottega sunglasses yellow",
+			"value": "mottega sunglasses yellow"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "flower clip",
+			"value": "flower clip"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "43",
+			"value": "43"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-gyaru",
+			"value": "lolita-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "s-drip",
+			"value": "s-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "389",
+			"value": "389"
 		}
 	]
 }

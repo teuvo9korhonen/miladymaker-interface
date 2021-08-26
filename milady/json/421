@@ -5,59 +5,59 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "bushland",
+			"value": "bushland"
 		},
 		{
 			"trait_type": "Race",
-			"value": "tan",
+			"value": "tan"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "closed",
+			"value": "closed"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "sheep pullover",
+			"value": "sheep pullover"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "tuft purple",
+			"value": "tuft purple"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "cherry earring",
+			"value": "cherry earring"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "nose ring gold",
+			"value": "nose ring gold"
 		},
 		{
 			"trait_type": "Glasses",
-			"value": "prescription glasses",
+			"value": "prescription glasses"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "trucker oasis",
+			"value": "trucker oasis"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "44",
+			"value": "44"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep-gyaru",
+			"value": "prep-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "s-drip",
+			"value": "s-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "421",
+			"value": "421"
 		}
 	]
 }

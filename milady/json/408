@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunset",
+			"value": "sunset"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "smug",
+			"value": "smug"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "aqua",
+			"value": "aqua"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "jesus tank",
+			"value": "jesus tank"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "braid blue",
+			"value": "braid blue"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "heart pearls earring",
+			"value": "heart pearls earring"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "33",
+			"value": "33"
 		},
 		{
 			"trait_type": "Core",
-			"value": "gyaru",
+			"value": "gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "408",
+			"value": "408"
 		}
 	]
 }

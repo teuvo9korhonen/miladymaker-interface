@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunset",
+			"value": "sunset"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pale",
+			"value": "pale"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "sleepy",
+			"value": "sleepy"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown",
+			"value": "brown"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "football shirt",
+			"value": "football shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "short orange",
+			"value": "short orange"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "face piercings",
+			"value": "face piercings"
 		},
 		{
 			"trait_type": "Neck",
-			"value": "lean neck tattoo",
+			"value": "lean neck tattoo"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "37",
+			"value": "37"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast",
+			"value": "hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "a-drip",
+			"value": "a-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "396",
+			"value": "396"
 		}
 	]
 }

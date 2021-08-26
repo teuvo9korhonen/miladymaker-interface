@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "mountain",
+			"value": "mountain"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pale",
+			"value": "pale"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "classic",
+			"value": "classic"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "gold spray puffer",
+			"value": "gold spray puffer"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl brown",
+			"value": "bowl brown"
 		},
 		{
 			"trait_type": "Face Decoration",
-			"value": "teardrops tattoo",
+			"value": "teardrops tattoo"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "orange beret",
+			"value": "orange beret"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "31",
+			"value": "31"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep-hypebeast",
+			"value": "prep-hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "398",
+			"value": "398"
 		}
 	]
 }

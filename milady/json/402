@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "mountain",
+			"value": "mountain"
 		},
 		{
 			"trait_type": "Race",
-			"value": "black",
+			"value": "black"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "spiral",
+			"value": "spiral"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "green",
+			"value": "green"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "ribbon lolita",
+			"value": "ribbon lolita"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl purple",
+			"value": "bowl purple"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "trucker hat 911",
+			"value": "trucker hat 911"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "37",
+			"value": "37"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita-gyaru",
+			"value": "lolita-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "a-drip",
+			"value": "a-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "402",
+			"value": "402"
 		}
 	]
 }

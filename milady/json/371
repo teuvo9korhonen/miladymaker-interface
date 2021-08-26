@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "harajuku",
+			"value": "harajuku"
 		},
 		{
 			"trait_type": "Race",
-			"value": "clay",
+			"value": "clay"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "teary",
+			"value": "teary"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Necklace",
-			"value": "fliphone lanyard",
+			"value": "fliphone lanyard"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "tennis outfit",
+			"value": "tennis outfit"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "bowl green",
+			"value": "bowl green"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "brown cowboy hat",
+			"value": "brown cowboy hat"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "44",
+			"value": "44"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep-gyaru",
+			"value": "prep-gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "s-drip",
+			"value": "s-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "371",
+			"value": "371"
 		}
 	]
 }

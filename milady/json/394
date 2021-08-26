@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunrise",
+			"value": "sunrise"
 		},
 		{
 			"trait_type": "Race",
-			"value": "tan",
+			"value": "tan"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "crying",
+			"value": "crying"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "sweater and tie",
+			"value": "sweater and tie"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "og blonde",
+			"value": "og blonde"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "loop chain earring",
+			"value": "loop chain earring"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "27",
+			"value": "27"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep",
+			"value": "prep"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "c-drip",
+			"value": "c-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "394",
+			"value": "394"
 		}
 	]
 }

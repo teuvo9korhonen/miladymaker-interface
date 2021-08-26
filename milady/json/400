@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sonora",
+			"value": "sonora"
 		},
 		{
 			"trait_type": "Race",
-			"value": "tan",
+			"value": "tan"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "smug",
+			"value": "smug"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "peter pan collar shirt",
+			"value": "peter pan collar shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "short blonde",
+			"value": "short blonde"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "maid hat",
+			"value": "maid hat"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "33",
+			"value": "33"
 		},
 		{
 			"trait_type": "Core",
-			"value": "lolita",
+			"value": "lolita"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "b-drip",
+			"value": "b-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "400",
+			"value": "400"
 		}
 	]
 }

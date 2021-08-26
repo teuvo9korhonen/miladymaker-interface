@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "mountain",
+			"value": "mountain"
 		},
 		{
 			"trait_type": "Race",
-			"value": "clay",
+			"value": "clay"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "crying",
+			"value": "crying"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "aqua",
+			"value": "aqua"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "super lover shirt",
+			"value": "super lover shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "short blonde",
+			"value": "short blonde"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "bar piercings",
+			"value": "bar piercings"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "23",
+			"value": "23"
 		},
 		{
 			"trait_type": "Core",
-			"value": "gyaru",
+			"value": "gyaru"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "d-drip",
+			"value": "d-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "391",
+			"value": "391"
 		}
 	]
 }

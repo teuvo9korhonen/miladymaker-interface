@@ -5,47 +5,47 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sonora",
+			"value": "sonora"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "smug",
+			"value": "smug"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "blue",
+			"value": "blue"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "red puffer",
+			"value": "red puffer"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "tuft blue",
+			"value": "tuft blue"
 		},
 		{
 			"trait_type": "Earring",
-			"value": "bar piercings",
+			"value": "bar piercings"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "28",
+			"value": "28"
 		},
 		{
 			"trait_type": "Core",
-			"value": "hypebeast",
+			"value": "hypebeast"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "c-drip",
+			"value": "c-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "411",
+			"value": "411"
 		}
 	]
 }

@@ -5,51 +5,51 @@
 	"attributes": [
 		{
 			"trait_type": "Background",
-			"value": "sunrise",
+			"value": "sunrise"
 		},
 		{
 			"trait_type": "Race",
-			"value": "pink",
+			"value": "pink"
 		},
 		{
 			"trait_type": "Eyes",
-			"value": "closed",
+			"value": "closed"
 		},
 		{
 			"trait_type": "Eye Color",
-			"value": "brown",
+			"value": "brown"
 		},
 		{
 			"trait_type": "Shirt",
-			"value": "tie dye shirt",
+			"value": "tie dye shirt"
 		},
 		{
 			"trait_type": "Hair",
-			"value": "braid brown",
+			"value": "braid brown"
 		},
 		{
 			"trait_type": "Hat",
-			"value": "varsity cap",
+			"value": "varsity cap"
 		},
 		{
 			"trait_type": "Neck",
-			"value": "castle neck tattoo",
+			"value": "castle neck tattoo"
 		},
 		{
 			"trait_type": "Drip Score",
-			"value": "26",
+			"value": "26"
 		},
 		{
 			"trait_type": "Core",
-			"value": "prep-harajuku",
+			"value": "prep-harajuku"
 		},
 		{
 			"trait_type": "Drip Grade",
-			"value": "c-drip",
+			"value": "c-drip"
 		},
 		{
 			"trait_type": "Number",
-			"value": "414",
+			"value": "414"
 		}
 	]
 }
