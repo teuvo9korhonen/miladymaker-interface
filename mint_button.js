@@ -8,7 +8,7 @@ const ConnectAndMint = ({ reserve }) => {
   const [signedIn, setSignedIn] = useState(false);
   const [walletAddress, setWalletAddress] = useState(null);
   const [miladyContract, setmiladyContract] = useState(null);
-  var [totalSupply, setTotalSupply] = useState(null);
+  const [totalSupply, setTotalSupply] = useState(null);
   const [saleStarted, setSaleStarted] = useState(false);
   const [whitelistedFor1, setWhitelistedFor1] = useState(false);
   const [whitelistedFor2, setWhitelistedFor2] = useState(false);
@@ -48,7 +48,6 @@ const ConnectAndMint = ({ reserve }) => {
     setSignedIn(false);
   }
 
-
   async function callContractData(walletAddress) {
     const miladyContract = new window.web3.eth.Contract(ABI, ADDRESS);
     setmiladyContract(miladyContract);
@@ -80,7 +79,7 @@ const ConnectAndMint = ({ reserve }) => {
 
   async function mintMiladys(n) {
     if (!miladyContract) {
-      console.log("Wallet not online.");
+      return e("button", { className: "connect-button", onClick: signOut }, `MetaMask wallet offline.`);
       return;
     }
 
