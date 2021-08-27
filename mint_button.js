@@ -116,7 +116,7 @@ const ConnectAndMint = ({ reserve }) => {
           console.log("transactionHash", hash);
         });
     } catch (err) {
-      //const Error = () => e("div", { className: "error-output" }, `An error has occured: Insufficient Funds.`);
+      alert(JSON.stringify(err));
     }
   }
 
@@ -142,7 +142,7 @@ const ConnectAndMint = ({ reserve }) => {
           console.log("transactionHash", hash);
         });
     } catch (err) {
-      alert("An error has occured. Please try again later.");
+      alert(JSON.stringify(err));
     }
   }
 
