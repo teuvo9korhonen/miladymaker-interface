@@ -161,14 +161,14 @@ div.desc {
 }
 
 .connect-button {
-    /* display: block; */
-    /* margin: 1em auto; */
-    /* width: 250px; */
-    font-size: 20px;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-    white-space:pre-line;
+  /* display: block; */
+  /* margin: 1em auto; */
+  /* width: 250px; */
+  font-size: 20px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  white-space: pre-line;
 }
 .connect-button:hover {
   color: yellow;
@@ -176,7 +176,6 @@ div.desc {
 
 .mint-button a,
 .mint-reserve-button a {
-  
   margin-left: 1em;
   cursor: pointer;
   color: black;
@@ -196,6 +195,9 @@ div.desc {
   color: #333;
   margin: 0.5em;
 }
+.current-supply {
+  font-weight: bold;
+}
 
 .whitelisted-notices {
   margin-top: 1em;
@@ -204,12 +206,17 @@ div.desc {
   border-top: 1px solid #333;
   padding: 0.5em 0;
 }
+.whitelisted-notice:last-child {
+  border-bottom: 1px solid #333;
+}
 .whitelisted-notice-reserve {
   margin: 0.5em 0;
 }
 
+.wallet-show a {
+  display: block;
+}
 
-.wallet-show a
-{ 
-  display:block;
+.reserve-content {
+  text-align: center;
 }

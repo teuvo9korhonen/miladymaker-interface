@@ -97,14 +97,17 @@ const ConnectAndMint = ({ reserve }) => {
 
   async function mintMiladys(n) {
     if (!miladyContract) {
-      return e("button", { className: "connect-button", onClick: signOut }, `MetaMask wallet offline.`);
       return;
     }
 
     try {
       const price = getMiladyPriceEach(n).multipliedBy(n).toString();
 
-      const gasAmount = await miladyContract.methods.mintMiladys(n).estimateGas({ from: walletAddress, value: price });
+      // const gasAmount = await miladyContract.methods.mintMiladys(n).estimateGas({ from: walletAddress, value: price });
+
+      // Using reserveMintMiladys() instead of mintMiladys(n) to estimate gas...
+      // This is a gross hack and it frightens me, but I think it works. // alima
+      const gasAmount = await miladyContract.methods.reserveMintMiladys().estimateGas({ from: walletAddress });
 
       console.log("estimated gas", gasAmount);
       console.log({ from: walletAddress, value: price });
@@ -122,7 +125,7 @@ const ConnectAndMint = ({ reserve }) => {
 
   async function reserveMintMiladys() {
     if (!miladyContract) {
-      return e("button", { className: "connect-button", onClick: signOut }, `MetaMask wallet offline.`);
+      return;
     }
 
     try {
@@ -150,11 +153,23 @@ const ConnectAndMint = ({ reserve }) => {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
-  const SignInButton = () => e("button", { className: "connect-button", onClick: signIn }, `Connect to MetaMask`);
   const Breaker = () => e("br");
-  const SignOutButton = () =>
-    e("button", { className: "connect-button", onClick: signOut }, `Disconnect from MetaMask`);
-  const AmountMinted = (n) => e("div", { className: "showtotal" }, `${format(n)} / ${format(10000)} minted`);
+
+  const SignInButton = () => {
+    return e("button", { className: "connect-button", onClick: signIn }, `Connect to MetaMask`);
+  };
+  const SignOutButton = () => {
+    return e("button", { className: "connect-button", onClick: signOut }, `Disconnect from MetaMask`);
+  };
+
+  const AmountMinted = (n) => {
+    return e(
+      "div",
+      { className: "amount-minted" },
+      e("div", { className: "current-supply" }, "Current Supply:"),
+      e("div", null, `${format(n)} / ${format(10000)} minted`)
+    );
+  };
 
   const MintButton = (n) => {
     const priceEach = getMiladyPriceEach(n).dividedBy("1e18");
@@ -214,6 +229,18 @@ const ConnectAndMint = ({ reserve }) => {
     );
   };
 
+  const WalletNotice = () => {
+    return e(
+      "div",
+      { className: "wallet-show" },
+      e("a", { href: "http://etherscan.io/address/" + walletAddress }, "Connected wallet: " + walletAddress)
+    );
+  };
+
+  const NoWalletNotice = () => {
+    return e("div", { className: "wallet-show" }, "No wallet connected");
+  };
+
   /*
    if (!saleStarted) {
     return e("div", { className: "sale-notice" }, "The sale has not started yet.");
@@ -223,44 +250,67 @@ const ConnectAndMint = ({ reserve }) => {
   if (!signedIn) {
     return e(
       "div",
-      { className: "showtotal" },
-      totalSupply + " / " + " 10,000" + " minted",
-      e(
-        "div",
-        { className: "connect-or-buy" },
-        Breaker(),
-        MintButton(1),
-        MintButton(5),
-        MintButton(15),
-        MintButton(30),
-        Breaker(),
-        SignInButton()
-      ),
+      { className: "reserve-content" },
+      totalSupply ? AmountMinted(totalSupply) : null,
       Breaker(),
-      e("div", { className: "wallet-show" }, "No Wallet Connected")
+      SignInButton(),
+      Breaker(),
+      Breaker(),
+      NoWalletNotice()
+    );
+  }
+
+  if (reserve) {
+    if (whitelistedFor1) {
+      return e(
+        "div",
+        { className: "reserve-content" },
+        totalSupply ? AmountMinted(totalSupply) : null,
+        Breaker(),
+        SignOutButton(),
+        Breaker(),
+        WhitelistedNoticeReserve(1),
+        MintReserveButton()
+      );
+    }
+    if (whitelistedFor2) {
+      return e(
+        "div",
+        { className: "reserve-content" },
+        totalSupply ? AmountMinted(totalSupply) : null,
+        Breaker(),
+        SignOutButton(),
+        Breaker(),
+        WhitelistedNoticeReserve(2),
+        MintReserveButton()
+      );
+    }
+    return e(
+      "div",
+      { className: "reserve-content" },
+      totalSupply ? AmountMinted(totalSupply) : null,
+      Breaker(),
+      SignOutButton(),
+      Breaker(),
+      WhitelistedNoticeReserve(0)
     );
   }
 
   if (signedIn) {
     return e(
       "div",
-      { className: "showtotal" },
+      null,
       totalSupply ? AmountMinted(totalSupply) : null,
+      Breaker(),
+      SignOutButton(),
+      Breaker(),
+      Breaker(),
+      WalletNotice(),
       Breaker(),
       MintButton(1),
       MintButton(5),
       MintButton(15),
       MintButton(30),
-      Breaker(),
-      SignOutButton(),
-      Breaker(),
-      Breaker(),
-      e(
-        "div",
-        { className: "wallet-show" },
-
-        e("a", { href: "http://etherscan.io/address/" + walletAddress }, "Connected Wallet: ", walletAddress)
-      ),
       e(
         "div",
         { className: "whitelisted-notices" },
@@ -269,20 +319,9 @@ const ConnectAndMint = ({ reserve }) => {
       )
     );
   }
-
-  if (reserve) {
-    if (whitelistedFor1) {
-      return e("div", null, SignOutButton(), WhitelistedNoticeReserve(1), MintReserveButton());
-    }
-    if (whitelistedFor2) {
-      return e("div", null, SignOutButton(), WhitelistedNoticeReserve(2), MintReserveButton());
-    }
-    return e("div", null, SignOutButton(), WhitelistedNoticeReserve(0));
-  }
 };
 
 const mint = document.querySelector("#mint");
-//const totalSupplyShow = document.querySelector("#showtotal");
 
 if (mint) {
   ReactDOM.render(
