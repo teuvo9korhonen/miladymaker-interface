@@ -12,26 +12,25 @@ const ConnectAndMint = ({ reserve }) => {
   const [saleStarted, setSaleStarted] = useState(false);
   const [whitelistedFor1, setWhitelistedFor1] = useState(false);
   const [whitelistedFor2, setWhitelistedFor2] = useState(false);
-  
+
   useEffect(() => {
     (async () => {
-        if (typeof window.web3 !== "undefined") {
-      // Use existing gateway
-      window.web3 = new Web3(window.ethereum);
-    } else {
-      alert("No ETH interface plugged. Using read-only.");
-    }
-     const miladyContract = new window.web3.eth.Contract(ABI, ADDRESS);
-    setmiladyContract(miladyContract);
+      if (typeof window.web3 !== "undefined") {
+        // Use existing gateway
+        window.web3 = new Web3(window.ethereum);
+      } else {
+        alert("No ETH interface plugged. Using read-only.");
+      }
+      const miladyContract = new window.web3.eth.Contract(ABI, ADDRESS);
+      setmiladyContract(miladyContract);
 
-    const totalSupply = await miladyContract.methods.totalSupply().call();
-    setTotalSupply(totalSupply);
+      const totalSupply = await miladyContract.methods.totalSupply().call();
+      setTotalSupply(totalSupply);
 
-    const saleIsActive = await miladyContract.methods.saleIsActive().call();
-    setSaleStarted(saleIsActive);
-
+      const saleIsActive = await miladyContract.methods.saleIsActive().call();
+      setSaleStarted(saleIsActive);
     })();
-});
+  });
 
   async function signIn() {
     if (typeof window.web3 !== "undefined") {
@@ -40,7 +39,6 @@ const ConnectAndMint = ({ reserve }) => {
     } else {
       alert("No ETH interface plugged. Using read-only.");
     }
-
 
     window.ethereum
       .enable()
@@ -97,7 +95,6 @@ const ConnectAndMint = ({ reserve }) => {
     }
   }
 
-
   async function mintMiladys(n) {
     if (!miladyContract) {
       return e("button", { className: "connect-button", onClick: signOut }, `MetaMask wallet offline.`);
@@ -105,7 +102,6 @@ const ConnectAndMint = ({ reserve }) => {
     }
 
     try {
-      
       const price = getMiladyPriceEach(n).multipliedBy(n).toString();
 
       const gasAmount = await miladyContract.methods.mintMiladys(n).estimateGas({ from: walletAddress, value: price });
@@ -120,14 +116,13 @@ const ConnectAndMint = ({ reserve }) => {
           console.log("transactionHash", hash);
         });
     } catch (err) {
-      //const Error = () => e("div", { className: "error-output" }, `An error has occured: Insufficient Funds.`); 
+      //const Error = () => e("div", { className: "error-output" }, `An error has occured: Insufficient Funds.`);
     }
   }
 
   async function reserveMintMiladys() {
     if (!miladyContract) {
       return e("button", { className: "connect-button", onClick: signOut }, `MetaMask wallet offline.`);
-      
     }
 
     try {
@@ -165,24 +160,14 @@ const ConnectAndMint = ({ reserve }) => {
     const priceEach = getMiladyPriceEach(n).dividedBy("1e18");
     const priceAll = priceEach.multipliedBy(n);
 
-    if(!signedIn)
-    {
-       
-        return e(
+    if (!signedIn) {
+      return e(
         "div",
         { className: "mint-button" },
-        e(
-          "span",
-          { onHover: () => null },
-          `Mint ${n} Milady${n > 1 ? "s" : ""} - ${priceAll} ETH (${priceEach} each)`,
-          
-        )
+        e("span", { onHover: () => null }, `Mint ${n} Milady${n > 1 ? "s" : ""} - ${priceAll} ETH (${priceEach} each)`)
       );
-
-    }
-    else 
-    {
-         return e(
+    } else {
+      return e(
         "div",
         { className: "mint-button" },
         e(
@@ -192,7 +177,6 @@ const ConnectAndMint = ({ reserve }) => {
         )
       );
     }
-   
   };
 
   const WhitelistedNotice = (n) => {
@@ -236,8 +220,7 @@ const ConnectAndMint = ({ reserve }) => {
    }
   */
 
-if(!signedIn)
-  {
+  if (!signedIn) {
     return e(
       "div",
       { className: "showtotal" },
@@ -251,24 +234,15 @@ if(!signedIn)
         MintButton(15),
         MintButton(30),
         Breaker(),
-        SignInButton(),  
-
+        SignInButton()
       ),
       Breaker(),
-      e(
-        "div",
-        { className: "wallet-show" }, "No Wallet Connected"
-      )
+      e("div", { className: "wallet-show" }, "No Wallet Connected")
     );
   }
- 
 
-  if(signedIn)
-  {
-
-
+  if (signedIn) {
     return e(
-     
       "div",
       { className: "showtotal" },
       totalSupply ? AmountMinted(totalSupply) : null,
@@ -278,14 +252,14 @@ if(!signedIn)
       MintButton(15),
       MintButton(30),
       Breaker(),
-      SignOutButton(),  
+      SignOutButton(),
       Breaker(),
       Breaker(),
       e(
         "div",
         { className: "wallet-show" },
 
-        e("a", { href: "http://etherscan.io/address/"+walletAddress}, "Connected Wallet: ", walletAddress)
+        e("a", { href: "http://etherscan.io/address/" + walletAddress }, "Connected Wallet: ", walletAddress)
       ),
       e(
         "div",
@@ -293,7 +267,6 @@ if(!signedIn)
         whitelistedFor1 ? WhitelistedNotice(1) : null,
         whitelistedFor2 ? WhitelistedNotice(2) : null
       )
-      
     );
   }
 
@@ -306,21 +279,16 @@ if(!signedIn)
     }
     return e("div", null, SignOutButton(), WhitelistedNoticeReserve(0));
   }
-   
-  
 };
-
 
 const mint = document.querySelector("#mint");
 //const totalSupplyShow = document.querySelector("#showtotal");
 
 if (mint) {
- 
   ReactDOM.render(
     e(() => ConnectAndMint({ reserve: false })),
     mint
   );
-   
 }
 
 const mintReserve = document.querySelector("#mint-reserve");
