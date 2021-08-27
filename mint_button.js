@@ -30,7 +30,7 @@ const ConnectAndMint = ({ reserve }) => {
       const saleIsActive = await miladyContract.methods.saleIsActive().call();
       setSaleStarted(saleIsActive);
     })();
-  });
+  }, []);
 
   async function signIn() {
     if (typeof window.web3 !== "undefined") {
