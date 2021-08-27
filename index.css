@@ -164,19 +164,23 @@ div.desc {
   /* display: block; */
   /* margin: 1em auto; */
   /* width: 250px; */
+  padding: 0.5em;
   font-size: 20px;
-  background: #000;
-  color: #fff;
+  background: #b9d9b7;
+  color: #2f4d0c;
   cursor: pointer;
   white-space: pre-line;
 }
 .connect-button:hover {
-  color: yellow;
+  background: #9db89b;
+  color: #1d3007;
 }
 
+.mint-button {
+  margin: 0.33em 0;
+}
 .mint-button a,
 .mint-reserve-button a {
-  margin-left: 1em;
   cursor: pointer;
   color: black;
 }
@@ -188,12 +192,17 @@ div.desc {
 .mint-reserve-button {
   text-align: center;
 }
+.mint-reserve-button a {
+  color: #2f4d0c;
+  font-weight: bold;
+  font-size: 1.25em;
+}
 
 .amount-minted {
   text-align: center;
   font-style: italic;
   color: #333;
-  margin: 0.5em;
+  padding: 0 0 1em;
 }
 .current-supply {
   font-weight: bold;
@@ -217,6 +226,10 @@ div.desc {
   display: block;
 }
 
-.reserve-content {
+.centered-text {
   text-align: center;
+}
+
+.mint-your-milady {
+  margin-top: 1em;
 }

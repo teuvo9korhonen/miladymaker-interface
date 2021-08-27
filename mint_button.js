@@ -107,7 +107,9 @@ const ConnectAndMint = ({ reserve }) => {
 
       // Using reserveMintMiladys() instead of mintMiladys(n) to estimate gas...
       // This is a gross hack and it frightens me, but I think it works. // alima
-      const gasAmount = await miladyContract.methods.reserveMintMiladys().estimateGas({ from: walletAddress });
+      const gasAmount = await miladyContract.methods
+        .reserveMintMiladys()
+        .estimateGas({ from: walletAddress, value: "0" });
 
       console.log("estimated gas", gasAmount);
       console.log({ from: walletAddress, value: price });
@@ -153,7 +155,8 @@ const ConnectAndMint = ({ reserve }) => {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
-  const Breaker = () => e("br");
+  const Hr = () => e("hr");
+  const Br = () => e("br");
 
   const SignInButton = () => {
     return e("button", { className: "connect-button", onClick: signIn }, `Connect to MetaMask`);
@@ -162,35 +165,29 @@ const ConnectAndMint = ({ reserve }) => {
     return e("button", { className: "connect-button", onClick: signOut }, `Disconnect from MetaMask`);
   };
 
-  const AmountMinted = (n) => {
+  const MiniHeader = () => {
+    return e("div", null, AmountMinted(), Hr(), e("h3", { className: "mint-your-milady" }, "Mint your Milady:"));
+  };
+
+  const AmountMinted = () => {
+    if (totalSupply == null) return null;
     return e(
       "div",
       { className: "amount-minted" },
       e("div", { className: "current-supply" }, "Current Supply:"),
-      e("div", null, `${format(n)} / ${format(10000)} minted`)
+      e("div", null, `${format(totalSupply)} / ${format(10000)}`)
     );
   };
 
   const MintButton = (n) => {
     const priceEach = getMiladyPriceEach(n).dividedBy("1e18");
     const priceAll = priceEach.multipliedBy(n);
+    const text = `Mint ${n} Milady${n > 1 ? "s" : ""} - ${priceAll} ETH (${priceEach} each)`;
 
     if (!signedIn) {
-      return e(
-        "div",
-        { className: "mint-button" },
-        e("span", { onHover: () => null }, `Mint ${n} Milady${n > 1 ? "s" : ""} - ${priceAll} ETH (${priceEach} each)`)
-      );
+      return e("div", { className: "mint-button" }, text);
     } else {
-      return e(
-        "div",
-        { className: "mint-button" },
-        e(
-          "a",
-          { onClick: () => mintMiladys(n) },
-          `Mint ${n} Milady${n > 1 ? "s" : ""} - ${priceAll} ETH (${priceEach} each)`
-        )
-      );
+      return e("div", { className: "mint-button" }, e("a", { onClick: () => mintMiladys(n) }, text));
     }
   };
 
@@ -230,11 +227,7 @@ const ConnectAndMint = ({ reserve }) => {
   };
 
   const WalletNotice = () => {
-    return e(
-      "div",
-      { className: "wallet-show" },
-      e("a", { href: "http://etherscan.io/address/" + walletAddress }, "Connected wallet: " + walletAddress)
-    );
+    return e("div", { className: "wallet-show" }, "Connected wallet: " + walletAddress);
   };
 
   const NoWalletNotice = () => {
@@ -250,13 +243,18 @@ const ConnectAndMint = ({ reserve }) => {
   if (!signedIn) {
     return e(
       "div",
-      { className: "reserve-content" },
-      totalSupply ? AmountMinted(totalSupply) : null,
-      Breaker(),
+      { className: "centered-text" },
+      MiniHeader(),
+      Br(),
       SignInButton(),
-      Breaker(),
-      Breaker(),
-      NoWalletNotice()
+      Br(),
+      Br(),
+      NoWalletNotice(),
+      Br(),
+      MintButton(1),
+      MintButton(5),
+      MintButton(15),
+      MintButton(30)
     );
   }
 
@@ -264,11 +262,14 @@ const ConnectAndMint = ({ reserve }) => {
     if (whitelistedFor1) {
       return e(
         "div",
-        { className: "reserve-content" },
-        totalSupply ? AmountMinted(totalSupply) : null,
-        Breaker(),
+        { className: "centered-text" },
+        MiniHeader(),
+        Br(),
         SignOutButton(),
-        Breaker(),
+        Br(),
+        Br(),
+        WalletNotice(),
+        Br(),
         WhitelistedNoticeReserve(1),
         MintReserveButton()
       );
@@ -276,49 +277,50 @@ const ConnectAndMint = ({ reserve }) => {
     if (whitelistedFor2) {
       return e(
         "div",
-        { className: "reserve-content" },
-        totalSupply ? AmountMinted(totalSupply) : null,
-        Breaker(),
+        { className: "centered-text" },
+        MiniHeader(),
+        Br(),
         SignOutButton(),
-        Breaker(),
+        Br(),
+        Br(),
+        WalletNotice(),
+        Br(),
         WhitelistedNoticeReserve(2),
         MintReserveButton()
       );
     }
     return e(
       "div",
-      { className: "reserve-content" },
-      totalSupply ? AmountMinted(totalSupply) : null,
-      Breaker(),
+      { className: "centered-text" },
+      MiniHeader(),
+      Br(),
       SignOutButton(),
-      Breaker(),
+      Br(),
       WhitelistedNoticeReserve(0)
     );
   }
 
-  if (signedIn) {
-    return e(
+  return e(
+    "div",
+    null,
+    MiniHeader(),
+    Br(),
+    SignOutButton(),
+    Br(),
+    Br(),
+    WalletNotice(),
+    Br(),
+    MintButton(1),
+    MintButton(5),
+    MintButton(15),
+    MintButton(30),
+    e(
       "div",
-      null,
-      totalSupply ? AmountMinted(totalSupply) : null,
-      Breaker(),
-      SignOutButton(),
-      Breaker(),
-      Breaker(),
-      WalletNotice(),
-      Breaker(),
-      MintButton(1),
-      MintButton(5),
-      MintButton(15),
-      MintButton(30),
-      e(
-        "div",
-        { className: "whitelisted-notices" },
-        whitelistedFor1 ? WhitelistedNotice(1) : null,
-        whitelistedFor2 ? WhitelistedNotice(2) : null
-      )
-    );
-  }
+      { className: "whitelisted-notices" },
+      whitelistedFor1 ? WhitelistedNotice(1) : null,
+      whitelistedFor2 ? WhitelistedNotice(2) : null
+    )
+  );
 };
 
 const mint = document.querySelector("#mint");
