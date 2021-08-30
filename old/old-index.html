@@ -3,19 +3,9 @@
   <head>
     <title>Milady Maker</title>
     <link rel="stylesheet" href="index.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon-16x16.png"
-    />
-    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <meta charset="utf-8" />
@@ -54,7 +44,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
-      content="https://www.miladymaker.net/banner.png"
+      content="https://www.miladymaker.net/images/banner.png"
     />
     <meta name="twitter:title" content="Milady Maker NFT" />
     <meta name="twitter:site" content="milady_sonora" />
@@ -64,7 +54,7 @@
     />
     <meta
       property="og:image"
-      content="https://www.miladymaker.net/banner.png"
+      content="https://www.miladymaker.net/images/banner.png"
     />
   </head>
 
@@ -73,7 +63,7 @@
       <div class="logo" style="margin: 1em">
         <a href="https://opensea.io/collection/milady">
           <img
-            src="images/banner.png"
+            src="banner.png"
             style="border: 2px solid gray; max-width: 500px; padding: 0em"
         /></a>
       </div>
@@ -90,10 +80,16 @@
       </p>
     </div>
 
+    <!--
+		<div id="header" class="box" style="border:none; background-color:none; overflow: hidden; display: inline-block">
+<img src="logo.png" style="height:200px"><img src="milady3.jpg" style="height:200px">
+<img src="milady4.jpg" style="height:200px"><img src="milady5.jpg" style="height:200px">
+	</div>-->
+
     <div style="margin: 0 auto; width: 50%; padding: 0.5em">
       <audio controls autoplay loop>
-        <source src="./mp3/ost.ogg" type="audio/ogg" />
-        <source src="./mp3/ost.mp3" type="audio/mpeg" />
+        <source src="ost.ogg" type="audio/ogg" />
+        <source src="ost.mp3" type="audio/mpeg" />
       </audio>
     </div>
 
@@ -129,6 +125,11 @@
       </li>
     </ul>
 
+    <!--
+<p>Purchase: 9,500 Total - 1 Milady @ 0.08 E - 5 @ 0.4 E - 15 @ 1.2 E - 30 @ 2.4 E</p>
+<p>100 Drip Booster Packs (Grade A and Above) of 5 @ 2.4E (6X Cost)
+-->
+
     <hr />
     <p style="text-align: center">
       <a href="https://discord.gg/milady">Milady Village Community Discord</a> |
@@ -136,8 +137,6 @@
         >Milady Maker Official Twitter</a
       >
     </p>
-
-    <!-- ######## NEW BOX ######## -->
 
     <div class="box">
       <div class="box_bar">
@@ -148,8 +147,12 @@
         All 10,000 Milady's are be fairly launched in a simultaneous drop. 9,500
         will be for sale with 500 set aside as a community reserve.
       </p>
+
+      <!-- <hr /> -->
+      <!-- <h3>Mint your Milady:</h3> -->
+      <!--<p> Check back soon for the sale! </p>-->
+
       <div class="mint-box">
-        <h2>You're connected in a wrong network.</h2>
         <div id="mint"></div>
       </div>
       <p style="text-align: center">
@@ -163,46 +166,66 @@
       </p>
     </div>
 
-    <!-- ######## OLD BOX ######## -->
-    <div class="box">
-      <div class="box_bar">
-        <h2>Milady Maker Minting</h2>
-      </div>
-
-      <p>
-        All 10,000 Milady's are be fairly launched in a simultaneous drop. 9,500
-        will be for sale with 500 set aside as a community reserve.
-      </p>
-
-      <div class="mint-box">
-        <div>
-          <button id="connect" class="connect-button">
-            Connect to MetaMask
-          </button>
-          <p id="message"></p>
-          <p id="mint_count"></p>
-          <p id="buy1"></p>
-          <p id="buy5"></p>
-          <p id="buy15"></p>
-          <p id="buy30"></p>
+    <!--
+      <div class="gallery_container">
+        <div class="gallery_item">
+          <img src="mint.png" alt="Mint" />
+          <div class="desc">
+            1 Milady <br />
+            0.08 Ξ
+          </div>
+        </div>
+        <div class="gallery_item">
+          <img src="mint5.png" alt="Mint" />
+          <div class="desc">
+            5 Milady Pack <br />
+            .375 Ξ <br />
+            (0.075 each)
+          </div>
+        </div>
+        <div class="gallery_item">
+          <img src="mint15.png" alt="Mint" />
+          <div class="desc">
+            15 Milady Pack <br />
+            1.05 Ξ <br />
+            (0.07 each)
+          </div>
+        </div>
+        <div class="gallery_item">
+          <img src="mint30.png" alt="Mint" />
+          <div class="desc">
+            30 Milady Pack <br />
+            1.95 Ξ <br />
+            (0.065 each)
+          </div>
         </div>
       </div>
-      <p style="text-align: center">
-        <i
-          >Note: Milady's are revealed on OpenSea in batches as they mint.
-          Please be patient as metadata can take some time to update!
-        </i>
-        <br /><a href="https://opensea.io/collection/milady"
-          >View the Collection</a
-        >
-      </p>
-    </div>
+-->
 
     <hr />
     <p style="text-align: center">
       10,000 unique Milady NFT's will be produced from over 100,000 possible
       combinations. No new Gen 1 Milady's will ever be minted after this sale.
     </p>
+
+    <!--
+<div class="box"><div class="box_bar">
+<h2>Launch Timeline</h2>
+</div>
+		<h3>0% — Launch:</h3>
+		<p>Milady Maker will go live, with the full collection available to mint at 0.08 E. They will be sold in packs of 1, 5 and 30 to help offset gas charges.</p>
+		<p>Collab.land will be utilized to authenticate Milady ownership and provide access into the members-only section of Milady Village. The first 300 authentications will be given a special NFT to indicate OG status.</p>
+	<hr>
+		
+		<h3>30% — Early Buyer Giveaway</h3>
+		<p>5 random Milady's from the reserve will be airdropped to randomly selected holders in Milady Village.</p>
+		<hr>
+		<h3>75% — Superdrip Giveaway</h3>
+		<p>3 superdrip Milady's from the reserve will be airdropped to randomly selected holders in Milady Village. </p>
+		<h3>100% — Completion</h3>
+		<p></p>
+	</div>
+-->
 
     <hr />
     <div style="padding: 1em; padding-left: 3em; padding-right: 3em">
@@ -214,7 +237,7 @@
           text-align: center;
         "
       >
-        <img src="images/fruits_milady.png" />
+        <img src="fruits_milady.png" />
         <p style="margin-top: 0.5em">
           Milady style is inspired by the subcultural fashion tribes of Y2K
           Japan.
@@ -235,27 +258,27 @@
 
         <div class="gallery_container">
           <div class="gallery_item">
-            <img src="images/gyaru.png" alt="Gyaru Milady" />
+            <img src="gyaru.png" alt="Gyaru Milady" />
             <div class="desc">Gyaru</div>
           </div>
 
           <div class="gallery_item">
-            <img src="images/prep.png" alt="Prep Milady" />
+            <img src="prep.png" alt="Prep Milady" />
             <div class="desc">Prep</div>
           </div>
 
           <div class="gallery_item">
-            <img src="images/lolita.png" alt="Lolita Milady" />
+            <img src="lolita.png" alt="Lolita Milady" />
             <div class="desc">Lolita</div>
           </div>
 
           <div class="gallery_item">
-            <img src="images/hypebeast.png" alt="Hypebeast Milady" />
+            <img src="hypebeast.png" alt="Hypebeast Milady" />
             <div class="desc">Hypebeast</div>
           </div>
 
           <div class="gallery_item">
-            <img src="images/harajuku.png" alt="Harajuku Milady" />
+            <img src="harajuku.png" alt="Harajuku Milady" />
             <div class="desc">Harajuku</div>
           </div>
         </div>
@@ -277,7 +300,7 @@
           text-align: center;
         "
       >
-        <img src="images/milady4.jpg" />
+        <img src="milady4.jpg" />
         <p style="margin-top: 0.5em">
           Milady's produce eclectic but spiritually coherent outfits.
         </p>
@@ -311,7 +334,7 @@
           text-align: center;
         "
       >
-        <img src="images/milady3.jpg" />
+        <img src="milady3.jpg" />
         <p style="margin-top: 0.5em">We love a cute Milady!</p>
       </div>
     </div>
@@ -346,7 +369,7 @@
 
       <div style="padding: 1em; padding-left: 3em; padding-right: 3em">
         <div style="padding: 1em; font-style: italic; text-align: center">
-          <img src="images/miladymix.png" />
+          <img src="miladymix.png" />
           <p style="margin-top: 0.5em">Milady Mixes #1 - Harajuku Dreamin'</p>
         </div>
       </div>
@@ -360,7 +383,7 @@
       </p>
       <div style="padding: 1em; padding-left: 3em; padding-right: 3em">
         <div style="padding: 1em; font-style: italic; text-align: center">
-          <img src="images/miladyvr.png" />
+          <img src="miladyvr.png" />
           <p style="margin-top: 0.5em">
             <i>"Hey Milady Fans! Welcome to the Daily Milady!!"</i>
           </p>
@@ -375,11 +398,85 @@
 
       <div style="padding: 1em; padding-left: 3em; padding-right: 3em">
         <div style="padding: 1em; font-style: italic; text-align: center">
-          <img src="images/bootleg.png" />
+          <img src="bootleg.png" />
           <p style="margin-top: 0.5em">The Prada bootleg buckethat</p>
         </div>
       </div>
     </div>
+
+    <!--		<h3>Milady dApp Radio:</h3>
+		<p>Decentralized digital radio station dApp designed to stream album-by-album, with community governance deciding the addition and removal of albums to the mix.</p>
+	-->
+
+    <!--
+<div class="box"><div class="box_bar">
+<h2>Expansion Packs</h2>
+</div>
+	
+		<h3>Q1 — Milady Community Radio:</h3>
+		<p>Decentralized digital radio station dApp designed to stream album-by-album, with community governance with adding/removing albums from the mix.</p><p>Mixtapes are also shared to an exclusive Milady-owner only library.</li>
+		
+		<hr>
+		
+		<h3>Q2 — Milady Banners:</h3>
+		<p>Generative NFT header photo series, available to mint only to Milady NFT owners. The banners are being designed with a novel generative algorithm styled to match aesthetically with Milady Maker as an extension of its avatar-first design. They will be available in multiple formats and resolution.</p>
+	<hr>
+		<h3>Q3 — Milady Breeder:</h3>
+		<p>Pair 2 Milady's to produce a low-res pixel Baby Milady with a unique set of randomly generated attributes, influenced by the core and drip grades of the parents. Every Milady can only be used one time for breeding.</p>
+		
+		<hr>
+		<h3>Q4 — Milady Maker 2:</h3>
+		 <p>High resolution pixel based render of the Milady Maker NFT's built with a secondary accessory market that allows switching and trading individual cosmetics. 
+			 Gen 1 Milady's will be able to import their accessories or have it cashed into $MILADY, a reward token introduced to buy and sell cosmetic accessories, farmable in a daily care minigame.</p>
+		</div>
+		<div style="padding:1em; padding-left: 3em; padding-right: 3em"><div style="border:1px solid black; padding: 1em; font-style:italic; text-align:center"> 
+			<img src="milady2.png"><p style="margin-top:0.5em">Milady Maker 2 will handdraw accessories into a stylized pixel aesthetic.</p></div></div>
+-->
+
+    <!--
+<div class="box"><div class="box_bar">
+  <h2>Generation Design Philosophy</h2>
+</div>
+  <p>
+Following the design of all the Milady cosmetics, a Drip Assessment was performed with the team subjectively grading each cosmetic for its level of drip - stylishnessness and luxury. This was used to decide the distribution rate for each cosmetic, with the higher drip pieces being more rare to increase their market value.</p> 
+<p> 
+After a Milady's fashion is generated, the drip level assigned to each cosmetic is added up, weighted by the visual prominence of its slot (e.g. hat > necklace). Special borders are rewarded to Milady's if their overall drip is ranked a higher grade - drip, superdrip, legendary drip. This is designed to favor visually prominent aesthetic slots over only objective rarity of the collected cosmetics.</p>
+</div>
+	
+  
+		<div class="box"><div class="box_bar">
+<h2>Biotrait Generation</h2>
+</div>
+<p>Milady's base "biotraits" are randomly generated to create unique race, face & hair combinations. All biotraits maintain a standard distribution, except for a small selection of rarities and ultrararities, to allow speculative value to be focused on the cosmetics.</p>
+</div>
+<div class="m_box"><div class="m_box_bar">
+<h2>ゆっくりしていってね!</h2>
+</div>
+<p>
+Milady Maker is a collection of 10,000 unique NFTs developed by a generative algorithm.
+ ach Milady is an entirely unique digital painting composed of traits in a novel generative algorithm designed to instill aesthetic consistency.</p>
+<p>Milady's are designed to be profile-picture ready and double as entry tickets into the exclusive Milady Village community, and will also provide exclusive minting rights to a generative NFT Cover Photo.</p> 
+<p>Milady's have speculative value based on a complex of metrics: objective rarity, drip grade, core consistency and costume completion.</p>
+	<p>Milady Maker is fairly launched in a one-time drop at a minting fee of 0.1 Ethereum.</p>
+</div>
+		
+<div class="box"><div class="box_bar">
+<h2>Drip Generation</h2>
+</div>
+<p>Milady's fashion accessories fall under three categories, Core, Costume and Prop:</p>
+<ul>
+<li>A Core is a general sartorial theme with a large collection of items. Every core has its own rarity, and then each item has its own rarity within it. Every Milady can be rated on how much its accessories fall under the same aesthetic Core Consistency..</li>
+<li>A Costume are rare halloween-style costume. Every costume has exactly one item for each of the major slots; a Milady that contains all the pieces of a costume is considered Costume Complete.</li>
+<li>A prop are extra-rare one-off items that don't fit in any core or costume. These items do not count for or against Core Consistency or Costume Completion, but add value by being very rare.</li>
+</ul>
+</div>
+		
+<div class="box"><div class="box_bar">
+<h2>Chain Generation</h2>
+</div>
+<p>Milady Maker has a novel addition to its RNG algorithm designed to organically produce aesthetic consistency. As accessories are iteratively generated according to certain categories and sub-categories of various rarity levels, when one acessory is completed there is a RNG roll for a chance that the next one will fall under the same category or sub-category. This tips the finger on the scale to make high Core Consistency and high Costume Completion rated Milady's more frequent.</p>
+</div>		
+-->
 
     <hr />
 
@@ -429,6 +526,33 @@
       </div>
     </div>
 
+    <!--
+<div class="m_box_red"><div class="m_box_bar_red">
+<h2>Notes On the Design Process</h2>
+</div>
+	
+<p><u>Milady Sonora's Neochibi Style</u><br>
+Milady Sonora is a digital painter who has shown works in galleries both physically and digitally through Remilia Collective. 
+They've developed their distinctive take on the Chibi Anime style in a portraiture series over the years, 
+one which invokes a calming, ethereal, white-hearted angelicism in a blend of Western and Japanese aesthetics.</p>
+<p><u>Sartorialism</u><br>
+The team was interested in approaching the generative art space from an angle of sartorialism, by using the Milady as a template for fashion accessorization. 
+The thematic "Cores" were chosen around a loose narrative of throwback Tokyo street fashion, as seemed suited to Milady's fusion "neochibi" aesthetic. 
+The Chain Algorithm was designed to lend the generated works towards more aesthetic coherency, something that seemed missing in earlier generative NFT projects which followed more traditional RNG.</p>
+<p><u>Intuitive Value: Rarity <-> Drip</u><br>
+A major motivating factor for this design was also the desire for relative value to be intuitive; without knowing the 'meta' of the Milady market, one can ascertain higher or lower value Milady's at a glance by appraising their drip. 
+This is achieved understanding the direct relationship between rarity and secondary market value; distribution rates were decided by first assessing each accessory by its "drip", making the highest drip accessories most rare and thus most valuable.</p>
+<p><u>Profile-first</u><br>
+An interesting, unplanned development in generative NFT projects is buyers using the works as profile pictures on online communities. In retrospect, this makes sense, as the field operates almost entirely by word-of-mouth from digital networks.
+Unfortunately this is not something that most of the earlier generative NFT projects have designed with in mind. Mainly, they are too far zoomed out and have minimal background generation. While a user can manually crop their NFT and create a transparency to add a background, most do not; maybe out of lack of knowhow, or because its a violation of their NFT art - like drawing over a painting.</p>
+<p>Milady's were designed to be great profile pictures from the start, with a higher vertical ratio so that a square crop will be a perfect zoom to convey emotional expressiveness, while still retaining the space to show off accessories.
+The design of the accessories also intentionally lent high-value rarities to larger or more distinctly colored pieces, with the intention that a valuable Milady can be read as such even as a thumbnail.</p>
+<p>This is also why an optional NFT header add-in is planned as the gen 2 production, to cement our recognition of the unique relationship between generative NFT's and online spaces - perhaps as an early, organic structure for Ethereum based identities!</p>
+<p><u>Specs</u><br>
+We chose to follow the standard and proven formula of generative NFT art so we could place focus on our design innovations described above: 10,000 units, ERC-720 NFT, fair single drop with price to mint, and reserves set aside for marketing & community management.</p>
+</div>
+-->
+
     <script
       src="https://unpkg.com/react@17.0.2/umd/react.development.js"
       crossorigin
@@ -437,9 +561,9 @@
       src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"
       crossorigin
     ></script>
-    <script src="./js/config.js"></script>
-    <script src="./js/web3.min.js"></script>
-    <script src="./js/bignumber.min.js"></script>
-    <script src="./js/mint_button_new.js"></script>
+    <script src="./config.js"></script>
+    <script src="./web3.min.js"></script>
+    <script src="./bignumber.min.js"></script>
+    <script src="./mint_button.js"></script>
   </body>
 </html>
