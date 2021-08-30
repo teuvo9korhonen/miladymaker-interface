@@ -17,6 +17,9 @@ const ConnectAndMint = ({ reserve }) => {
   const [isMetamask, setIsMetamask] = useState(false);
   const [signedIn, setSignedIn] = useState(false);
 
+  const [chainId, setChainId] = useState(0);
+  const [chainName, setChainName] = useState("");
+
   const [walletAddress, setWalletAddress] = useState(null);
   const [miladyContract, setmiladyContract] = useState(null);
   const [totalSupply, setTotalSupply] = useState(null);
@@ -43,7 +46,7 @@ const ConnectAndMint = ({ reserve }) => {
             e(
               "h1",
               { className: "NoWalletTitle" },
-              `MetaMask was not detected. Please install it to continue.`
+              `MetaMask was not detected. You're in Read-only mode, to interact with the dapp, please install Metamask.`
             ),
             nowallet
           );
@@ -85,16 +88,16 @@ const ConnectAndMint = ({ reserve }) => {
       .enable()
       .then((accounts) => {
         window.web3.eth.net
+          .getId()
+          // check if connected network is mainnet
+          .then((network) => {
+            setChainId(network);
+          });
+        window.web3.eth.net
           .getNetworkType()
           // check if connected network is mainnet
           .then((network) => {
-            if (network != "main") {
-              alert(
-                "You are on " +
-                  network +
-                  " network. Change network to Ethereum mainnet."
-              );
-            }
+            setChainName(network);
           });
         let walletAddress = accounts[0];
         setWalletAddress(walletAddress);
@@ -204,9 +207,9 @@ const ConnectAndMint = ({ reserve }) => {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
-  //////////
-  // Tags //
-  //////////
+  ////////////////////////////////
+  //            Tags            //
+  ////////////////////////////////
 
   const Hr = () => e("hr");
   const Br = () => e("br");
@@ -227,6 +230,35 @@ const ConnectAndMint = ({ reserve }) => {
       "Install Metamask"
     );
   };
+
+  ////////////////////////////////
+
+  //Text when the user is in another network.
+  const TextWrongChain = () => {
+    return e(
+      "div",
+      null,
+      e(
+        "h2",
+        { className: "TextNoWallet" },
+        "You are on ",
+        e(
+          "span",
+          { className: "TextNoWallet" },
+          chainName.charAt(0).toUpperCase(),
+          chainName.slice(1)
+        ),
+        e("span", { className: "TextNoWallet" }, " Network")
+      ),
+      e(
+        "h2",
+        { className: "TextNoWallet" },
+        "Please, change to Ethereum Mainnet."
+      )
+    );
+  };
+
+  ////////////////////////////////
 
   const SignInButton = () => {
     return e(
@@ -339,12 +371,6 @@ const ConnectAndMint = ({ reserve }) => {
     return e("div", { className: "wallet-show" }, "No wallet connected");
   };
 
-  /*
-   if (!saleStarted) {
-    return e("div", { className: "sale-notice" }, "The sale has not started yet.");
-   }
-  */
-
   ///////////////////////////////////////////
   // States When the User enter on the web //
   ///////////////////////////////////////////
@@ -364,8 +390,7 @@ const ConnectAndMint = ({ reserve }) => {
   }
 
   //When the user isn't connected and MetaMask isn't installed.
-
-  if (!signedIn && isMetamask) {
+  else if (!signedIn && isMetamask) {
     return e(
       "div",
       { className: "centered-text" },
@@ -381,45 +406,16 @@ const ConnectAndMint = ({ reserve }) => {
     );
   }
 
-  if (reserve) {
-    if (whitelistedFor1) {
-      return e(
-        "div",
-        { className: "centered-text" },
-        MiniHeader(),
-        Br(),
-        SignOutButton(),
-        Br(),
-        Br(),
-        WalletNotice(),
-        Br(),
-        WhitelistedNoticeReserve(1),
-        MintReserveButton()
-      );
-    }
-    if (whitelistedFor2) {
-      return e(
-        "div",
-        { className: "centered-text" },
-        MiniHeader(),
-        Br(),
-        SignOutButton(),
-        Br(),
-        Br(),
-        WalletNotice(),
-        Br(),
-        WhitelistedNoticeReserve(2),
-        MintReserveButton()
-      );
-    }
+  //When the user is in a wrong network.
+  else if (signedIn && isMetamask && chainId != 1) {
     return e(
       "div",
       { className: "centered-text" },
-      MiniHeader(),
       Br(),
-      SignOutButton(),
       Br(),
-      WhitelistedNoticeReserve(0)
+      TextWrongChain(),
+      Br(),
+      Br()
     );
   }
 
