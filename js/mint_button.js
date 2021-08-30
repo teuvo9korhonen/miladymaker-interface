@@ -48,7 +48,11 @@ const ConnectAndMint = ({ reserve }) => {
           // check if connected network is mainnet
           .then((network) => {
             if (network != "main") {
-              alert("You are on " + network + " network. Change network to Ethereum mainnet.");
+              alert(
+                "You are on " +
+                  network +
+                  " network. Change network to Ethereum mainnet."
+              );
             }
           });
         let walletAddress = accounts[0];
@@ -76,10 +80,14 @@ const ConnectAndMint = ({ reserve }) => {
     const saleIsActive = await miladyContract.methods.saleIsActive().call();
     setSaleStarted(saleIsActive);
 
-    const whitelistOneMint = await miladyContract.methods.whitelistOneMint(walletAddress).call();
+    const whitelistOneMint = await miladyContract.methods
+      .whitelistOneMint(walletAddress)
+      .call();
     setWhitelistedFor1(whitelistOneMint);
 
-    const whitelistTwoMint = await miladyContract.methods.whitelistTwoMint(walletAddress).call();
+    const whitelistTwoMint = await miladyContract.methods
+      .whitelistTwoMint(walletAddress)
+      .call();
     setWhitelistedFor2(whitelistTwoMint);
   }
 
@@ -159,14 +167,28 @@ const ConnectAndMint = ({ reserve }) => {
   const Br = () => e("br");
 
   const SignInButton = () => {
-    return e("button", { className: "connect-button", onClick: signIn }, `Connect to MetaMask`);
+    return e(
+      "button",
+      { className: "connect-button", onClick: signIn },
+      `Connect to MetaMask`
+    );
   };
   const SignOutButton = () => {
-    return e("button", { className: "connect-button", onClick: signOut }, `Disconnect from MetaMask`);
+    return e(
+      "button",
+      { className: "connect-button", onClick: signOut },
+      `Disconnect from MetaMask`
+    );
   };
 
   const MiniHeader = () => {
-    return e("div", null, AmountMinted(), Hr(), e("h3", { className: "mint-your-milady" }, "Mint your Milady:"));
+    return e(
+      "div",
+      null,
+      AmountMinted(),
+      Hr(),
+      e("h3", { className: "mint-your-milady" }, "Mint your Milady:")
+    );
   };
 
   const AmountMinted = () => {
@@ -182,12 +204,18 @@ const ConnectAndMint = ({ reserve }) => {
   const MintButton = (n) => {
     const priceEach = getMiladyPriceEach(n).dividedBy("1e18");
     const priceAll = priceEach.multipliedBy(n);
-    const text = `Mint ${n} Milady${n > 1 ? "s" : ""} - ${priceAll} ETH (${priceEach} each)`;
+    const text = `Mint ${n} Milady${
+      n > 1 ? "s" : ""
+    } - ${priceAll} ETH (${priceEach} each)`;
 
     if (!signedIn) {
       return e("div", { className: "mint-button" }, text);
     } else {
-      return e("div", { className: "mint-button" }, e("a", { onClick: () => mintMiladys(n) }, text));
+      return e(
+        "div",
+        { className: "mint-button" },
+        e("a", { onClick: () => mintMiladys(n) }, text)
+      );
     }
   };
 
@@ -213,7 +241,9 @@ const ConnectAndMint = ({ reserve }) => {
     return e(
       "div",
       { className: "whitelisted-notice-reserve" },
-      `Congrats! Your wallet is whitelisted to reserve ${n} free Milady${n > 1 ? "s" : ""} from the ` +
+      `Congrats! Your wallet is whitelisted to reserve ${n} free Milady${
+        n > 1 ? "s" : ""
+      } from the ` +
         `Community Reserve! Click below to claim if you haven't already (gas not included):`
     );
   };
@@ -227,7 +257,11 @@ const ConnectAndMint = ({ reserve }) => {
   };
 
   const WalletNotice = () => {
-    return e("div", { className: "wallet-show" }, "Connected wallet: " + walletAddress);
+    return e(
+      "div",
+      { className: "wallet-show" },
+      "Connected wallet: " + walletAddress
+    );
   };
 
   const NoWalletNotice = () => {

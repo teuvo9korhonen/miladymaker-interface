@@ -1,11 +1,25 @@
 body {
   font: 1.2em;
-  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "MS Pゴシック",
-    "MS PGothic", farial, helvetica, clean, sans-serif;
+  font-family: "ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ Pro W3", "Hiragino Kaku Gothic Pro", Osaka,
+    "ãƒ¡ã‚¤ãƒªã‚ª", Meiryo, "MS Pã‚´ã‚·ãƒƒã‚¯", "MS PGothic", farial, helvetica,
+    clean, sans-serif;
   max-width: 43em;
   margin: auto;
   background-image: linear-gradient(#d9f0d6, #f4ffee, #f4ffee, white, white);
   background-attachment: fixed;
+}
+
+#NoWallet {
+  text-align: center;
+  font-size: 12px;
+}
+
+.TextNoWallet {
+  font-size: 20px;
+}
+
+.TextInstallWallet {
+  font-size: 24px;
 }
 
 img {
