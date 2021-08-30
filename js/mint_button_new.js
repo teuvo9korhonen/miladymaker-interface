@@ -10,6 +10,9 @@ const useEffect = React.useEffect;
 ///////////////////
 
 const ConnectAndMint = ({ reserve }) => {
+  //////////////////
+  //    States    //
+  //////////////////
   const [signedIn, setSignedIn] = useState(false);
   const [walletAddress, setWalletAddress] = useState(null);
   const [miladyContract, setmiladyContract] = useState(null);
@@ -17,14 +20,32 @@ const ConnectAndMint = ({ reserve }) => {
   const [saleStarted, setSaleStarted] = useState(false);
   const [whitelistedFor1, setWhitelistedFor1] = useState(false);
   const [whitelistedFor2, setWhitelistedFor2] = useState(false);
+  const [isMetamask, setIsMetamask] = useState(false);
+
+  ////////////////////
+  // Contract Calls //
+  ////////////////////
 
   useEffect(() => {
     (async () => {
       if (typeof window.web3 !== "undefined") {
         // Use existing gateway
         window.web3 = new Web3(window.ethereum);
+        setIsMetamask(true);
       } else {
-        alert("No ETH interface plugged. Using read-only.");
+        setIsMetamask(false);
+        const nowallet = document.querySelector("#NoWallet");
+
+        if (nowallet) {
+          ReactDOM.render(
+            e(
+              "h1",
+              { className: "NoWalletTitle" },
+              `MetaMask was not detected. Please install it to continue.`
+            ),
+            nowallet
+          );
+        }
       }
       const miladyContract = new window.web3.eth.Contract(ABI, ADDRESS);
       setmiladyContract(miladyContract);
@@ -37,12 +58,25 @@ const ConnectAndMint = ({ reserve }) => {
     })();
   }, []);
 
+  ///////////////////
+
   async function signIn() {
     if (typeof window.web3 !== "undefined") {
       // Use existing gateway
       window.web3 = new Web3(window.ethereum);
     } else {
-      alert("No ETH interface plugged. Using read-only.");
+      const nowallet = document.querySelector("#NoWallet");
+
+      if (nowallet) {
+        ReactDOM.render(
+          e(
+            "h1",
+            { className: "NoWalletTitle" },
+            `No Metamask. Using read-only.`
+          ),
+          nowallet
+        );
+      }
     }
 
     window.ethereum
