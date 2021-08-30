@@ -135,7 +135,7 @@ const ConnectAndMint = ({ reserve }) => {
     setWhitelistedFor2(whitelistTwoMint);
   }
 
-  function getMiladyPriceEach(n) {
+  function get_milady_price(n) {
     if (n === 30) {
       return BigNumber("60000000000000000"); // 0.06 ETH
     } else if (n === 15) {
@@ -177,24 +177,30 @@ const ConnectAndMint = ({ reserve }) => {
     }
   }
 
-  async function reserveMintMiladys() {
+  //SEND TRANSACTION FUNCTION
+  async function buyMiladys(n) {
     if (!miladyContract) {
       return;
     }
 
+    const price = get_milady_price(n).multipliedBy(n);
+    const gas_price = await web3.eth.getGasPrice();
+
+    var gas = await miladyContract.methods
+      .mintMiladys(n)
+      .estimateGas({ gasPrice: gas_price, from: walletAddress, value: price });
+
+    console.log(gas);
+
     try {
-      const price = "0";
-
-      const gasAmount = await miladyContract.methods
-        .reserveMintMiladys()
-        .estimateGas({ from: walletAddress, value: price });
-
-      console.log("estimated gas", gasAmount);
-      console.log({ from: walletAddress, value: price });
-
-      await miladyContract.methods
-        .reserveMintMiladys()
-        .send({ from: walletAddress, value: price, gas: String(gasAmount) })
+      miladyContract.methods
+        .mintMiladys(n)
+        .send({
+          gas: gas,
+          from: walletAddress,
+          gasPrice: gas_price.toString(),
+          value: price,
+        })
         .on("transactionHash", (hash) => {
           console.log("transactionHash", hash);
         });
@@ -305,7 +311,7 @@ const ConnectAndMint = ({ reserve }) => {
   };
 
   const MintButton = (n) => {
-    const priceEach = getMiladyPriceEach(n).dividedBy("1e18");
+    const priceEach = get_milady_price(n).dividedBy("1e18");
     const priceAll = priceEach.multipliedBy(n);
     const text = `Mint ${n} Milady${
       n > 1 ? "s" : ""
@@ -317,7 +323,7 @@ const ConnectAndMint = ({ reserve }) => {
       return e(
         "div",
         { className: "mint-button" },
-        e("button", { onClick: () => mintMiladys(n) }, text)
+        e("button", { onClick: () => buyMiladys(n) }, text)
       );
     }
   };
@@ -330,32 +336,6 @@ const ConnectAndMint = ({ reserve }) => {
         n > 1 ? "s" : ""
       } from the Community Reserve! `,
       e("a", { href: "reserve.html" }, "Click to view!")
-    );
-  };
-
-  const WhitelistedNoticeReserve = (n) => {
-    if (n === 0) {
-      return e(
-        "div",
-        { className: "whitelisted-notice-reserve" },
-        `Sorry, but your address (${walletAddress}) is not whitelisted.`
-      );
-    }
-    return e(
-      "div",
-      { className: "whitelisted-notice-reserve" },
-      `Congrats! Your wallet is whitelisted to reserve ${n} free Milady${
-        n > 1 ? "s" : ""
-      } from the ` +
-        `Community Reserve! Click below to claim if you haven't already (gas not included):`
-    );
-  };
-
-  const MintReserveButton = () => {
-    return e(
-      "div",
-      { className: "mint-reserve-button" },
-      e("a", { onClick: () => reserveMintMiladys() }, `Mint Miladys`)
     );
   };
 
