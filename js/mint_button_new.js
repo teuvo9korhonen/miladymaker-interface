@@ -13,14 +13,16 @@ const ConnectAndMint = ({ reserve }) => {
   //////////////////
   //    States    //
   //////////////////
+  // Wallet and Account States
+  const [isMetamask, setIsMetamask] = useState(false);
   const [signedIn, setSignedIn] = useState(false);
+
   const [walletAddress, setWalletAddress] = useState(null);
   const [miladyContract, setmiladyContract] = useState(null);
   const [totalSupply, setTotalSupply] = useState(null);
   const [saleStarted, setSaleStarted] = useState(false);
   const [whitelistedFor1, setWhitelistedFor1] = useState(false);
   const [whitelistedFor2, setWhitelistedFor2] = useState(false);
-  const [isMetamask, setIsMetamask] = useState(false);
 
   ////////////////////
   // Contract Calls //
@@ -72,7 +74,7 @@ const ConnectAndMint = ({ reserve }) => {
           e(
             "h1",
             { className: "NoWalletTitle" },
-            `No Metamask. Using read-only.`
+            `MetaMask was not detected. Please install it to continue.`
           ),
           nowallet
         );
@@ -209,6 +211,23 @@ const ConnectAndMint = ({ reserve }) => {
   const Hr = () => e("hr");
   const Br = () => e("br");
 
+  //HTML TAGS When the user isn't connected and MetaMask isn't installed.
+  const TextNoWallet = () => {
+    return e(
+      "h2",
+      { className: "TextNoWallet" },
+      "You don't have Metamask Installed, you can download it here:"
+    );
+  };
+
+  const TextInstallWallet = () => {
+    return e(
+      "a",
+      { className: "TextInstallWallet", href: "https://metamask.io/" },
+      "Install Metamask"
+    );
+  };
+
   const SignInButton = () => {
     return e(
       "button",
@@ -221,6 +240,15 @@ const ConnectAndMint = ({ reserve }) => {
       "button",
       { className: "connect-button", onClick: signOut },
       `Disconnect from MetaMask`
+    );
+  };
+
+  const MiladyText = () => {
+    return e(
+      "p",
+      {},
+      `All 10,000 Milady's are be fairly launched in a simultaneous drop.
+      9,500 will be for sale with 500 set aside as a community reserve.`
     );
   };
 
@@ -317,21 +345,39 @@ const ConnectAndMint = ({ reserve }) => {
    }
   */
 
-  if (!signedIn) {
+  ///////////////////////////////////////////
+  // States When the User enter on the web //
+  ///////////////////////////////////////////
+
+  //When the user isn't connected and MetaMask isn't installed.
+
+  if (!signedIn && !isMetamask) {
     return e(
       "div",
       { className: "centered-text" },
+      Br(),
+      TextNoWallet(),
+      Br(),
+      TextInstallWallet(),
+      Br()
+    );
+  }
+
+  //When the user isn't connected and MetaMask isn't installed.
+
+  if (!signedIn && isMetamask) {
+    return e(
+      "div",
+      { className: "centered-text" },
+      MiladyText(),
+      Br(),
       MiniHeader(),
       Br(),
       SignInButton(),
       Br(),
       Br(),
       NoWalletNotice(),
-      Br(),
-      MintButton(1),
-      MintButton(5),
-      MintButton(15),
-      MintButton(30)
+      Br()
     );
   }
 
