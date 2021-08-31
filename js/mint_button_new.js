@@ -366,7 +366,7 @@ const ConnectAndMint = () => {
   }
 
   //When the user is in a wrong network.
-  else if (signedIn && isMetamask && chainId != 1) {
+  else if (signedIn && isMetamask && chainId != CHAINID) {
     return e(
       "div",
       { className: "centered-text" },
