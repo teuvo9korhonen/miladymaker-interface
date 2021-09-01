@@ -166,10 +166,41 @@ const ConnectAndMint = () => {
     const gas_price = await web3.eth.getGasPrice();
     console.log("Gas Price: " + gas_price);
 
-    var gasAmount = await miladyContract.methods.mintMiladys(n).estimateGas({
-      from: walletAddress,
-      value: price,
-    });
+    var gasAmount = await miladyContract.methods.mintMiladys(n).estimateGas(
+      {
+        from: walletAddress,
+        value: price,
+      },
+      (err) => {
+        if (err) {
+          const noFounds = document.querySelector("#mint");
+
+          ReactDOM.render(
+            e(
+              "div",
+              { className: "centered-text" },
+              MiladyText(),
+              Br(),
+              MiniHeader(),
+              Br(),
+              SignOutButton(),
+              Br(),
+              Br(),
+              WalletNotice(),
+              Br(),
+              NoFounds(n),
+              Br(),
+              MintButton(1),
+              MintButton(5),
+              MintButton(15),
+              MintButton(30),
+              Br()
+            ),
+            noFounds
+          );
+        }
+      }
+    );
     console.log("Gas Amount: " + gasAmount);
 
     if (gas_price && gasAmount) {
@@ -232,6 +263,19 @@ const ConnectAndMint = () => {
         "h2",
         { className: "TextNoWallet" },
         "Wrong network detected. Please change to Ethereum Mainnet."
+      )
+    );
+  };
+
+  //No Founds to sent transaction.
+  const NoFounds = (n) => {
+    return e(
+      "div",
+      null,
+      e(
+        "h2",
+        { className: "TextNoWallet" },
+        "You don't have founds for mint " + n.toString() + " Miladys."
       )
     );
   };
@@ -387,10 +431,19 @@ const ConnectAndMint = () => {
     return e(
       "div",
       { className: "centered-text" },
+      MiladyText(),
+      Br(),
+      MiniHeader(),
+      Br(),
+      SignInButton(),
       Br(),
       Br(),
       TextWrongChain(),
       Br(),
+      MintText(1),
+      MintText(5),
+      MintText(15),
+      MintText(30),
       Br()
     );
   }
@@ -398,6 +451,8 @@ const ConnectAndMint = () => {
   return e(
     "div",
     null,
+    MiladyText(),
+    Br(),
     MiniHeader(),
     Br(),
     SignOutButton(),
