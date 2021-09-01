@@ -10,8 +10,6 @@ const useEffect = React.useEffect;
 ///////////////////
 
 const ConnectAndMint = () => {
-  ////////////////////////
-
   //////////////////
   //    States    //
   //////////////////
@@ -158,26 +156,27 @@ const ConnectAndMint = () => {
       return;
     }
 
-    const price = get_milady_price(n).multipliedBy(n);
+    const price = get_milady_price(n).multipliedBy(n).toString();
+    console.log(price);
+
     const gas_price = await web3.eth.getGasPrice();
-    console.log("Gas Price Recommended: " + gas_price.toString() + " GWEI");
-    const gasAmaunt = await miladyContract.methods.mintMiladys(n).estimateGas({
-      gasPrice: gas_price.toString(),
+    console.log("Gas Price: " + gas_price);
+
+    var gasAmount = await miladyContract.methods.mintMiladys(n).estimateGas({
       from: walletAddress,
-      value: "0",
+      value: price,
     });
+    console.log("Gas Amount: " + gasAmount);
 
-    console.log(gasAmaunt);
-
-    if (gas_price.toString() != "0" && gasAmaunt) {
+    if (gas_price && gasAmount) {
       try {
         miladyContract.methods
           .mintMiladys(n)
           .send({
-            gas: gasAmaunt,
             from: walletAddress,
-            gasPrice: gas_price,
             value: price,
+            gas: gasAmount,
+            gasPrice: gas_price,
           })
           .on("transactionHash", (hash) => {
             console.log("transactionHash", hash);
