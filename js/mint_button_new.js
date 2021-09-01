@@ -236,10 +236,9 @@ const ConnectAndMint = () => {
   //HTML TAGS When the user isn't connected and MetaMask isn't installed.
   const TextNoWallet = () => {
     return e(
-      "h2",
+      "p",
       { className: "TextNoWallet" },
-      "[No Metamask detected] ",
-      e("a", { href: "https://metamask.io/" }, "(https://metamask.io/)"),
+      e("a", { href: "https://metamask.io/" }, "No Metamask detected"),
       ". If on mobile, make sure to be browsing on Metamask's browser."
     );
   };
