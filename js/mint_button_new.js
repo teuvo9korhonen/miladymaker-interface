@@ -20,6 +20,8 @@ const ConnectAndMint = () => {
   const [chainId, setChainId] = useState(0);
   const [chainName, setChainName] = useState("");
 
+  const [showNoWallet, toggleShow] = useState(false);
+
   const [walletAddress, setWalletAddress] = useState(null);
   const [miladyContract, setmiladyContract] = useState(null);
   const [totalSupply, setTotalSupply] = useState(null);
@@ -62,14 +64,27 @@ const ConnectAndMint = () => {
       // Use existing gateway
       window.web3 = new Web3(window.ethereum);
     } else {
-      const nowallet = document.querySelector("#NoWallet");
+      const nowallet = document.querySelector("#mint");
 
       if (nowallet) {
         ReactDOM.render(
           e(
-            "h1",
-            { className: "NoWalletTitle" },
-            `[No Metamask detected]. If on mobile, make sure to be browsing on Metamask's browser.`
+            "div",
+            { className: "centered-text" },
+            MiladyText(),
+            Br(),
+            MiniHeader(),
+            Br(),
+            SignInButton(),
+            Br(),
+            Br(),
+            TextNoWallet(),
+            Br(),
+            MintText(1),
+            MintText(5),
+            MintText(15),
+            MintText(30),
+            Br()
           ),
           nowallet
         );
@@ -192,7 +207,9 @@ const ConnectAndMint = () => {
     return e(
       "h2",
       { className: "TextNoWallet" },
-      "[No Metamask detected]. If on mobile, make sure to be browsing on Metamask's browser."
+      "[No Metamask detected] ",
+      e("a", { href: "https://metamask.io/" }, "(https://metamask.io/)"),
+      ". If on mobile, make sure to be browsing on Metamask's browser."
     );
   };
 
@@ -283,6 +300,16 @@ const ConnectAndMint = () => {
     }
   };
 
+  const MintText = (n) => {
+    const priceEach = get_milady_price(n).dividedBy("1e18");
+    const priceAll = priceEach.multipliedBy(n);
+    const text = `Mint ${n} Milady${
+      n > 1 ? "s" : ""
+    } - ${priceAll} ETH (${priceEach} each)`;
+
+    return e("div", { className: "mint-button" }, text);
+  };
+
   const WhitelistedNotice = (n) => {
     return e(
       "div",
@@ -296,14 +323,14 @@ const ConnectAndMint = () => {
 
   const WalletNotice = () => {
     return e(
-      "div",
+      "p",
       { className: "wallet-show" },
       "Connected wallet: " + walletAddress
     );
   };
 
   const NoWalletNotice = () => {
-    return e("div", { className: "wallet-show" }, "No wallet connected");
+    return e("p", { className: "wallet-show" }, "No wallet connected");
   };
 
   ///////////////////////////////////////////
@@ -316,10 +343,19 @@ const ConnectAndMint = () => {
     return e(
       "div",
       { className: "centered-text" },
+      MiladyText(),
       Br(),
-      TextNoWallet(),
+      MiniHeader(),
       Br(),
-      TextInstallWallet(),
+      SignInButton(),
+      Br(),
+      Br(),
+      NoWalletNotice(),
+      Br(),
+      MintText(1),
+      MintText(5),
+      MintText(15),
+      MintText(30),
       Br()
     );
   }
@@ -337,6 +373,11 @@ const ConnectAndMint = () => {
       Br(),
       Br(),
       NoWalletNotice(),
+      Br(),
+      MintText(1),
+      MintText(5),
+      MintText(15),
+      MintText(30),
       Br()
     );
   }

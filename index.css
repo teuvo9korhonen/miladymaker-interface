@@ -238,8 +238,11 @@ div.desc {
   margin: 0.5em 0;
 }
 
-.wallet-show a {
+.wallet-show {
   display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .centered-text {
