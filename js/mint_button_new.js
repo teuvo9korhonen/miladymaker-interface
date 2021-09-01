@@ -43,17 +43,6 @@ const ConnectAndMint = () => {
       } else {
         setIsMetamask(false);
         const nowallet = document.querySelector("#NoWallet");
-
-        if (nowallet) {
-          ReactDOM.render(
-            e(
-              "h1",
-              { className: "NoWalletTitle" },
-              `MetaMask was not detected. You're in Read-only mode, to interact with the dapp, please install Metamask.`
-            ),
-            nowallet
-          );
-        }
       }
       const miladyContract = new window.web3.eth.Contract(ABI, ADDRESS);
       setmiladyContract(miladyContract);
@@ -80,7 +69,7 @@ const ConnectAndMint = () => {
           e(
             "h1",
             { className: "NoWalletTitle" },
-            `MetaMask was not detected. Please install it to continue.`
+            `[No Metamask detected]. If on mobile, make sure to be browsing on Metamask's browser.`
           ),
           nowallet
         );
@@ -203,7 +192,7 @@ const ConnectAndMint = () => {
     return e(
       "h2",
       { className: "TextNoWallet" },
-      "You don't have Metamask Installed, you can download it here:"
+      "[No Metamask detected]. If on mobile, make sure to be browsing on Metamask's browser."
     );
   };
 
@@ -225,19 +214,7 @@ const ConnectAndMint = () => {
       e(
         "h2",
         { className: "TextNoWallet" },
-        "You are on ",
-        e(
-          "span",
-          { className: "TextNoWallet" },
-          chainName.charAt(0).toUpperCase(),
-          chainName.slice(1)
-        ),
-        e("span", { className: "TextNoWallet" }, " Network")
-      ),
-      e(
-        "h2",
-        { className: "TextNoWallet" },
-        "Please, change to Ethereum Mainnet."
+        "Wrong network detected. Please change to Ethereum Mainnet."
       )
     );
   };
