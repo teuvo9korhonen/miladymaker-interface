@@ -29,6 +29,21 @@ const ConnectAndMint = () => {
   const [whitelistedFor1, setWhitelistedFor1] = useState(false);
   const [whitelistedFor2, setWhitelistedFor2] = useState(false);
 
+  ///////////////////////
+  // TOTAL SUPPLY CALL //
+  ///////////////////////
+
+  let call = new XMLHttpRequest();
+  call.open(
+    "GET",
+    "http://api.etherscan.io/api?module=proxy&action=eth_getStorageAt&address=0x5af0d9827e0c53e4799bb226655a1de152a425a5&position=0x2&tag=latest&apikey=N6RBJJAAQK1YWA66IE1KZ8T5SRGRCR4W9T"
+  );
+  call.send();
+  call.onload = () => {
+    const value = JSON.parse(call.response).result;
+    setTotalSupply(parseInt(value));
+  };
+
   //TRANSACTION STATES
   const [gasPrice, setGasPrice] = useState(0);
 
