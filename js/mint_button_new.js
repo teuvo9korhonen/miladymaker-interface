@@ -315,7 +315,7 @@ const ConnectAndMint = () => {
     return e(
       "p",
       {},
-      `All 10,000 Milady's are be fairly launched in a simultaneous drop.
+      `All 10,000 Milady's are fairly launched in a simultaneous drop.
       9,500 will be for sale with 500 set aside as a community reserve.`
     );
   };
