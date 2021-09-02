@@ -283,15 +283,27 @@ const ConnectAndMint = () => {
 
   //No Founds to sent transaction.
   const NoFounds = (n) => {
-    return e(
-      "div",
-      null,
-      e(
-        "h2",
-        { className: "TextNoWallet" },
-        "You don't have founds for mint " + n.toString() + " Miladys."
-      )
-    );
+    if (n == 1) {
+      return e(
+        "div",
+        null,
+        e(
+          "h2",
+          { className: "TextNoWallet" },
+          "You don't have enough funds to mint " + n.toString() + " Milady."
+        )
+      );
+    } else {
+      return e(
+        "div",
+        null,
+        e(
+          "h2",
+          { className: "TextNoWallet" },
+          "You don't have enough funds to mint " + n.toString() + " Miladys."
+        )
+      );
+    }
   };
 
   ////////////////////////////////
