@@ -33,16 +33,32 @@ const ConnectAndMint = () => {
   // TOTAL SUPPLY CALL //
   ///////////////////////
 
-  let call = new XMLHttpRequest();
-  call.open(
-    "GET",
-    "https://api.etherscan.io/api?module=proxy&action=eth_getStorageAt&address=0x5af0d9827e0c53e4799bb226655a1de152a425a5&position=0x2&tag=latest&apikey=N6RBJJAAQK1YWA66IE1KZ8T5SRGRCR4W9T"
-  );
-  call.send();
-  call.onload = () => {
-    const value = JSON.parse(call.response).result;
-    setTotalSupply(parseInt(value));
-  };
+  useEffect(() => {
+    let call = new XMLHttpRequest();
+    call.open(
+      "GET",
+      "https://api.etherscan.io/api?module=proxy&action=eth_getStorageAt&address=0x5af0d9827e0c53e4799bb226655a1de152a425a5&position=0x2&tag=latest&apikey=N6RBJJAAQK1YWA66IE1KZ8T5SRGRCR4W9T"
+    );
+    call.send();
+    call.onload = () => {
+      if (call.status == 200) {
+        const value = JSON.parse(call.response).result;
+        if (isNaN(parseInt(value)) == false) {
+          setTotalSupply(parseInt(value));
+          console.log("Total Supply: " + parseInt(value));
+        }
+      } else {
+        let callText = new XMLHttpRequest();
+        callText.open("GET", "total_supply.txt");
+        callText.send();
+        callText.onload = () => {
+          const value = JSON.parse(callText.response);
+          setTotalSupply(value);
+          console.log("Total Supply: " + value);
+        };
+      }
+    };
+  }, []);
 
   //TRANSACTION STATES
   const [gasPrice, setGasPrice] = useState(0);
@@ -343,7 +359,7 @@ const ConnectAndMint = () => {
   };
 
   const AmountMinted = () => {
-    if (totalSupply == null) return null;
+    if (totalSupply == null && totalSupply != NaN) return null;
     return e(
       "div",
       { className: "amount-minted" },
