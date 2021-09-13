@@ -18,15 +18,9 @@ const e = React.createElement;
 const useState = React.useState;
 const useEffect = React.useEffect;
 
-const mint = document.querySelector("#mint");
+const mintReserve = document.querySelector("#mint-reserve");
 
-////////////////////////////////
-
-/////////////////////////
-// FIRST VIEW FUNCTION //
-/////////////////////////
-
-const ConnectAndMint = () => {
+const ConnectAndGet = () => {
   //////////////////
   //    States    //
   //////////////////
@@ -43,6 +37,7 @@ const ConnectAndMint = () => {
   const [miladyContract, setmiladyContract] = useState(null);
   const [totalSupply, setTotalSupply] = useState(null);
   const [saleStarted, setSaleStarted] = useState(false);
+  const [listLoading, setListLoader] = useState(false);
   const [whitelistedFor1, setWhitelistedFor1] = useState(false);
   const [whitelistedFor2, setWhitelistedFor2] = useState(false);
 
@@ -112,14 +107,13 @@ const ConnectAndMint = () => {
       // Use existing gateway
       window.web3 = new Web3(window.ethereum);
     } else {
-      const nowallet = document.querySelector("#mint");
+      const nowallet = document.querySelector("#mint-reserve");
 
       if (nowallet) {
         ReactDOM.render(
           e(
             "div",
             { className: "centered-text" },
-            MiladyText(),
             Br(),
             MiniHeader(totalSupply),
             Br(),
@@ -127,11 +121,6 @@ const ConnectAndMint = () => {
             Br(),
             Br(),
             TextNoWallet(),
-            Br(),
-            MintText(1),
-            MintText(5),
-            MintText(15),
-            MintText(30),
             Br()
           ),
           nowallet
@@ -170,6 +159,7 @@ const ConnectAndMint = () => {
   }
 
   async function callContractData(walletAddress) {
+    setListLoader(true);
     const miladyContract = new window.web3.eth.Contract(ABI, ADDRESS);
     setmiladyContract(miladyContract);
 
@@ -188,17 +178,13 @@ const ConnectAndMint = () => {
       .whitelistTwoMint(walletAddress)
       .call();
     setWhitelistedFor2(whitelistTwoMint);
+
+    setListLoader(false);
   }
 
   function get_milady_price(n) {
-    if (n === 30) {
-      return BigNumber("60000000000000000"); // 0.06 ETH
-    } else if (n === 15) {
-      return BigNumber("70000000000000000"); // 0.07 ETH
-    } else if (n === 5) {
-      return BigNumber("75000000000000000"); // 0.075 ETH
-    } else {
-      return BigNumber("80000000000000000"); // 0.08 ETH
+    if (n === 2) {
+      return BigNumber("00000000000000000"); // 0.06 ETH
     }
   }
 
@@ -229,7 +215,7 @@ const ConnectAndMint = () => {
     const priceAll = priceEach.multipliedBy(n);
     const text = `Mint ${n} Milady${
       n > 1 ? "s" : ""
-    } - ${priceAll} ETH (${priceEach} each)`;
+    } - ${priceAll} ETH (You just pay the gas fee)`;
 
     if (!signedIn) {
       return e("div", { className: "mint-button" }, text);
@@ -266,51 +252,14 @@ const ConnectAndMint = () => {
     const gas_price = await web3.eth.getGasPrice();
     console.log("Gas Price: " + gas_price);
 
-    var gasAmount = await miladyContract.methods.mintMiladys(n).estimateGas(
-      {
-        from: walletAddress,
-        value: price,
-      },
-      (err) => {
-        if (err) {
-          const noFounds = document.querySelector("#mint");
-
-          ReactDOM.render(
-            e(
-              "div",
-              { className: "centered-text" },
-              MiladyText(),
-              Br(),
-              MiniHeader(totalSupply),
-              Br(),
-              SignOutButton(),
-              Br(),
-              Br(),
-              WalletNotice(walletAddress),
-              Br(),
-              NoFounds(n),
-              Br(),
-              MintButton(1),
-              MintButton(5),
-              MintButton(15),
-              MintButton(30),
-              Br()
-            ),
-            noFounds
-          );
-        }
-      }
-    );
-    console.log("Gas Amount: " + gasAmount);
-
-    if (gas_price && gasAmount) {
+    if (gas_price) {
       try {
         miladyContract.methods
-          .mintMiladys(n)
+          .reserveMintMiladys()
           .send({
             from: walletAddress,
             value: price,
-            gas: gasAmount,
+            gas: 400000,
             gasPrice: gas_price,
           })
           .on("transactionHash", (hash) => {
@@ -322,7 +271,7 @@ const ConnectAndMint = () => {
     }
   }
 
-  if (mint) {
+  if (mintReserve) {
     ///////////////////////////////////////////
     // States When the User enter on the web //
     ///////////////////////////////////////////
@@ -333,7 +282,6 @@ const ConnectAndMint = () => {
       return e(
         "div",
         { className: "centered-text" },
-        MiladyText(),
         Br(),
         MiniHeader(totalSupply),
         Br(),
@@ -341,11 +289,6 @@ const ConnectAndMint = () => {
         Br(),
         Br(),
         NoWalletNotice(),
-        Br(),
-        MintText(1),
-        MintText(5),
-        MintText(15),
-        MintText(30),
         Br()
       );
     }
@@ -355,7 +298,6 @@ const ConnectAndMint = () => {
       return e(
         "div",
         { className: "centered-text" },
-        MiladyText(),
         Br(),
         MiniHeader(totalSupply),
         Br(),
@@ -363,33 +305,59 @@ const ConnectAndMint = () => {
         Br(),
         Br(),
         NoWalletNotice(),
-        Br(),
-        MintText(1),
-        MintText(5),
-        MintText(15),
-        MintText(30),
         Br()
       );
-    }
-
-    //When the user is in a wrong network.
-    else if (signedIn && isMetamask && chainId != CHAINID) {
+    } //When the user is in a wrong network.
+    else if (signedIn && isMetamask && listLoading) {
+      if (chainId != CHAINID) {
+        return e(
+          "div",
+          { className: "centered-text" },
+          Br(),
+          MiniHeader(totalSupply),
+          Br(),
+          SignInButton(),
+          Br(),
+          WalletNotice(walletAddress),
+          Br(),
+          TextWrongChain(),
+          Br()
+        );
+      } else if (!whitelistedFor2) {
+        return e(
+          "div",
+          { className: "centered-text" },
+          Br(),
+          MiniHeader(totalSupply),
+          Br(),
+          SignInButton(),
+          Br(),
+          WalletNotice(walletAddress),
+          Br(),
+          e("div", null, e("h2", { className: "TextNoWallet" }, "Loading...")),
+          Br()
+        );
+      }
+    } else if (signedIn && isMetamask && !whitelistedFor2) {
       return e(
         "div",
         { className: "centered-text" },
-        MiladyText(),
         Br(),
         MiniHeader(totalSupply),
         Br(),
         SignInButton(),
         Br(),
+        WalletNotice(walletAddress),
         Br(),
-        TextWrongChain(),
-        Br(),
-        MintText(1),
-        MintText(5),
-        MintText(15),
-        MintText(30),
+        e(
+          "div",
+          null,
+          e(
+            "h2",
+            { className: "TextNoWallet" },
+            "You're not in the White List."
+          )
+        ),
         Br()
       );
     }
@@ -397,7 +365,6 @@ const ConnectAndMint = () => {
     return e(
       "div",
       null,
-      MiladyText(),
       Br(),
       MiniHeader(totalSupply),
       Br(),
@@ -406,23 +373,14 @@ const ConnectAndMint = () => {
       Br(),
       WalletNotice(walletAddress),
       Br(),
-      MintButton(1),
-      MintButton(5),
-      MintButton(15),
-      MintButton(30),
-      e(
-        "div",
-        { className: "whitelisted-notices" },
-        whitelistedFor1 ? WhitelistedNotice(1) : null,
-        whitelistedFor2 ? WhitelistedNotice(2) : null
-      )
+      MintButton(2)
     );
   }
 };
 
-if (mint) {
+if (mintReserve) {
   ReactDOM.render(
-    e(() => ConnectAndMint({ reserve: false })),
-    mint
+    e(() => ConnectAndGet({ reserve: true })),
+    mintReserve
   );
 }
